@@ -37,18 +37,30 @@ const ALIAS_FAMILIA = {
 const PATRON_NORMA = /\b(nch|en|ansi\/isea|ansi\/assp|ansi|iso|iec|nfpa|ds|osha|as\/nzs)\s?\/?\s?(\d[\d./-]*|[a-z]*\d[\d.]*)/gi;
 
 function buscarPorCodigoNorma(textoNorm) {
-  // Compara contra las claves exactas del glosario NORMAS (33 códigos)
+  // Compara contra las claves del glosario NORMAS (33 códigos). Algunas
+  // claves son compuestas (ej. "DS 594 LOTO", "DS 594 UV / NCh 3273"), asi
+  // que se acepta coincidencia en ambos sentidos: la pregunta contiene la
+  // clave completa, o la clave empieza con lo que escribio la persona.
   const matches = [];
   for (const codigo of Object.keys(normas)) {
     const codigoNorm = normalizar(codigo);
-    if (textoNorm.includes(codigoNorm)) matches.push(codigo);
+    const primerToken = codigoNorm.split(/[\s/]/)[0];
+    if (
+      textoNorm.includes(codigoNorm) ||
+      (textoNorm.length >= 4 && codigoNorm.startsWith(textoNorm)) ||
+      (primerToken.length >= 3 && codigoNorm.includes(textoNorm) && textoNorm.includes(primerToken))
+    ) {
+      matches.push(codigo);
+    }
   }
-  // Compara también contra los códigos citados en "actualizaciones" (ediciones más específicas,
+  // Compara tambien contra los codigos citados en "actualizaciones" (ediciones mas especificas,
   // ej. "EN 397:2025", "ANSI/ISEA Z89.1-2026")
   const actMatches = [];
   for (const a of actualizaciones) {
     const base = normalizar(a.norma).split(/[:\-]/)[0].trim(); // ej "en 397" de "en 397:2025"
-    if (base && textoNorm.includes(base)) actMatches.push(a);
+    if (base && (textoNorm.includes(base) || (textoNorm.length >= 4 && base.startsWith(textoNorm)))) {
+      actMatches.push(a);
+    }
   }
   return { matches, actMatches };
 }
