@@ -7,13 +7,15 @@
   const backdrop = document.getElementById('backdrop');
   const btnMenu = document.getElementById('btnMenu');
   const btnTheme = document.getElementById('btnTheme');
+  const btnReset = document.getElementById('btnReset');
   const btnFontMinus = document.getElementById('btnFontMinus');
   const btnFontPlus = document.getElementById('btnFontPlus');
   const categoriasList = document.getElementById('categoriasList');
   const temarioList = document.getElementById('temarioList');
   const guiaList = document.getElementById('guiaList');
 
-  const sessionId = 'sess-' + Math.random().toString(36).slice(2, 10);
+  const initialMessagesHTML = messagesEl.innerHTML;
+  let sessionId = 'sess-' + Math.random().toString(36).slice(2, 10);
   let fontScale = 1;
   let sending = false;
 
@@ -63,6 +65,17 @@
     sidebar.classList.remove('open');
     backdrop.classList.remove('open');
   }
+
+  // ---------- Nueva consulta (reinicia el chat) ----------
+  btnReset.addEventListener('click', () => {
+    if (sending) return;
+    messagesEl.innerHTML = initialMessagesHTML;
+    input.value = '';
+    input.style.height = 'auto';
+    sessionId = 'sess-' + Math.random().toString(36).slice(2, 10);
+    closeSidebarOnMobile();
+    input.focus();
+  });
 
   // ---------- Tema claro/oscuro ----------
   btnTheme.addEventListener('click', () => {
