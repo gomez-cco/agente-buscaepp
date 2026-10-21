@@ -33,11 +33,18 @@
       });
 
       temarioList.innerHTML = '';
-      data.temario.forEach(t => {
-        const li = document.createElement('li');
-        li.textContent = `${t.codigo} — ${t.titulo}`;
-        li.dataset.q = `Explícame qué exige la norma ${t.codigo} (${t.titulo}) y a qué EPP aplica.`;
-        temarioList.appendChild(li);
+      (data.temarioPorFamilia || []).forEach(grupo => {
+        const header = document.createElement('li');
+        header.className = 'familia-header';
+        header.textContent = `${grupo.icono || ''} ${grupo.label}`.trim();
+        temarioList.appendChild(header);
+        grupo.normas.forEach(t => {
+          const li = document.createElement('li');
+          li.className = 'norma-item';
+          li.textContent = `${t.codigo} — ${t.titulo}`;
+          li.dataset.q = `Explícame qué exige la norma ${t.codigo} (${t.titulo}) y a qué EPP aplica.`;
+          temarioList.appendChild(li);
+        });
       });
 
       estudioList.innerHTML = '';
