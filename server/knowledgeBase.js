@@ -10,10 +10,12 @@ function loadJSON(file) {
   return JSON.parse(fs.readFileSync(path.join(KB_DIR, file), 'utf8'));
 }
 
-const normas = loadJSON('normas.json');           // 33 normas: titulo, objetivo, campo, requisitos, categorias, tags
+const normas = loadJSON('normas.json');           // 34 normas: titulo, objetivo, campo, requisitos, categorias, tags, resumenSimple
 const eppInfo = loadJSON('epp_info.json');        // ~72 items de producto: nombre, norma, motivo
 const familias = loadJSON('familias.json');       // 17 familias con label e icono
 const actualizaciones = loadJSON('actualizaciones_2024_2026.json'); // cambios normativos recientes
+const pictogramas = loadJSON('pictogramas.json'); // significado de pictogramas (guantes: EN 388/511/374/407)
+const certificadores = loadJSON('certificadores.json'); // quién certifica/fiscaliza cada norma, por prefijo de código
 
 // Serializa el glosario de normas en un bloque de texto compacto
 function serializarNormas() {
@@ -79,5 +81,7 @@ module.exports = {
   eppInfo,
   familias,
   actualizaciones,
+  pictogramas,
+  certificadores,
   construirBaseConocimiento,
 };
