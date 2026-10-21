@@ -18,6 +18,50 @@ const pictogramas = loadJSON('pictogramas.json'); // significado de pictogramas 
 const certificadores = loadJSON('certificadores.json'); // quién certifica/fiscaliza cada norma, por prefijo de código
 const estudiaConBuscaEpp = loadJSON('estudia_con_buscaepp.json'); // 190 preguntas y respuestas de las guías técnicas "Estudia con BuscaEPP" (buscaepp.cl, Zona VIP)
 
+// A qué familia de producto pertenece cada una de las 34 normas del glosario.
+// Permite agrupar el "Temario normativo" del sidebar por familia (calzado,
+// guantes, LOTO, etc.) en vez de una lista plana de 34 códigos — así el
+// ejecutivo en terreno ve de un vistazo todas las normas que respaldan una
+// familia de EPP al momento de sugerir una opción al cliente.
+// "general" agrupa normas transversales que no son de una familia de
+// producto específica (ej. la Ley 16.744, "ley madre").
+const NORMA_FAMILIA = {
+  'NCh 461': 'cabeza',
+  'NCh 1358': 'auditiva',
+  'NCh 1301': 'visual',
+  'NCh 1562': 'soldador',
+  'NCh 1582': 'visual',
+  'NCh 1583': 'visual',
+  'NCh 2175': 'respiratoria',
+  'NCh 2176': 'respiratoria',
+  'NCh 2378': 'respiratoria',
+  'NCh 1284': 'respiratoria',
+  'NCh 1115': 'guantes',
+  'NCh 1805': 'guantes',
+  'NCh 772/1': 'calzado',
+  'NCh 1796': 'calzado',
+  'NCh 2147/1': 'calzado',
+  'NCh 2147/2': 'calzado',
+  'NCh 2147/3': 'calzado',
+  'NCh 1258': 'caidas',
+  'NCh 2374': 'caidas',
+  'NCh 1806': 'soldador',
+  'NCh 1303': 'ropa',
+  'NCh 1410': 'svial',
+  'NCh 1411/1': 'svial',
+  'NCh 1411/3 LOTO': 'loto',
+  'NCh 2929': 'loto',
+  'DS 594 LOTO': 'loto',
+  'OSHA LOTO': 'loto',
+  'EN ISO 11612 / NFPA 2112': 'ignifugo',
+  'EN ISO 11611': 'soldador',
+  'DS 594 Art. 45 — Detectores de Gas': 'gases',
+  'EN 342 / EN ISO 11612 — Ropa Térmica': 'ropa',
+  'DS 594 UV / NCh 3273': 'piel',
+  'MOP Decreto N°78/2012': 'vial',
+  'Ley 16744': 'general',
+};
+
 // Serializa el glosario de normas en un bloque de texto compacto
 function serializarNormas() {
   return Object.entries(normas).map(([codigo, n]) => {
@@ -85,5 +129,6 @@ module.exports = {
   pictogramas,
   certificadores,
   estudiaConBuscaEpp,
+  NORMA_FAMILIA,
   construirBaseConocimiento,
 };

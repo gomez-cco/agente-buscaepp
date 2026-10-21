@@ -1,6 +1,6 @@
 const path = require('path');
 const express = require('express');
-const { normas, familias, estudiaConBuscaEpp } = require('./knowledgeBase');
+const { normas, familias, estudiaConBuscaEpp, NORMA_FAMILIA } = require('./knowledgeBase');
 const { responder } = require('./matcher');
 
 const app = express();
@@ -42,7 +42,28 @@ app.get('/api/sidebar', (_req, res) => {
     titulo: g.titulo,
     totalPreguntas: g.totalPreguntas,
   }));
-  res.json({ temario, categorias, guiasEstudio });
+
+  // Agrupa las 34 normas del temario por familia de producto (calzado,
+  // guantes, LOTO, etc.), en el mismo orden en que aparecen las familias en
+  // familias.json, para que el ejecutivo en terreno pueda ubicar de un
+  // vistazo todas las normas que respaldan la familia que le interesa.
+  const porFamilia = {};
+  for (const [codigo, n] of Object.entries(normas)) {
+    const fam = NORMA_FAMILIA[codigo] || 'general';
+    if (!porFamilia[fam]) porFamilia[fam] = [];
+    porFamilia[fam].push({ codigo, titulo: n.titulo });
+  }
+  const ordenFamilias = [...Object.keys(familias), 'general'];
+  const temarioPorFamilia = ordenFamilias
+    .filter(fam => porFamilia[fam] && porFamilia[fam].length)
+    .map(fam => ({
+      id: fam,
+      label: fam === 'general' ? 'General / Transversal' : (familias[fam] && familias[fam].label) || fam,
+      icono: fam === 'general' ? '📜' : (familias[fam] && familias[fam].icono) || '',
+      normas: porFamilia[fam],
+    }));
+
+  res.json({ temario, categorias, guiasEstudio, temarioPorFamilia });
 });
 
 app.get('/healthz', (_req, res) => res.json({ ok: true }));
