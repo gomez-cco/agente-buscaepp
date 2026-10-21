@@ -1,0 +1,267 @@
+const NORMAS = {
+  'NCh 461': {
+    titulo: 'Cascos de protección de uso industrial',
+    objetivo: 'Establece los requisitos de materiales, construcción, dimensiones y ensayos que deben cumplir los cascos de protección para la industria, con el fin de proteger la cabeza del trabajador contra golpes, objetos que caen y salpicaduras.',
+    campo: 'Industria en general, construcción, minería, forestal y cualquier faena con riesgo de impacto en la cabeza.',
+    requisitos: 'El casco debe resistir impactos de al menos 50 J, penetración de objetos punzantes, y no debe transmitir fuerzas superiores a 5 kN al cráneo. Debe incluir sistema de suspensión interior ajustable.',
+    categorias: ['Casco tipo A', 'Casco tipo B (dieléctrico)', 'Casco tipo C (conducción eléctrica reducida)'],
+    tags: ['casco', 'cabeza', 'impacto', 'industria']
+  },
+  'NCh 1358': {
+    titulo: 'Protectores auditivos — terminología y clasificación',
+    objetivo: 'Define la terminología técnica y la clasificación de los protectores auditivos (orejeras y tapones) para uso en ambientes laborales con exposición a ruido.',
+    campo: 'Todos los ambientes de trabajo con niveles de ruido superiores a 85 dB(A).',
+    requisitos: 'Los protectores deben indicar el NRR (Noise Reduction Rating) o SNR. Los tapones desechables deben ser hipoalergénicos. Las orejeras deben sellar correctamente el pabellón auditivo.',
+    categorias: ['Tapones auditivos desechables', 'Tapones reutilizables', 'Orejeras de copa', 'Orejeras adosables a casco'],
+    tags: ['ruido', 'auditivo', 'tapones', 'orejeras', 'dB']
+  },
+  'NCh 1301': {
+    titulo: 'Protección personal — elementos protectores de los ojos',
+    objetivo: 'Establece los requisitos ópticos, mecánicos y de resistencia química que deben cumplir los lentes y gafas de seguridad para proteger los ojos de riesgos laborales.',
+    campo: 'Trabajos con partículas proyectadas, polvo, salpicaduras de líquidos, radiaciones ópticas y operaciones de pulido, esmerilado y corte.',
+    requisitos: 'Los lentes deben tener resistencia al impacto de alta velocidad (prueba de bola de acero a 45 m/s), distorsión óptica mínima, y marcación clara del fabricante y grado de protección.',
+    categorias: ['Lentes de seguridad', 'Gafas panorámicas', 'Gafas químicas', 'Protectores faciales'],
+    tags: ['lentes', 'ojos', 'impacto', 'partículas', 'química']
+  },
+  'NCh 1562': {
+    titulo: 'Protección personal — pantallas para soldadores',
+    objetivo: 'Define los requisitos de construcción, filtros y resistencia mecánica de las caretas y pantallas utilizadas en procesos de soldadura para proteger ojos, cara y cuello.',
+    campo: 'Soldadura al arco eléctrico, MIG, TIG, oxiacetilénica y corte por plasma.',
+    requisitos: 'Los filtros deben cumplir con el número de sombra (shade) adecuado al proceso: shade 9-11 para electrodo, 10-13 para MIG/TIG. Debe proteger contra radiación UV, IR y visible intensa.',
+    categorias: ['Careta de soldar de mano', 'Careta de soldar de cabeza', 'Careta de oscurecimiento automático'],
+    tags: ['soldadura', 'careta', 'arco', 'UV', 'IR', 'shade']
+  },
+  'NCh 1582': {
+    titulo: 'Protección de los ojos — filtros ultravioleta',
+    objetivo: 'Establece los requisitos que deben cumplir los filtros para radiación ultravioleta utilizados en lentes y pantallas de protección ocular en entornos laborales.',
+    campo: 'Trabajos al aire libre con exposición solar intensa, laboratorios con fuentes UV, lámparas germicidas y procesos de curado UV.',
+    requisitos: 'Los filtros deben bloquear al menos el 99,9% de la radiación UV-B (280–315 nm) y UV-A (315–380 nm). Deben mantener transmisión visual adecuada para la actividad.',
+    categorias: ['Filtros UV-A', 'Filtros UV-B', 'Filtros UV-A+B combinados'],
+    tags: ['UV', 'ultravioleta', 'lentes', 'filtro', 'solar']
+  },
+  'NCh 1583': {
+    titulo: 'Protección de los ojos — filtros infrarrojos',
+    objetivo: 'Especifica los requisitos de transmisión y clasificación de los filtros para radiación infrarroja utilizados en la protección ocular en procesos de alta temperatura.',
+    campo: 'Hornos industriales, fundición, acería, soldadura oxiacetilénica, vidriería y cualquier proceso con fuentes intensas de calor radiante.',
+    requisitos: 'Los filtros se clasifican por número de sombra (1.5 a 10) según la intensidad de la fuente IR. Deben bloquear la radiación IR sin comprometer excesivamente la visión.',
+    categorias: ['Filtros IR escala 1.5–4', 'Filtros IR escala 4–10'],
+    tags: ['infrarrojo', 'IR', 'calor', 'soldadura', 'fundición', 'filtro']
+  },
+  'NCh 2175': {
+    titulo: 'Aparatos de protección respiratoria — vocabulario',
+    objetivo: 'Establece y define los términos y definiciones utilizados en el campo de los equipos de protección respiratoria, asegurando un lenguaje técnico uniforme.',
+    campo: 'Aplicable a todos los ambientes laborales donde se requiera protección respiratoria contra partículas, gases, vapores o atmósferas deficientes en oxígeno.',
+    requisitos: 'Norma de referencia terminológica. Define conceptos como: factor de protección, hermeticidad, zona de respiración, flujo inspiratorio, resistencia respiratoria, entre otros.',
+    categorias: ['Respiradores filtrantes', 'Equipos de respiración autónoma', 'Líneas de aire'],
+    tags: ['vocabulario', 'terminología', 'respirador', 'EPR']
+  },
+  'NCh 2176': {
+    titulo: 'Aparatos de protección respiratoria — clasificación',
+    objetivo: 'Clasifica los distintos tipos de equipos de protección respiratoria según su principio de funcionamiento, tipo de contaminante y nivel de protección ofrecido.',
+    campo: 'Industria química, minería, construcción, laboratorios, agricultura y cualquier ambiente con contaminantes aéreos.',
+    requisitos: 'Divide los equipos en dependientes del ambiente (filtrantes) e independientes (autónomos). Cada clase debe indicar su factor de protección nominal (FPN) y los contaminantes para los que es efectivo.',
+    categorias: ['Clase P1 (baja eficiencia)', 'Clase P2 (media eficiencia)', 'Clase P3 (alta eficiencia)', 'Equipos autónomos'],
+    tags: ['clasificación', 'P1', 'P2', 'P3', 'filtro', 'autónomo']
+  },
+  'NCh 2378': {
+    titulo: 'Aparatos de protección respiratoria — máscaras completas',
+    objetivo: 'Establece los requisitos de construcción, materiales, sellado facial y ensayos para las máscaras completas de protección respiratoria que cubren ojos, nariz y boca.',
+    campo: 'Ambientes con concentraciones de gases o partículas peligrosas que superen los niveles permisibles, incluyendo atmósferas con riesgo para los ojos.',
+    requisitos: 'La máscara debe lograr un factor de protección ≥ 2000. El sello facial debe resistir fugas con valores menores al 0,05%. Los visores deben ser resistentes a impactos y productos químicos.',
+    categorias: ['Máscara completa con filtros de partículas', 'Máscara con filtros de gases y vapores', 'Máscara mixta'],
+    tags: ['máscara completa', 'full face', 'gases', 'partículas', 'sellado']
+  },
+  'NCh 1284': {
+    titulo: 'Aparatos de protección respiratoria — medias máscaras y cuartos de máscara',
+    objetivo: 'Define los requisitos de diseño, materiales, sellado y ensayos para las medias máscaras (nariz y boca) y cuartos de máscara (solo boca y nariz) reutilizables.',
+    campo: 'Operaciones de pintura, manejo de solventes, laboratorios, pulido, lijado y ambientes con partículas o gases en concentraciones moderadas.',
+    requisitos: 'Factor de protección nominal ≥ 10 para cuarto de máscara y ≥ 100 para media máscara. Los filtros deben ser intercambiables y codificados por color según tipo de contaminante.',
+    categorias: ['Cuarto de máscara', 'Media máscara reutilizable', 'Media máscara desechable (tipo N95/FFP2)'],
+    tags: ['media máscara', 'N95', 'FFP2', 'filtro', 'gases', 'vapores']
+  },
+  'NCh 1115': {
+    titulo: 'Cuero para guantes de protección — requisitos',
+    objetivo: 'Establece los requisitos físicos y mecánicos que debe cumplir el cuero utilizado en la fabricación de guantes de protección laboral.',
+    campo: 'Industria metalmecánica, construcción, forestal, soldadura y cualquier faena con riesgo de cortes, abrasión o calor moderado.',
+    requisitos: 'El cuero debe tener resistencia a la tracción ≥ 15 N/mm², elongación mínima del 40%, espesor uniforme y ausencia de defectos que reduzcan su resistencia. Se prohíbe el uso de cuero con tratamientos que reduzcan su resistencia.',
+    categorias: ['Cuero vaca (vacuno)', 'Cuero cerdo (cabritilla)', 'Cuero carnaza'],
+    tags: ['cuero', 'guante', 'vacuno', 'cabritilla', 'resistencia']
+  },
+  'NCh 1805': {
+    titulo: 'Guantes de protección — requisitos generales',
+    objetivo: 'Establece los requisitos generales de diseño, materiales, marcación y ensayos que deben cumplir todos los tipos de guantes de protección personal.',
+    campo: 'Aplicable a todos los sectores industriales que requieran protección de manos contra riesgos mecánicos, químicos, térmicos o eléctricos.',
+    requisitos: 'Los guantes deben indicar talla, nivel de protección, pictogramas de riesgo y límites de uso. Resistencia al corte según EN 388 (niveles 1–5), resistencia a químicos según permeación y penetración. Para guantes de cuero y/o textiles específicamente, aplica además la NCh1252/1.Of96 (clasificación, requisitos y métodos de ensayo), que reemplazó a la antigua NCh1252.Of77.',
+    categorias: ['Guantes mecánicos', 'Guantes químicos', 'Guantes térmicos', 'Guantes dieléctricos'],
+    tags: ['guante', 'mecánico', 'químico', 'dieléctrico', 'térmico', 'corte']
+  },
+  'NCh 772/1': {
+    titulo: 'NCh 772/1 Of.92 — Calzado de seguridad de uso general (norma vigente en Chile)',
+    objetivo: 'Establece los requisitos básicos y adicionales (opcionales) para el calzado de seguridad de uso general en Chile. Incluye riesgos mecánicos, resistencia al deslizamiento, riesgos térmicos y comportamiento ergonómico. Reemplaza a NCh 1584 como norma vigente.',
+    campo: 'Industria en general, construcción, minería, manufactura y logística donde existe riesgo de caída de objetos sobre el pie.',
+    requisitos: 'Características de fabricación, material y elementos de protección. A diferencia de EN ISO 20345, esta norma no define niveles S1/S2/S3. Para importaciones el ISP reconoce EN ISO 20345 vía registro RFI. Actualización verificada: la norma de métodos de ensayo asociada, NCh773/1:1992, fue reemplazada por NCh3749 (adopción de ISO 20344) — la norma de requisitos NCh772/1 no cambió, pero los ensayos de laboratorio ahora se rigen por NCh3749/ISO 20344.',
+    categorias: ['Calzado con puntera de protección', 'Calzado con plantilla antiperforación', 'Calzado con resistencia al deslizamiento', 'Calzado con protección térmica'],
+    tags: ['calzado', 'seguridad', 'puntera', 'acero', 'composite', 'NCh 772', 'uso general']
+  },
+  'NCh 1796': {
+    titulo: 'Calzado de seguridad — calzado de goma',
+    objetivo: 'Establece los requisitos para botas de goma o PVC con protección de seguridad, destinadas a uso en ambientes húmedos, con barro, agua o agentes químicos.',
+    campo: 'Agricultura, pesca, industria alimentaria, minería en zonas húmedas, construcción en terrenos inundados y manipulación de agentes corrosivos diluidos.',
+    requisitos: 'La goma debe ser vulcanizada, resistente al envejecimiento y a productos químicos básicos. La puntera debe cumplir los mismos requisitos de impacto que NCh 772/1 Of.92.',
+    categorias: ['Bota de goma sin puntera', 'Bota de goma con puntera metálica', 'Bota PVC con puntera'],
+    tags: ['bota', 'goma', 'PVC', 'húmedo', 'química', 'agua']
+  },
+  'NCh 2147/1': {
+    titulo: 'Calzado de seguridad — calzado antiestático',
+    objetivo: 'Especifica los requisitos para calzado que disipa la electricidad estática acumulada en el cuerpo del trabajador, previniendo descargas que puedan causar ignición o daño en equipos electrónicos.',
+    campo: 'Industria electrónica, petroquímica, fabricación de explosivos, salas limpias y cualquier ambiente con riesgo de ignición por estática.',
+    requisitos: 'Resistencia eléctrica entre 0 y 500.000 ohm (0 Ω a 500 kΩ). Disipa la carga estática acumulada en el trabajador. No apto para trabajos con riesgo de contacto con tensión eléctrica.',
+    categorias: ['Calzado antiestático (ESD)', 'Zapato con suela disipativa'],
+    tags: ['antiestático', 'ESD', 'estática', 'electrónica', 'explosivos']
+  },
+  'NCh 2147/2': {
+    titulo: 'Calzado de seguridad — calzado aislante hasta 600V',
+    objetivo: 'Define los requisitos para calzado dieléctrico que aísla al trabajador de corrientes eléctricas de hasta 600V, protegiéndolo contra descargas eléctricas accidentales.',
+    campo: 'Trabajos eléctricos en baja tensión, instalaciones eléctricas domiciliarias e industriales, mantenimiento de equipos energizados.',
+    requisitos: 'La corriente de fuga no debe ser superior a 5 mA. El calzado aísla al trabajador de corrientes eléctricas en baja tensión. No debe contener partes metálicas expuestas ni conductoras.',
+    categorias: ['Bota dieléctrica 600V', 'Zapato dieléctrico liviano'],
+    tags: ['dieléctrico', 'eléctrico', '600V', 'aislante', 'baja tensión']
+  },
+  'NCh 2147/3': {
+    titulo: 'Calzado de seguridad — calzado semiconductor',
+    objetivo: 'Establece los requisitos para calzado con conductividad eléctrica controlada, diseñado para entornos donde se necesita disipar carga estática con mayor eficiencia que el calzado antiestático.',
+    campo: 'Industria de semiconductores, salas blancas de alta tecnología y entornos donde la carga estática representa riesgo para componentes ultrasensibles.',
+    requisitos: 'Resistencia eléctrica de 10.000 ohm (10 kΩ). Mayor conductividad que el calzado antiestático (NCh 2147/1). No apto para trabajos con riesgo de contacto con tensión eléctrica.',
+    categorias: ['Calzado conductor semiconductor'],
+    tags: ['semiconductor', 'conductor', 'ESD', 'sala blanca', 'electrónica']
+  },
+  'NCh 1258': {
+    titulo: 'Cinturones de seguridad y arneses para trabajos en altura',
+    objetivo: 'Norma compuesta por varias partes que establece terminología, clasificación, requisitos y métodos de ensayo para equipos de protección personal contra caídas de altura: cinturones de seguridad, arneses de cuerpo completo, estrobos y líneas de vida.',
+    campo: 'Construcción, montaje industrial, trabajos en techos, torres de comunicación, faenas forestales y cualquier tarea a más de 1,8 m de altura (DS 594).',
+    requisitos: 'NCh1258/0: terminología y clasificación. NCh1258/1: requisitos del arnés de cuerpo completo. NCh1258/2: estrobos y amortiguadores de impacto. NCh1258/3: líneas de vida autorretráctiles. NCh1258/4: rieles y líneas de vida verticales. NCh1258/5: conectores con compuerta de trabado automático. NCh1258/6: ensayo de comportamiento del sistema completo.',
+    categorias: ['Cinturón de posicionamiento', 'Arnés de cuerpo completo', 'Estrobo con absorbedor de impacto', 'Línea de vida autorretráctil'],
+    tags: ['arnés', 'altura', 'caída', 'cuerda de vida', 'construcción', 'cinturón']
+  },
+  'NCh 2374': {
+    titulo: 'Protección personal — equipos de protección contra caídas',
+    objetivo: 'Establece los requisitos y métodos de ensayo para los sistemas completos de protección contra caídas, incluyendo arneses, conectores, absorbedores y líneas de vida.',
+    campo: 'Todo trabajo en altura donde exista riesgo de caída libre, incluyendo construcción, minería, mantenimiento industrial y trabajo en espacios confinados con desnivel.',
+    requisitos: 'El sistema debe limitar la fuerza de choque sobre el trabajador a máximo 6 kN. La distancia de detención total no debe superar 1 m. Los mosquetones deben tener resistencia de apertura ≥ 15 kN.',
+    categorias: ['Sistemas de detención de caídas', 'Líneas de vida horizontales', 'Conectores y mosquetones', 'Absorbedores de energía'],
+    tags: ['anticaída', 'línea de vida', 'mosquetón', 'absorbedor', 'altura']
+  },
+  'NCh 1806': {
+    titulo: 'Protección personal — ropa para soldadores',
+    objetivo: 'Establece los requisitos de confección, materiales ignífugos y resistencia al calor de la ropa de protección destinada específicamente a trabajos de soldadura.',
+    campo: 'Soldadura al arco, MIG, TIG, oxiacetilénica, corte por plasma y cualquier proceso que genere chispas, salpicaduras de metal fundido o calor intenso.',
+    requisitos: 'La tela debe ser 100% algodón o fibra ignífuga tratada. No se permite el uso de materiales sintéticos que puedan derretirse. Debe pasar prueba de propagación de llama (no debe arder más de 2 segundos tras retirar la fuente).',
+    categorias: ['Coleto de cuero', 'Chaqueta de soldador', 'Pantalón ignífugo', 'Polainas y mangas de cuero'],
+    tags: ['soldador', 'ignífugo', 'chispas', 'cuero', 'algodón', 'llama']
+  },
+  'NCh 1303': {
+    titulo: 'Ropa de protección — requisitos generales',
+    objetivo: 'Define los requisitos generales de diseño, fabricación, marcación y ensayos que debe cumplir toda ropa de protección personal, independiente del riesgo específico.',
+    campo: 'Aplicable a toda ropa de protección usada en entornos laborales: química, biológica, mecánica, térmica o de visibilidad.',
+    requisitos: 'La ropa debe indicar talla según EN 340, instrucciones de lavado y mantenimiento, pictograma de riesgo y nivel de protección. No debe restringir movimientos ni generar riesgos adicionales.',
+    categorias: ['Ropa química (Tipo 1–6)', 'Ropa térmica', 'Ropa de alta visibilidad', 'Ropa biológica'],
+    tags: ['ropa', 'protección', 'talla', 'química', 'térmica', 'visibilidad']
+  },
+  'NCh 1410': {
+    titulo: 'Prevención de riesgos — colores de seguridad',
+    objetivo: 'Establece los colores de seguridad y sus significados para la señalización de riesgos, equipos de emergencia y rutas de evacuación en instalaciones laborales.',
+    campo: 'Toda instalación industrial, comercial o de servicio donde sea necesario comunicar peligros, obligaciones, prohibiciones o información de seguridad.',
+    requisitos: 'Rojo: peligro/prohibición/equipos contra incendio. Amarillo: precaución/riesgo. Verde: seguridad/primeros auxilios/evacuación. Azul: obligación/información. Los colores deben cumplir con coordenadas cromáticas específicas.',
+    categorias: ['Rojo (peligro)', 'Amarillo (precaución)', 'Verde (seguridad)', 'Azul (obligación)'],
+    tags: ['color', 'señalización', 'peligro', 'evacuación', 'rojo', 'verde', 'azul']
+  },
+  'NCh 1411/1': {
+    titulo: 'Prevención de riesgos — letreros de seguridad, aspectos generales',
+    objetivo: 'Establece los principios generales de diseño, dimensiones, colores y simbología para los letreros y señales de seguridad utilizados en lugares de trabajo.',
+    campo: 'Toda instalación donde se requiera informar sobre peligros, rutas de evacuación, uso obligatorio de EPP, prohibiciones o ubicación de equipos de emergencia.',
+    requisitos: 'Los letreros deben ser visibles a una distancia mínima de 10 metros. El contraste entre fondo y símbolo debe ser ≥ 0,70. Deben ser resistentes a la intemperie si se usan en exteriores.',
+    categorias: ['Señales de prohibición', 'Señales de advertencia', 'Señales de obligación', 'Señales de evacuación'],
+    tags: ['letrero', 'señal', 'evacuación', 'prohibición', 'advertencia', 'obligación']
+  },
+  'NCh 1411/3 LOTO': {
+    titulo: 'Etiquetas y tarjetas de seguridad — Tagout (LOTO)',
+    objetivo: 'Establece los requisitos de diseño, materiales y resistencia de las etiquetas y tarjetas de seguridad utilizadas en procedimientos de Bloqueo y Etiquetado (LOTO). Las tarjetas de bloqueo personal (Tagout) deben identificar al trabajador que realiza la intervención.',
+    campo: 'Toda industria que implemente procedimientos LOTO para control de energías peligrosas: eléctrica, hidráulica, neumática, térmica, química, gravitacional.',
+    requisitos: 'Las tarjetas deben ser resistentes al calor (hasta 120°C), humedad y radiación UV. Material PAI (plástico de alta densidad) o similar. Deben indicar: nombre del trabajador, área, motivo del bloqueo, fecha, y la leyenda "NO OPERAR / DO NOT OPERATE". Resistencia mínima de 50 lb (22 kg) al arranque.',
+    categorias: ['Tarjeta personal roja "PELIGRO"', 'Tarjeta naranja (bloqueo grupal)', 'Tarjeta amarilla "FUERA DE SERVICIO"', 'Tarjeta azul (prueba / puesta en marcha)'],
+    tags: ['loto', 'tagout', 'tarjeta', 'bloqueo', 'nch 1411', 'personal']
+  },
+  'NCh 2929': {
+    titulo: 'Seguridad en máquinas — Control de energías peligrosas (Tagout)',
+    objetivo: 'Establece los principios de seguridad aplicables a máquinas fijas para el control de energías peligrosas. Exige la instalación de tarjetas de seguridad (Tagout) en cada mecanismo de control de energía cuando la máquina está fuera de servicio o en mantenimiento.',
+    campo: 'Toda maquinaria fija instalada en industria, minería, manufactura y construcción. Complementa el DS 594 en lo relativo a LOTO en maquinaria específica.',
+    requisitos: 'Cada punto de aislamiento de energía debe ser identificado y etiquetado. El operador debe instalar su candado personal y tarjeta antes de intervenir. Se debe identificar el tipo de energía: eléctrica, hidráulica, neumática, térmica o química.',
+    categorias: ['Energía eléctrica', 'Energía hidráulica', 'Energía neumática', 'Energía térmica', 'Energía química/gravitacional'],
+    tags: ['loto', 'nch 2929', 'máquina', 'seguridad', 'tagout', 'energía']
+  },
+  'DS 594 LOTO': {
+    titulo: 'DS 594 Art. 37 — Procedimiento escrito de control de energías',
+    objetivo: 'El Decreto Supremo 594/99 del Ministerio de Salud (MINSAL) es la base legal del sistema LOTO en Chile. Su artículo 37 establece la obligación del empleador de implementar procedimientos escritos para el control de energías peligrosas en equipos y máquinas durante su mantenimiento, reparación o limpieza.',
+    campo: 'Toda empresa en Chile que cuente con equipos o maquinaria que almacene o genere energía peligrosa. Aplica en industria, minería, construcción, alimentaria, química y cualquier actividad productiva.',
+    requisitos: 'El empleador debe elaborar un procedimiento escrito de LOTO para cada equipo. El procedimiento debe incluir: identificación de las fuentes de energía, puntos de aislamiento, secuencia de bloqueo, responsable del bloqueo, verificación de desenergización y liberación de energía residual. Los trabajadores deben ser capacitados y autorizados.',
+    categorias: ['Procedimiento escrito por equipo', 'Capacitación obligatoria trabajadores', 'Candado llave única por trabajador', 'Tarjeta personal NCh 1411/3', 'Verificación post-bloqueo'],
+    tags: ['loto', 'ds 594', 'procedimiento', 'control energías', 'chile', 'obligatorio']
+  },
+  'OSHA LOTO': {
+    titulo: 'OSHA 29 CFR 1910.147 — Control of Hazardous Energy (Lockout/Tagout)',
+    objetivo: 'Estándar internacional de la Occupational Safety and Health Administration (OSHA) de EE.UU. para el control de energías peligrosas. Es la referencia técnica adoptada en Chile para procedimientos LOTO, especialmente en minería (RIC N°5 SERNAGEOMIN) y en empresas con certificación internacional.',
+    campo: 'Referencia aplicable en Chile en ausencia de norma nacional específica más detallada. Adoptada por la industria minera (RIC 05), petroquímica y empresas multinacionales. Define los estándares mínimos para candados, dispositivos y procedimientos LOTO.',
+    requisitos: 'Candado de llave única por trabajador (KD - Keyed Different). Procedimiento escrito por equipo con secuencia de pasos. Dispositivos de bloqueo aprobados (dieléctricos, resistentes). Verificación de cero energía antes de intervenir. Capacitación documentada de trabajadores autorizados y afectados. Revisión anual del programa.',
+    categorias: ['Candados KD (llave única)', 'Hasps (bloqueo múltiple)', 'Bloqueos de válvulas y breakers', 'Cajas de bloqueo grupal', 'Tarjetas Tagout', 'Procedimiento escrito por equipo'],
+    tags: ['loto', 'osha', 'lockout', 'tagout', 'ric 05', 'minería', 'internacional']
+  },
+
+  'EN ISO 11612 / NFPA 2112': {
+    titulo: 'Ropa ignífuga / resistente a la llama (FR/AR) — protección general',
+    objetivo: 'Chile no cuenta con una NCh específica para ropa ignífuga o resistente al arco eléctrico. El ISP reconoce certificaciones internacionales vía Registro RFI: EN ISO 11612 (protección térmica y contra llama, uso general), NFPA 2112 (ropa FR industrial, flash fire), NFPA 70E (protección arco eléctrico, categorías HRC 1-4). ⚠️ Para soldadura específicamente, la norma correcta es EN ISO 11611 (ver ficha aparte) — no esta.',
+    campo: 'Fundición, minería, sector eléctrico (arco eléctrico), petroquímica y cualquier faena con riesgo de llama súbita o calor radiante intenso — riesgo general, no soldadura.',
+    requisitos: 'EN ISO 11612 clasifica por códigos A-F según el tipo de protección térmica (llama, calor convectivo, radiante, metal fundido). NFPA 2112 exige ATPV mínimo. NFPA 70E clasifica por categorías de riesgo de arco (HRC 1-4) según la energía incidente en cal/cm².',
+    categorias: ['Ropa FR industrial', 'Ropa anti-arco eléctrico', 'Overol/mono ignífugo', 'Ropa corporativa con tratamiento FR'],
+    tags: ['ignífuga', 'fr', 'arco eléctrico', 'llama', 'nfpa']
+  },
+  'EN ISO 11611': {
+    titulo: 'Ropa de protección para soldadura y procesos afines',
+    objetivo: 'Norma específica para soldadura eléctrica, oxicorte y procesos afines — distinta de EN ISO 11612 (que es para riesgo térmico general). Se confunden fácil por el número casi idéntico, pero certifican cosas distintas: 11612 no está diseñada para las chispas y proyecciones metálicas propias de soldar. El ISP la reconoce vía Registro RFI, igual que el resto de la familia ignífuga.',
+    campo: 'Soldadura eléctrica (arco), oxicorte, esmerilado cercano a soldadura, y cualquier tarea con proyección de partículas metálicas incandescentes.',
+    requisitos: 'Clasifica en 2 clases según el nivel de exposición: Clase 1 (procesos con menor riesgo de proyección, menor cantidad de humo) y Clase 2 (procesos con mayor riesgo, técnicas en posiciones difíciles o espacios reducidos). Muchas prendas de soldador combinan EN ISO 11611 (soldadura) con EN ISO 11612 (calor/llama general) para cubrir ambos riesgos a la vez.',
+    categorias: ['Chaqueta de soldador', 'Overol de soldador', 'Delantal de soldador', 'Polaina/manguito de soldador'],
+    tags: ['soldadura', 'soldador', 'oxicorte', 'chispas', 'ignífuga']
+  },
+  'DS 594 Art. 45 — Detectores de Gas': {
+    titulo: 'Instrumentación y detectores de gases',
+    objetivo: 'No existe una NCh específica para detectores de gas. El D.S. 594 Art. 45 exige medición y control de atmósferas peligrosas; la certificación técnica del equipo se rige por normas internacionales de zonas explosivas: IEC 60079 (serie), ATEX (Europa), IECEx (internacional).',
+    campo: 'Minería subterránea, espacios confinados, petroquímica, y cualquier faena con riesgo de atmósfera explosiva, tóxica o deficiente en oxígeno.',
+    requisitos: 'El equipo debe estar certificado para la zona de riesgo donde se usará (Zona 0/1/2 gas, Zona 20/21/22 polvo). Calibración periódica obligatoria con gases patrón trazables, con certificado y número de serie del equipo.',
+    categorias: ['Detector portátil 4 gases', 'Detector fijo de área', 'Equipo Ex certificado', 'Calibración periódica'],
+    tags: ['gas', 'detector', 'atex', 'iecex', 'atmósfera explosiva', 'espacio confinado']
+  },
+  'EN 342 / EN ISO 11612 — Ropa Térmica': {
+    titulo: 'Ropa térmica (frío extremo y calor)',
+    objetivo: 'No existe una NCh dedicada a ropa térmica. Para frío extremo se referencia EN 342 (aislación térmica en ambientes fríos); para calor y llama, EN ISO 11612 (ver ficha de ropa ignífuga). El ISP reconoce ambas vía Registro RFI cuando corresponde.',
+    campo: 'Cámaras de frío, trabajo a la intemperie en climas extremos (frío), y hornos/fundición/soldadura (calor) según el caso.',
+    requisitos: 'EN 342 mide aislación térmica (valor Icler) y resistencia al viento y a la penetración de agua. Para calor, aplican los mismos criterios de EN ISO 11612.',
+    categorias: ['Ropa para cámara de frío', 'Ropa de intemperie clima extremo', 'Ropa con aislación térmica certificada'],
+    tags: ['térmica', 'frío', 'calor', 'aislación', 'intemperie']
+  },
+  'DS 594 UV / NCh 3273': {
+    titulo: 'Protección de piel/dérmica y ropa con filtro UV',
+    objetivo: 'El D.S. 594 (modificado en 2011) obliga a las empresas con trabajadores expuestos a radiación UV solar a mantener un programa escrito de protección: informar riesgos, publicar el índice UV diario, y entregar EPP específico. Para la ropa con protección UV, la norma chilena es NCh 3273:2012.',
+    campo: 'Trabajo al aire libre con exposición solar: construcción, agricultura, forestal, minería a rajo abierto, obras viales.',
+    requisitos: 'EPP mínimo: protector solar FPS 30 o más (aplicar al menos 2 veces por jornada), lentes con filtro UV, sombrero de ala ancha o tipo legionario que cubra el cuello, ropa que cubra la mayor parte del cuerpo. NCh 3273:2012 certifica el factor de protección UV (UPF) de la tela. El ISP publicó además la Nota Técnica N°55 sobre productos para la piel con protección solar.',
+    categorias: ['Protector solar FPS 30+', 'Ropa con certificación NCh 3273 (UPF)', 'Sombrero ala ancha / legionario', 'Lentes con filtro UV'],
+    tags: ['piel', 'dérmica', 'uv', 'solar', 'nch 3273', 'protector solar']
+  },
+  'MOP Decreto N°78/2012': {
+    titulo: 'Obras viales — señalización y alta visibilidad en vía pública',
+    objetivo: 'El Manual de Señalización de Tránsito (Decreto N°78/2012, MTT/MOP) regula específicamente cómo debe verse el personal que trabaja en calles y carreteras: colores y tipo de cintas retrorreflectantes exigidas. Se aplica junto a la norma de la prenda (NCh 3254 o EN ISO 20471), no la reemplaza.',
+    campo: 'Cuadrillas, banderilleros y personal de supervisión que trabaja en o cerca de la vía pública: construcción y mantención vial, señalización de obras.',
+    requisitos: 'Personal de campo: camisa o polera amarillo limón. Banderilleros: chaleco naranja con franjas de alta intensidad. La clase de la prenda (1/2/3 según NCh 3254 o EN ISO 20471) se define aparte, según la velocidad y proximidad del tránsito vehicular.',
+    categorias: ['Camisa/polera amarillo limón', 'Chaleco naranja banderillero', 'Franjas de alta intensidad nocturna', 'Clase 2 o 3 según NCh 3254'],
+    tags: ['obras viales', 'mop', 'tránsito', 'banderillero', 'alta visibilidad', 'vía pública']
+  }
+};

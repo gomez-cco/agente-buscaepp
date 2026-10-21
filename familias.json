@@ -1,0 +1,19 @@
+{
+  "cabeza": { "label": "Protección de cabeza (cascos)", "icono": "⛑️" },
+  "visual": { "label": "Protección visual y facial", "icono": "🥽" },
+  "auditiva": { "label": "Protección auditiva", "icono": "🎧" },
+  "respiratoria": { "label": "Protección respiratoria", "icono": "😷" },
+  "guantes": { "label": "Protección de manos (guantes)", "icono": "🧤" },
+  "calzado": { "label": "Calzado de seguridad", "icono": "🥾" },
+  "caidas": { "label": "Protección contra caídas", "icono": "🪝" },
+  "ropa": { "label": "Ropa de protección general", "icono": "🧥" },
+  "ignifugo": { "label": "Ropa ignífuga / arco eléctrico", "icono": "🔥" },
+  "piel": { "label": "Protección de piel (UV, química)", "icono": "🧴" },
+  "soldador": { "label": "Equipos para soldadura", "icono": "🪖" },
+  "vial": { "label": "Alta visibilidad / vial", "icono": "🦺" },
+  "svial": { "label": "Señalización vial", "icono": "🚧" },
+  "loto": { "label": "Bloqueo y etiquetado (LOTO)", "icono": "🔒" },
+  "gases": { "label": "Detección de gases", "icono": "☁️" },
+  "alco": { "label": "Control de alcohol/drogas", "icono": "🧪" },
+  "barreras": { "label": "Barreras y señalización de áreas", "icono": "🚧" }
+}

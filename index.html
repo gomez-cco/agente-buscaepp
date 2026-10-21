@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>EPPI — Asistente de normas EPP · BuscaEPP</title>
+<link rel="icon" href="assets/buscaepp-logo.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <button class="icon-btn" id="btnMenu" aria-label="Abrir menú">☰</button>
+      <img src="assets/buscaepp-logo.png" alt="BuscaEPP" class="brand-logo">
+      <div class="brand">
+        <strong>EPPI</strong>
+        <span>by BuscaEPP</span>
+      </div>
+      <img src="assets/govak-logo.png" alt="GOVAK" class="govak-logo">
+      <div class="topbar-actions">
+        <button class="icon-btn" id="btnFontMinus" aria-label="Reducir texto">A−</button>
+        <button class="icon-btn" id="btnFontPlus" aria-label="Aumentar texto">A+</button>
+        <button class="icon-btn" id="btnTheme" aria-label="Cambiar tema">☀</button>
+      </div>
+    </header>
+
+    <div class="body-row">
+      <div class="backdrop" id="backdrop"></div>
+      <aside class="sidebar" id="sidebar">
+        <section class="sidebar-section">
+          <h3>Cómo elegir tu EPP</h3>
+          <ul id="guiaList">
+            <li data-q="¿Qué norma exige casco de seguridad y qué tipos existen?">Cascos: tipos y norma</li>
+            <li data-q="¿Qué norma aplica a lentes y protección facial, y cómo se clasifican?">Visual y facial</li>
+            <li data-q="¿Cómo se identifican los filtros respiratorios según el uso que se les da?">Filtros respiratorios por uso</li>
+            <li data-q="¿Qué tipos de guantes de protección existen y qué norma les aplica cada uno?">Guantes por tipo de riesgo</li>
+            <li data-q="¿Qué norma exige el calzado de seguridad y qué tipos hay?">Calzado de seguridad</li>
+          </ul>
+        </section>
+
+        <section class="sidebar-section">
+          <h3>Categorías de EPP</h3>
+          <ul id="categoriasList"><li class="loading">Cargando…</li></ul>
+        </section>
+
+        <section class="sidebar-section">
+          <h3>Temario normativo</h3>
+          <ul id="temarioList"><li class="loading">Cargando…</li></ul>
+        </section>
+
+        <footer class="sidebar-footer">
+          Base normativa cargada desde el glosario y catálogo de BuscaEPP.cl, con actualizaciones verificadas 2024–2026. Información de referencia — no reemplaza el texto oficial de cada norma.
+        </footer>
+      </aside>
+
+      <main class="chat-col">
+        <div class="messages" id="messages">
+          <div class="msg assistant">
+            ¡Hola! Soy EPPI, el asistente de BuscaEPP. Pregúntame qué EPP necesitas para una tarea, qué norma le aplica, o cómo se clasifican cascos, filtros, guantes, calzado y más — con la normativa chilena e internacional vigente.
+          </div>
+        </div>
+        <form class="composer" id="composer">
+          <textarea id="input" rows="1" placeholder="Ej: ¿qué guantes uso para manipular ácidos?"></textarea>
+          <button type="submit" id="btnSend" aria-label="Enviar">➤</button>
+        </form>
+      </main>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

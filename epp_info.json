@@ -1,0 +1,434 @@
+{
+  "casco": {
+    "nombre": "Casco de seguridad",
+    "icono": "⛑️",
+    "norma": "NCh 461 / ANSI Z89.1",
+    "motivo": "Obligatorio por DS 594 en toda faena con riesgo de impacto en cabeza."
+  },
+  "casco_dielectrico": {
+    "nombre": "Casco dieléctrico (Clase E)",
+    "icono": "⛑️",
+    "norma": "NCh 461 Tipo B / ANSI Z89.1 Class E",
+    "motivo": "Obligatorio en trabajos eléctricos, resiste hasta 20.000V."
+  },
+  "casco_forestal": {
+    "nombre": "Casco forestal con pantalla y orejeras",
+    "icono": "⛑️",
+    "norma": "NCh 461 / EN 397",
+    "motivo": "Integra protección facial y auditiva para faenas con motosierra."
+  },
+  "casco_lampara": {
+    "nombre": "Casco con lámpara de minero",
+    "icono": "⛑️",
+    "norma": "NCh 461",
+    "motivo": "Obligatorio en interior mina para visibilidad y protección craneal."
+  },
+  "lentes": {
+    "nombre": "Lentes de seguridad",
+    "icono": "🥽",
+    "norma": "NCh 1301 / ANSI Z87.1",
+    "motivo": "Protegen contra partículas proyectadas, polvo y salpicaduras."
+  },
+  "lentes_panoramicas": {
+    "nombre": "Gafas panorámicas",
+    "icono": "🥽",
+    "norma": "NCh 1301 / EN ISO 16321-1",
+    "motivo": "Sellado perimetral para protección química o en ambientes con polvo intenso."
+  },
+  "lentes_extra": {
+    "nombre": "Lentes de seguridad adicionales bajo careta",
+    "icono": "🥽",
+    "norma": "NCh 1301",
+    "motivo": "Protección adicional contra destellos en corte por plasma."
+  },
+  "careta_soldar": {
+    "nombre": "Careta de soldador (shade 10–13)",
+    "icono": "🪖",
+    "norma": "NCh 1562",
+    "motivo": "Obligatoria para soldar al arco, protege contra radiación UV/IR y salpicaduras."
+  },
+  "careta_soldar_auto": {
+    "nombre": "Careta de oscurecimiento automático",
+    "icono": "🪖",
+    "norma": "NCh 1562 / EN 175",
+    "motivo": "Se oscurece automáticamente al iniciarse el arco. Recomendada para MIG/TIG."
+  },
+  "careta_oxicorte": {
+    "nombre": "Careta para oxicorte (shade 5–6)",
+    "icono": "🪖",
+    "norma": "NCh 1562 / NCh 1583",
+    "motivo": "Protege contra llama y radiación IR del corte oxiacetilénico."
+  },
+  "tapones": {
+    "nombre": "Tapones o protectores auditivos",
+    "icono": "🎧",
+    "norma": "NCh 1358 / ANSI S3.19",
+    "motivo": "Obligatorios cuando el ruido supera 85 dB(A) según DS 594."
+  },
+  "guantes_mecanicos": {
+    "nombre": "Guantes de protección mecánica",
+    "icono": "🧤",
+    "norma": "NCh 1805 / EN 388",
+    "motivo": "Protegen contra cortes, abrasión y golpes en manejo de materiales."
+  },
+  "guantes_anticorte": {
+    "nombre": "Guantes anticorte (nivel 4–5)",
+    "icono": "🧤",
+    "norma": "NCh 1805 / EN 388",
+    "motivo": "Obligatorios en operación de máquinas con riesgo de corte severo."
+  },
+  "guantes_quimicos": {
+    "nombre": "Guantes químicos (nitrilo grueso o neopreno)",
+    "icono": "🧤",
+    "norma": "NCh 1805 / ISO 374-1:2024",
+    "motivo": "Resistencia a ácidos, bases y solventes. Tipo según ficha de datos de seguridad."
+  },
+  "guantes_nitrilo": {
+    "nombre": "Guantes de nitrilo desechables",
+    "icono": "🧤",
+    "norma": "ISO 374-1:2024",
+    "motivo": "Protección básica contra químicos de laboratorio y fluidos biológicos."
+  },
+  "guantes_nitrilo_grueso": {
+    "nombre": "Guantes de nitrilo grueso",
+    "icono": "🧤",
+    "norma": "ISO 374-1:2024",
+    "motivo": "Mayor resistencia para manejo de residuos con mayor concentración química."
+  },
+  "guantes_latex": {
+    "nombre": "Guantes de látex (o nitrilo si alergia)",
+    "icono": "🧤",
+    "norma": "ISO 374-1:2024",
+    "motivo": "Protección en procedimientos clínicos. Usar nitrilo si hay alergia al látex."
+  },
+  "guantes_latex_esteril": {
+    "nombre": "Guantes de látex estériles",
+    "icono": "🧤",
+    "norma": "ISO 10282",
+    "motivo": "Obligatorios en cirugía y procedimientos invasivos."
+  },
+  "guantes_dielectricos": {
+    "nombre": "Guantes dieléctricos (hasta 600V)",
+    "icono": "🧤",
+    "norma": "NCh 2147 / EN 60903 Clase 00",
+    "motivo": "Aislamiento eléctrico en baja tensión. Prueba semestral obligatoria."
+  },
+  "guantes_dielectricos_at": {
+    "nombre": "Guantes dieléctricos alta tensión (Clase 2–4)",
+    "icono": "🧤",
+    "norma": "EN 60903",
+    "motivo": "Para trabajos en alta tensión. Certificados según nivel de tensión de trabajo."
+  },
+  "guantes_soldador": {
+    "nombre": "Guantes de soldador (cuero manga larga)",
+    "icono": "🧤",
+    "norma": "NCh 1115 / EN 12477:2026",
+    "motivo": "Protegen de chispas, salpicaduras y calor radiante en soldadura."
+  },
+  "guantes_termicos": {
+    "nombre": "Guantes térmicos (frío)",
+    "icono": "🧤",
+    "norma": "EN 511",
+    "motivo": "Aislamiento térmico para trabajos en cámaras frigoríficas bajo 0°C."
+  },
+  "guantes_criogenicos": {
+    "nombre": "Guantes criogénicos",
+    "icono": "🧤",
+    "norma": "EN 511",
+    "motivo": "Para manejo de gases criogénicos (nitrógeno líquido, CO2). Protegen hasta -196°C."
+  },
+  "guantes_neopreno": {
+    "nombre": "Guantes de neopreno impermeables",
+    "icono": "🧤",
+    "norma": "NCh 1805",
+    "motivo": "Para trabajo en ambiente marino con agua fría y riesgo de corte."
+  },
+  "calzado": {
+    "nombre": "Botín de seguridad punta de acero",
+    "icono": "🥾",
+    "norma": "NCh 772/1 Of.92 / EN ISO 20345",
+    "motivo": "Obligatorio en toda faena con riesgo de caída de objetos sobre el pie."
+  },
+  "calzado_dielectrico": {
+    "nombre": "Calzado dieléctrico (hasta 600V)",
+    "icono": "🥾",
+    "norma": "NCh 2147/2",
+    "motivo": "Aísla al trabajador de corrientes eléctricas en baja tensión."
+  },
+  "calzado_goma": {
+    "nombre": "Bota de goma o PVC",
+    "icono": "🥾",
+    "norma": "NCh 1796",
+    "motivo": "Para ambientes húmedos, barro o sustancias líquidas en el suelo."
+  },
+  "calzado_quimico": {
+    "nombre": "Bota química resistente",
+    "icono": "🥾",
+    "norma": "NCh 1796 / EN 13832",
+    "motivo": "Impermeabilidad y resistencia química para manejo de ácidos y cáusticos."
+  },
+  "calzado_anticorte": {
+    "nombre": "Bota forestal anticorte",
+    "icono": "🥾",
+    "norma": "EN ISO 17249",
+    "motivo": "Protección contra corte de motosierra en extremidades inferiores."
+  },
+  "chaleco_av": {
+    "nombre": "Chaleco de alta visibilidad",
+    "icono": "🦺",
+    "norma": "NCh 1303 / ANSI 107 Clase 2",
+    "motivo": "Obligatorio en vías de tránsito y zonas con maquinaria en movimiento."
+  },
+  "chaleco_salvavidas": {
+    "nombre": "Chaleco salvavidas / flotación",
+    "icono": "🛟",
+    "norma": "DS 430 / ISO 12402",
+    "motivo": "Obligatorio para trabajo en o sobre el agua según DS 430 MINTRAB."
+  },
+  "arnés": {
+    "nombre": "Arnés de seguridad cuerpo completo",
+    "icono": "🪝",
+    "norma": "NCh 1258 / NCh 2374",
+    "motivo": "Obligatorio en trabajos sobre 1,8 m de altura sin protección colectiva (DS 594)."
+  },
+  "respirador_polvo": {
+    "nombre": "Respirador desechable (N95/P2)",
+    "icono": "😷",
+    "norma": "NCh 2378 / NIOSH N95",
+    "motivo": "Para polvo y partículas. Obligatorio si concentración supera límites DS 594."
+  },
+  "respirador_p100": {
+    "nombre": "Respirador con filtro P100",
+    "icono": "😷",
+    "norma": "NCh 2378 / NIOSH P100",
+    "motivo": "Eficiencia 99,97%. Para polvos finos, sílice, asbesto y metales pesados."
+  },
+  "respirador_gases": {
+    "nombre": "Respirador con filtro gases/vapores (OV/AG)",
+    "icono": "😷",
+    "norma": "NCh 1284 / EN 14387",
+    "motivo": "Para solventes, pesticidas, pinturas y gases tóxicos. Cambiar filtro cada 40 hrs."
+  },
+  "mascara_completa": {
+    "nombre": "Máscara completa con filtro combinado",
+    "icono": "😷",
+    "norma": "NCh 2378",
+    "motivo": "Para exposición severa a gases o donde se requiere protección ocular integrada."
+  },
+  "ropa_soldador": {
+    "nombre": "Ropa de soldador (algodón/FR)",
+    "icono": "🧥",
+    "norma": "NCh 1806 / EN ISO 11612",
+    "motivo": "Sin materiales sintéticos. Protege contra chispas y salpicaduras metálicas."
+  },
+  "coleto": {
+    "nombre": "Coleto o delantal de cuero",
+    "icono": "🧥",
+    "norma": "NCh 1806",
+    "motivo": "Protección adicional del tronco en soldadura vertical o sobre la cabeza."
+  },
+  "ropa_quimica": {
+    "nombre": "Traje de protección química (Tyvek / PVC)",
+    "icono": "🧥",
+    "norma": "NCh 1303 / EN 13982",
+    "motivo": "Barrera contra salpicaduras de químicos. Tipo según concentración y agente."
+  },
+  "ropa_algodon": {
+    "nombre": "Ropa 100% algodón (sin sintéticos)",
+    "icono": "🧥",
+    "norma": "NCh 1303",
+    "motivo": "En trabajos eléctricos se prohíbe ropa sintética que pueda derretirse."
+  },
+  "ropa_arco_electrico": {
+    "nombre": "Ropa protección arco eléctrico (FR/ARC)",
+    "icono": "🧥",
+    "norma": "NFPA 70E / IEC 61482",
+    "motivo": "Obligatoria en alta tensión. Certificada con valor ATPV según nivel de riesgo."
+  },
+  "ropa_termica": {
+    "nombre": "Ropa térmica interior y exterior",
+    "icono": "🧥",
+    "norma": "EN 342",
+    "motivo": "Para trabajos en frío extremo bajo 0°C. Sistema de capas recomendado."
+  },
+  "ropa_uv": {
+    "nombre": "Ropa de protección solar (UPF 40+)",
+    "icono": "🧥",
+    "norma": "NCh 3273 / AS/NZS 4399",
+    "motivo": "Para trabajos al aire libre con exposición solar prolongada (Ley Ricarte Soto)."
+  },
+  "pantalon_anticorte": {
+    "nombre": "Pantalón anticorte para motosierra",
+    "icono": "🧥",
+    "norma": "EN ISO 11393",
+    "motivo": "Obligatorio para operadores de motosierra. Capas de fibra que detienen la cadena."
+  },
+  "bata_lab": {
+    "nombre": "Bata de laboratorio",
+    "icono": "🧥",
+    "norma": "EN 13034",
+    "motivo": "Barrera básica contra salpicaduras en laboratorio. Algodón o FR según riesgo."
+  },
+  "delantal_impermeable": {
+    "nombre": "Delantal impermeable",
+    "icono": "🧥",
+    "norma": "NCh 1303",
+    "motivo": "Protección contra agua, sangre y fluidos en procesamiento de alimentos."
+  },
+  "mascarilla_quirurgica": {
+    "nombre": "Mascarilla quirúrgica",
+    "icono": "😷",
+    "norma": "EN 14683:2025 Tipo II",
+    "motivo": "Barrera contra fluidos y partículas grandes en atención sanitaria básica."
+  },
+  "mascarilla_n95": {
+    "nombre": "Mascarilla N95 / FFP2",
+    "icono": "😷",
+    "norma": "NIOSH N95 / EN 149 FFP2",
+    "motivo": "Filtra ≥95% de partículas. Obligatoria en procedimientos aerosol-generadores."
+  },
+  "faja_lumbar": {
+    "nombre": "Faja lumbar ergonómica",
+    "icono": "🩺",
+    "norma": "DS 594 / Guía MINSAL ergonomía",
+    "motivo": "Recomendada en manejo manual de cargas superiores a 25 kg (hombres) o 15 kg (mujeres)."
+  },
+  "equipo_buceo": {
+    "nombre": "Equipo de buceo industrial certificado",
+    "icono": "🤿",
+    "norma": "DS 430 MINTRAB",
+    "motivo": "Obligatorio para buceo industrial según reglamento específico."
+  },
+  "sombrero_uv": {
+    "nombre": "Sombrero o casco con ala solar (UPF 50+)",
+    "icono": "👒",
+    "norma": "NCh 3273",
+    "motivo": "Protección UV para trabajo al aire libre. Complementar con ropa y bloqueador solar."
+  },
+  "gorro": {
+    "nombre": "Gorro quirúrgico",
+    "icono": "👒",
+    "norma": "Reglamento MINSAL",
+    "motivo": "Control de contaminación biológica en pabellones y áreas estériles."
+  },
+  "autorescatador": {
+    "nombre": "Autorescatador de emergencia",
+    "icono": "🫁",
+    "norma": "DS 132 MINMINERÍA / MSHA / EN 13794",
+    "motivo": "Dispositivo de emergencia de uso único para evacuación en interior mina. NO es un ERA. Se activa solo cuando hay déficit de oxígeno o gases tóxicos durante la salida de emergencia. Proporciona entre 30 y 60 minutos de oxígeno. Obligatorio según DS 132 para todo trabajador en interior mina subterránea."
+  },
+  "bota_mina": {
+    "nombre": "Bota de seguridad caña alta impermeable (uso mina)",
+    "icono": "🥾",
+    "norma": "NCh 772/1 Of.92 / NCh 1796",
+    "motivo": "En interior mina se usa bota (no botín) por la humedad y agua acumulada en galerías. Debe tener punta de acero, plantilla antiperforación y suela antideslizante en superficies húmedas."
+  },
+  "detector_gas_portatil": {
+    "nombre": "Detector de gas portátil (4 en 1)",
+    "icono": "☁️",
+    "norma": "DS 594 Art. 45 / IEC 60079 / MSHA",
+    "motivo": "Obligatorio en espacios confinados y zonas con riesgo de gases tóxicos o explosivos. Detecta O2, CO, H2S y LEL simultáneamente."
+  },
+  "ropa_impermeable_mina": {
+    "nombre": "Ropa impermeable para interior mina",
+    "icono": "🧥",
+    "norma": "DS 132 / DS 594",
+    "motivo": "Las galerías subterráneas presentan alta humedad y goteo constante. La ropa impermeable (chaqueta y pantalón PVC o similar) protege al trabajador de la humedad y el frío."
+  },
+  "rodilleras": {
+    "nombre": "Rodilleras de protección",
+    "icono": "🦵",
+    "norma": "EN 14404:2024",
+    "motivo": "Para trabajos que requieren arrodillarse en superficies duras o abrasivas. La edición 2024 agregó un Tipo 2 interoperable y el nivel de resistencia a perforación \"1U\"."
+  },
+  "protector_lumbar": {
+    "nombre": "Faja lumbar ergonómica",
+    "icono": "🩺",
+    "norma": "DS 594 / Guía MINSAL ergonomía",
+    "motivo": "Recomendada en manejo manual de cargas superiores a 25 kg (hombres) o 15 kg (mujeres) según ley de ergonomía."
+  },
+  "chaleco_reflectante_mina": {
+    "nombre": "Chaleco reflectante clase 3 (uso minero)",
+    "icono": "🦺",
+    "norma": "ANSI 107 Clase 3 / NCh 1303",
+    "motivo": "En minas con tráfico de maquinaria, se exige clase 3 (máxima visibilidad) con mangas reflectantes para ser visible en condiciones de baja luminosidad."
+  },
+  "pantalla_facial": {
+    "nombre": "Pantalla facial / careta de protección",
+    "icono": "🥽",
+    "norma": "NCh 1301 / ANSI Z87.1",
+    "motivo": "Protección total del rostro contra proyecciones, salpicaduras y esquirlas. Complementa los lentes de seguridad."
+  },
+  "guantes_vibracion": {
+    "nombre": "Guantes anti-vibración",
+    "icono": "🧤",
+    "norma": "EN ISO 10819",
+    "motivo": "Para operadores de equipos vibratorios (martillos, compactadoras). Reducen la transmisión de vibraciones mano-brazo previniendo el síndrome de Raynaud."
+  },
+  "tapones_banda": {
+    "nombre": "Tapones auditivos con banda (nivel 3)",
+    "icono": "🎧",
+    "norma": "NCh 1358 / EN 352-2",
+    "motivo": "Para zonas con ruido intermitente donde el trabajador debe quitarse y ponerse el protector frecuentemente. Más práctico que los tapones de espuma."
+  },
+  "ropa_antiflama": {
+    "nombre": "Ropa ignífuga FR (uso minería / petroquímica)",
+    "icono": "🧥",
+    "norma": "NFPA 2112 / EN ISO 11612",
+    "motivo": "En faenas con riesgo de ignición, flash fire o arco eléctrico. La ropa FR no se derrite ni propaga la llama, dando tiempo de evacuación al trabajador."
+  },
+  "zapatos_antistaticos": {
+    "nombre": "Calzado antiestático (ESD)",
+    "icono": "🥾",
+    "norma": "NCh 2147/1 / EN ISO 20345",
+    "motivo": "Disocia la carga estática del cuerpo. Obligatorio en zonas con riesgo de ignición por electricidad estática (explosivos, petroquímica, electrónica)."
+  },
+  "guantes_impacto": {
+    "nombre": "Guantes con protección de impacto (TPR)",
+    "icono": "🧤",
+    "norma": "EN 388 / ANSI/ISEA 138",
+    "motivo": "Dorso con protectores TPR contra impactos y aplastamientos. Ideales para operadores de maquinaria pesada y mantenimiento mecánico."
+  },
+  "loto_candado": {
+    "nombre": "Candado LOTO dieléctrico llave única (KD)",
+    "icono": "🔐",
+    "norma": "OSHA 29 CFR 1910.147 / RIC 05",
+    "motivo": "Cada trabajador usa su propio candado con una única llave. Impide la energización accidental del equipo durante la intervención. Obligatorio en procedimiento escrito DS 594."
+  },
+  "loto_hasp": {
+    "nombre": "Pinza de bloqueo múltiple (Hasp) 5mm",
+    "icono": "🔐",
+    "norma": "OSHA 29 CFR 1910.147",
+    "motivo": "Permite que varios técnicos coloquen sus candados en un mismo punto de bloqueo. Fundamental en trabajos grupales. El equipo NO puede energizarse mientras haya UN candado."
+  },
+  "loto_tarjeta": {
+    "nombre": "Tarjeta personal de bloqueo (Tagout) NCh 1411/3",
+    "icono": "🏷️",
+    "norma": "NCh 1411/3 / NCh 2929",
+    "motivo": "Tarjeta de identificación personal del trabajador que realiza el bloqueo. Señaliza el equipo como \"NO OPERAR\". Resistente a calor, humedad y UV. Exigida por NCh 2929 y DS 594."
+  },
+  "loto_valvula": {
+    "nombre": "Dispositivo de bloqueo de válvula ajustable",
+    "icono": "🔐",
+    "norma": "OSHA 29 CFR 1910.147",
+    "motivo": "Bloquea válvulas de bola, compuerta y mariposa durante mantención. Impide el paso de fluidos o gases presionados. Complementa el candado en sistemas hidráulicos y neumáticos."
+  },
+  "loto_breaker": {
+    "nombre": "Bloqueo de interruptor eléctrico (Breaker lockout)",
+    "icono": "🔐",
+    "norma": "OSHA 29 CFR 1910.147 / IEC 60947-5-1",
+    "motivo": "Dispositivo no conductor que bloquea el breaker en posición OFF, impidiendo su reconexión. Obligatorio en toda intervención eléctrica con tensión en el tablero."
+  },
+  "loto_caja": {
+    "nombre": "Caja de bloqueo grupal LOTO (Lockbox)",
+    "icono": "🗳️",
+    "norma": "OSHA 29 CFR 1910.147 / DS 594",
+    "motivo": "Las llaves de todos los puntos bloqueados se depositan en la caja grupal. Cada técnico coloca su candado personal. Nadie puede acceder a las llaves mientras existan candados. Procedimiento exigido por DS 594 en faenas con múltiples puntos de energía."
+  },
+  "loto_procedimiento": {
+    "nombre": "Procedimiento escrito LOTO (por equipo)",
+    "icono": "📋",
+    "norma": "DS 594 Art. 37 / OSHA 1910.147(c)(4)",
+    "motivo": "El DS 594 exige procedimiento escrito para el control de energías peligrosas en cada equipo o máquina. Debe incluir: identificación de energías, puntos de aislamiento, secuencia de bloqueo y responsable."
+  }
+}
