@@ -1,11 +1,11 @@
 {
-  "totalPreguntas": 190,
+  "totalPreguntas": 220,
   "guias": [
     {
       "id": "ropa_ignifuga",
       "titulo": "CONOCE SOBRE LA ROPA IGNÍFUGA",
       "descripcion": "Esta guía está dirigida a compradores técnicos, prevencionistas y profesionales de seguridad industrial. Las respuestas se organizan en 8 bloques: etiquetado, normas europeas, normas americanas, arco eléctrico, composición y cuidado, marco regulatorio chileno, guía de logos y tabla de referencia rápida.",
-      "totalPreguntas": 40,
+      "totalPreguntas": 43,
       "items": [
         {
           "p": "1",
@@ -286,6 +286,27 @@
           "pregunta": "¿Las mutualidades exigen alguna certificación específica?",
           "respuesta": "No exigen una norma única por ley, pero recomiendan que la ropa tenga certificación internacional verificada por un laboratorio acreditado (AITEX u otros organismos reconocidos).",
           "tag": null
+        },
+        {
+          "p": "41",
+          "bloque": "CUÁNDO Y DÓNDE USARLA (CONSULTIVO)",
+          "pregunta": "¿En qué trabajos o lugares se debe usar ropa ignífuga?",
+          "respuesta": "En cualquier tarea con riesgo real de llama, chispa o arco eléctrico: soldadura, mantenimiento eléctrico en baja/media tensión, plantas de petróleo y gas, petroquímicas, refinerías, minería (sobre todo en sala de mando y eléctrica), y cualquier proceso con riesgo de \"flash fire\" (incendio súbito por gases o vapores inflamables). La idea simple: si existe la posibilidad de que el trabajador quede envuelto en fuego por unos segundos, necesita ropa ignífuga, no solo ropa resistente al calor.",
+          "tag": "EN ISO 11612 / NFPA 2112"
+        },
+        {
+          "p": "42",
+          "bloque": "CUÁNDO Y DÓNDE USARLA (CONSULTIVO)",
+          "pregunta": "¿Por qué un trabajador necesitaría ropa ignífuga si no suelda ni trabaja directamente con electricidad?",
+          "respuesta": "Porque el riesgo no siempre es la fuente de ignición que él mismo genera, sino estar cerca de una que puede generar otra persona o un equipo: un compañero soldando al lado, un tablero eléctrico energizado en la misma sala, gases o vapores inflamables en el ambiente. La ropa ignífuga protege de quemarse si ocurre un incendio súbito en el entorno, aunque el trabajador no esté operando el equipo de riesgo.",
+          "tag": "EN ISO 11612"
+        },
+        {
+          "p": "43",
+          "bloque": "CUÁNDO Y DÓNDE USARLA (CONSULTIVO)",
+          "pregunta": "¿Qué riesgo cubre exactamente la ropa ignífuga que no cubre la ropa normal (o incluso la ropa resistente al calor)?",
+          "respuesta": "La ropa normal (incluso sintética \"resistente al calor\") se puede derretir sobre la piel y pegarse, agravando la quemadura. La ropa ignífuga está hecha para autoextinguirse: deja de arder apenas se retira la fuente de llama y no gotea ni se derrite, por lo que da segundos extra para reaccionar y alejarse del foco del incendio.",
+          "tag": "EN ISO 11612 / NFPA 2112"
         }
       ]
     },
@@ -1378,6 +1399,211 @@
           "tag": null
         }
       ]
+    },
+    {
+      "id": "cascos_seguridad",
+      "titulo": "CASCOS DE SEGURIDAD: TIPOS, DIELÉCTRICOS Y CÓMO ELEGIR",
+      "descripcion": "Guía consultiva (no legislativa) para recomendar el casco correcto según el trabajo, reconocer cuáles son dieléctricos, leer la marcación y mantenerlos en buen estado.",
+      "items": [
+        {
+          "p": 1,
+          "bloque": "TIPOS Y CLASIFICACIÓN",
+          "pregunta": "¿Qué tipos de cascos de seguridad existen?",
+          "respuesta": "En simple, se clasifican por dos ejes: el TIPO indica qué golpes resisten (Tipo I: solo impacto superior; Tipo II: impacto superior y lateral), y la CLASE indica qué tan protegido está el trabajador de electricidad (Clase C: conductivo, sin protección eléctrica; Clase G: hasta 2.200V; Clase E: hasta 20.000V). Un casco se describe combinando ambos, por ejemplo \"Tipo II, Clase E\".",
+          "tag": "ANSI Z89.1 / NCh 461"
+        },
+        {
+          "p": 2,
+          "bloque": "TIPOS Y CLASIFICACIÓN",
+          "pregunta": "¿Cuál es la diferencia entre Tipo I y Tipo II?",
+          "respuesta": "El Tipo I solo protege contra golpes que caen desde arriba (impacto superior). El Tipo II además protege los costados (impacto lateral) y tiene mayor resistencia eléctrica. Para trabajos de bajo riesgo (construcción básica, logística, agricultura) suele bastar el Tipo I; para minería, trabajos eléctricos o industriales de mayor riesgo se recomienda Tipo II.",
+          "tag": "ANSI Z89.1"
+        },
+        {
+          "p": 3,
+          "bloque": "TIPOS Y CLASIFICACIÓN",
+          "pregunta": "¿Qué significan las Clases C, G y E?",
+          "respuesta": "Clase C (Conductivo): NO ofrece ninguna protección eléctrica, se usa solo cuando no hay riesgo eléctrico y se busca ventilación. Clase G (General): protege hasta 2.200V, resistencia eléctrica baja/media. Clase E (Eléctrico): protege hasta 20.000V, es la que se exige en trabajos eléctricos o cerca de líneas energizadas.",
+          "tag": "ANSI Z89.1 / NCh 461"
+        },
+        {
+          "p": 4,
+          "bloque": "TIPOS Y CLASIFICACIÓN",
+          "pregunta": "¿Cuáles son los cascos dieléctricos y cuáles no lo son?",
+          "respuesta": "Son dieléctricos (aíslan de la electricidad) los cascos Clase E y, en menor grado, Clase G. NO son dieléctricos los cascos Clase C (conductivos) ni ningún casco ventilado, aunque diga \"Clase E\" en la etiqueta: las perforaciones de ventilación rompen el aislamiento. Para trabajo eléctrico siempre se debe exigir Tipo 2, Clase E, sin ventilación, y revisar la ficha técnica si además se necesita protección contra arco eléctrico.",
+          "tag": "ANSI Z89.1 / NCh 461"
+        },
+        {
+          "p": 5,
+          "bloque": "TIPOS Y CLASIFICACIÓN",
+          "pregunta": "¿Un casco ventilado puede ser dieléctrico?",
+          "respuesta": "No. Los cascos ventilados pierden la propiedad dieléctrica por tener aberturas en el casquete, sin importar qué clase indique la etiqueta original. Si el trabajo tiene riesgo eléctrico, se debe usar siempre un casco sin ventilación.",
+          "tag": "Buena práctica de uso"
+        },
+        {
+          "p": 6,
+          "bloque": "ELECCIÓN POR TRABAJO",
+          "pregunta": "¿Qué casco conviene para trabajos de bajo riesgo (construcción general, logística, agricultura, pesca)?",
+          "respuesta": "Un casco Tipo I es suficiente: protege de golpes desde arriba. Se le puede agregar sobrevisera para sol y barbuquejo (mentonera) para que no se mueva con el viento. No necesita ser Clase E si no hay riesgo eléctrico.",
+          "tag": "Recomendación de uso"
+        },
+        {
+          "p": 7,
+          "bloque": "ELECCIÓN POR TRABAJO",
+          "pregunta": "¿Qué casco conviene para minería, construcción pesada o trabajos industriales de riesgo medio/alto?",
+          "respuesta": "Se recomienda Tipo II, con protección lateral además de superior, y alta resistencia eléctrica. Si hay riesgo de descarga (líneas eléctricas, faenas con tableros energizados), debe ser Clase E.",
+          "tag": "Recomendación de uso"
+        },
+        {
+          "p": 8,
+          "bloque": "ELECCIÓN POR TRABAJO",
+          "pregunta": "¿Qué casco conviene para trabajo en altura, espacios confinados o rescate?",
+          "respuesta": "Cascos Tipo 2, Clase E, sin visera (la visera limita el movimiento de la cabeza en espacios reducidos) y con 3 puntos de amarre en el arnés interno, a diferencia de los cascos comunes. Muchos incorporan linterna y visor.",
+          "tag": "Recomendación de uso"
+        },
+        {
+          "p": 9,
+          "bloque": "ELECCIÓN POR TRABAJO",
+          "pregunta": "¿Qué casco conviene específicamente para trabajos eléctricos?",
+          "respuesta": "Siempre Tipo 2, Clase E, sin ventilación. No se deben agregar accesorios o periféricos que no sean dieléctricos. Para riesgo de arco eléctrico se necesita además un modelo específico certificado para ese riesgo — hay que revisar la ficha técnica, no todos los Clase E cubren arco eléctrico.",
+          "tag": "Recomendación de uso"
+        },
+        {
+          "p": 10,
+          "bloque": "ELECCIÓN POR TRABAJO",
+          "pregunta": "¿Qué casco conviene para fundiciones o trabajos con altas temperaturas?",
+          "respuesta": "Cascos fabricados en fibras fenólicas prensadas, que soportan hasta 200°C. Son obligatorios donde hay riesgo de quemaduras o salpicaduras de material incandescente. Su desventaja es que pesan más que un casco plástico normal.",
+          "tag": "Recomendación de uso"
+        },
+        {
+          "p": 11,
+          "bloque": "COLORES Y MARCACIÓN",
+          "pregunta": "¿Qué significan los colores de los cascos en una faena?",
+          "respuesta": "No hay una norma universal, pero en la práctica de terreno se suele usar un código por rol: blanco para supervisores, amarillo para operadores de maquinaria, rojo para brigada contra incendios, naranja para visitas, verde para higiene y seguridad, azul para electricistas/plomeros/carpinteros/albañiles, café para soldadores, y plateado/dorado (siempre plástico, nunca metálico) para gerencia. Cada empresa puede fijar su propio código, pero lo importante es que sea consistente y conocido por todos.",
+          "tag": "Buena práctica de uso"
+        },
+        {
+          "p": 12,
+          "bloque": "COLORES Y MARCACIÓN",
+          "pregunta": "¿Cómo se lee la marcación o etiqueta de un casco certificado?",
+          "respuesta": "En la parte interior de la visera o el casquete vienen, normalmente: la norma de certificación (ej. ANSI + NCh 461), el Tipo y Clase (ej. \"Tipo 1, Clase E\"), el material (ej. ABS, PEHD o fibra de resina), y uno o dos \"relojes\" circulares que indican el año (y a veces el mes) de fabricación. El arnés interno trae su propia marcación de fecha, aparte del casquete.",
+          "tag": "NCh 461"
+        },
+        {
+          "p": 13,
+          "bloque": "COLORES Y MARCACIÓN",
+          "pregunta": "¿Qué información mínima debe traer un casco certificado?",
+          "respuesta": "Norma o estándar que cumple, fabricante y modelo, material de fabricación, y fecha de fabricación. Si la etiqueta no trae esto, conviene desconfiar de que esté realmente certificado y pedir la ficha técnica al proveedor.",
+          "tag": "NCh 461"
+        },
+        {
+          "p": 14,
+          "bloque": "MANTENCIÓN Y BUENAS PRÁCTICAS",
+          "pregunta": "¿Cómo se debe limpiar y mantener un casco de seguridad?",
+          "respuesta": "Con jabón neutro y agua — nunca con alcohol o diluyentes, que debilitan el material. Hay que inspeccionar seguido tanto el casquete como el arnés interno; cualquier grieta, deformación o deterioro visible obliga a reemplazarlo de inmediato, no a seguir usándolo \"hasta que se rompa\".",
+          "tag": "Buena práctica de uso"
+        },
+        {
+          "p": 15,
+          "bloque": "MANTENCIÓN Y BUENAS PRÁCTICAS",
+          "pregunta": "¿Cada cuánto se debe reemplazar un casco?",
+          "respuesta": "Un casco usado al aire libre y expuesto al sol se recomienda reemplazarlo cada año, porque los rayos UV deterioran el material aunque no se vea a simple vista. Un casco que casi no se usa igual se recomienda desechar a los 3-4 años desde su fabricación, por envejecimiento del material.",
+          "tag": "Buena práctica de uso"
+        },
+        {
+          "p": 16,
+          "bloque": "MANTENCIÓN Y BUENAS PRÁCTICAS",
+          "pregunta": "¿Se puede pintar un casco de seguridad por cuenta propia?",
+          "respuesta": "No. La pintura puede debilitar el material del casquete. Si se necesita diferenciar cascos (por ejemplo por área o cargo), se deben usar solo adhesivos, nunca pintura directa.",
+          "tag": "Buena práctica de uso"
+        },
+        {
+          "p": 17,
+          "bloque": "MANTENCIÓN Y BUENAS PRÁCTICAS",
+          "pregunta": "¿Se le pueden agregar fonos u otros accesorios a cualquier casco?",
+          "respuesta": "No siempre. Los fonos u otros complementos deben ser de la misma marca del casco o estar validados como compatibles por el fabricante; de lo contrario el calce no queda firme y se puede perder la certificación del conjunto. Siempre conviene revisar qué recomienda el fabricante del casco.",
+          "tag": "Buena práctica de uso"
+        }
+      ],
+      "totalPreguntas": 17
+    },
+    {
+      "id": "trabajo_altura_arnes",
+      "titulo": "TRABAJO EN ALTURA: CUÁNDO USAR ARNÉS Y CÓMO ELEGIR EL SISTEMA",
+      "descripcion": "Guía consultiva sobre cuándo es obligatorio el arnés de seguridad, qué componentes necesita el sistema completo y cómo cuidarlo.",
+      "items": [
+        {
+          "p": 1,
+          "bloque": "CUÁNDO USAR ARNÉS",
+          "pregunta": "¿A partir de qué altura es obligatorio usar arnés de seguridad en Chile?",
+          "respuesta": "El D.S. N°594 exige protección contra caídas en todo trabajo realizado a 1,8 metros de altura o más sobre un nivel inferior, sin importar el rubro. Bajo esa altura igual se recomienda evaluar el riesgo (por ejemplo, un desnivel con superficie peligrosa abajo), pero la obligación legal parte en 1,8 m.",
+          "tag": "DS 594"
+        },
+        {
+          "p": 2,
+          "bloque": "CUÁNDO USAR ARNÉS",
+          "pregunta": "¿Qué norma regula los arneses y líneas de vida en Chile?",
+          "respuesta": "La familia de normas NCh 1258 (terminología, arnés de cuerpo completo, estrobos, líneas de vida verticales y conectores) y la NCh 2374, que regula el sistema completo de protección contra caídas, no solo el arnés por separado.",
+          "tag": "NCh 1258 / NCh 2374"
+        },
+        {
+          "p": 3,
+          "bloque": "CUÁNDO USAR ARNÉS",
+          "pregunta": "¿Qué diferencia hay entre un cinturón de posicionamiento y un arnés de cuerpo completo?",
+          "respuesta": "El cinturón de posicionamiento solo mantiene al trabajador apoyado en un punto mientras trabaja con las manos libres (por ejemplo, en un poste), pero NO detiene una caída libre: si el trabajador cae, el cinturón puede causar lesiones graves en la zona lumbar. El arnés de cuerpo completo reparte la fuerza del impacto por los hombros, muslos y pelvis, y es el único recomendado para detener una caída real.",
+          "tag": "NCh 1258/0 y /1"
+        },
+        {
+          "p": 4,
+          "bloque": "CUÁNDO USAR ARNÉS",
+          "pregunta": "¿En qué trabajos, además de construcción, se exige arnés?",
+          "respuesta": "Montaje industrial, mantenimiento de techos, torres de comunicación o eléctricas, faenas forestales con trabajo en altura, limpieza de fachadas, y minería donde existan plataformas, taludes o accesos elevados. En general, cualquier tarea sobre 1,8 m donde no exista una baranda u otra protección colectiva equivalente.",
+          "tag": "DS 594"
+        },
+        {
+          "p": 5,
+          "bloque": "COMPONENTES DEL SISTEMA",
+          "pregunta": "¿Qué elementos componen un sistema de detención de caídas completo?",
+          "respuesta": "Cuatro piezas, no solo el arnés: (1) el arnés de cuerpo completo, (2) un conector o estrobo con absorbedor de impacto, (3) un punto de anclaje certificado, y (4) conectores/mosquetones de trabado automático. Si falta una sola pieza, el sistema completo no protege.",
+          "tag": "NCh 2374"
+        },
+        {
+          "p": 6,
+          "bloque": "COMPONENTES DEL SISTEMA",
+          "pregunta": "¿Qué es un absorbedor de impacto y por qué es obligatorio?",
+          "respuesta": "Es una pieza que se despliega para frenar progresivamente la caída, limitando la fuerza que recibe el cuerpo del trabajador a un máximo de 6 kN (en vez de un frenado seco que podría causar lesiones internas). Sin absorbedor, una caída detenida de golpe puede ser tan dañina como la caída misma.",
+          "tag": "NCh 2374"
+        },
+        {
+          "p": 7,
+          "bloque": "COMPONENTES DEL SISTEMA",
+          "pregunta": "¿Qué es una línea de vida autorretráctil y cuándo conviene usarla en vez de un estrobo fijo?",
+          "respuesta": "Es un dispositivo tipo \"cinturón de auto\" que se extiende y frena automáticamente ante una caída, permitiendo libertad de movimiento mientras el trabajador se desplaza. Conviene en trabajos donde la persona necesita moverse por una superficie amplia (techos, estructuras), mientras que el estrobo fijo es más simple y se usa cuando el punto de anclaje y la posición de trabajo son fijos.",
+          "tag": "NCh 1258/3"
+        },
+        {
+          "p": 8,
+          "bloque": "COMPONENTES DEL SISTEMA",
+          "pregunta": "¿Qué fuerza mínima debe soportar un mosquetón o conector?",
+          "respuesta": "Los conectores con compuerta de trabado automático deben resistir una apertura de al menos 15 kN, de modo que no se abran accidentalmente bajo carga ni por un golpe lateral.",
+          "tag": "NCh 2374"
+        },
+        {
+          "p": 9,
+          "bloque": "INSPECCIÓN Y CUIDADOS",
+          "pregunta": "¿Cada cuánto se debe inspeccionar un arnés?",
+          "respuesta": "Antes de cada uso (revisión visual rápida de costuras, hebillas y cintas) y de forma más completa de manera periódica según lo defina el programa de prevención de la empresa. Cualquier corte, deshilachado, quemadura, deformación en las hebillas o indicador de caída activado (muchos arneses traen un testigo que se rompe si ya absorbió un impacto) obliga a retirarlo de inmediato.",
+          "tag": "Buena práctica de uso"
+        },
+        {
+          "p": 10,
+          "bloque": "INSPECCIÓN Y CUIDADOS",
+          "pregunta": "¿Cuándo se debe retirar un arnés de servicio?",
+          "respuesta": "Siempre que haya detenido una caída real (aunque se vea en buen estado), si tiene cortes o desgaste visible en las cintas o costuras, si las hebillas están deformadas o no cierran firme, o al cumplir la vida útil que indique el fabricante (generalmente entre 5 y 10 años desde la fabricación, incluso sin uso).",
+          "tag": "Buena práctica de uso"
+        }
+      ],
+      "totalPreguntas": 10
     }
   ]
 }
