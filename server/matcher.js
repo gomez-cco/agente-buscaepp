@@ -432,13 +432,21 @@ function buscarEnEstudia(textoNorm) {
   // Con una sola palabra significativa basta 1 coincidencia; con 2 o más se
   // exige al menos 2 coincidencias (evita que una sola palabra genérica
   // compartida, ej. "casco" solo, dispare la respuesta equivocada de otra
-  // guía que por casualidad comparte esa palabra). Además, el peso
-  // ponderado por idf debe cubrir al menos el 60% del peso total de la
-  // consulta, para que palabras comunes repetidas en toda una guía (que
-  // pesan poco) no empujen un match sobre palabras específicas que faltaron.
+  // guía que por casualidad comparte esa palabra).
+  //
+  // El umbral de confianza es un PESO ABSOLUTO (suma de idf de las palabras
+  // que sí calzaron), no una proporción del total de la consulta. Una
+  // proporción castigaba preguntas parafraseadas con palabras de relleno que
+  // no aparecen en ninguna guía (ej. "actualmente", "ocupan" en "¿qué
+  // colores ocupan los filtros actualmente?"): esas palabras no están en
+  // ningún item, así que su idf por defecto es alto (se tratan como "muy
+  // raras"), e inflan el denominador aunque no aporten nada real — hundiendo
+  // la proporción de un match que en realidad es correcto. Con un peso
+  // absoluto, lo que importa es cuánta evidencia específica coincidió, sin
+  // que palabras ajenas al corpus puedan diluirla.
+  const PESO_MINIMO = 6;
   const umbralMinimo = tokens.length === 1 ? 1 : 2;
-  const proporcionPeso = mejorPeso / idfTotalConsulta;
-  if (mejorOverlap >= umbralMinimo && proporcionPeso >= 0.6) {
+  if (mejorOverlap >= umbralMinimo && mejorPeso >= PESO_MINIMO) {
     return mejor;
   }
   return null;
