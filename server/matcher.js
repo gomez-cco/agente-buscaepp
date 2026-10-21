@@ -369,6 +369,30 @@ function esConsultaMenuEstudia(textoNorm) {
   return ALIAS_ESTUDIA_MENU.some(a => textoNorm.includes(normalizar(a)));
 }
 
+// Disparador del sidebar: al hacer clic en una guía de "Estudia con BuscaEPP"
+// se envía 'Ver preguntas de la guía "<título>"' — esto muestra el listado
+// completo de preguntas de esa guía (no la respuesta de una sola), para que
+// el ejecutivo elija cuál preguntar a continuación.
+function esConsultaListaGuia(textoNorm) {
+  return /^ver preguntas de la guia/.test(textoNorm);
+}
+
+function formatListaPreguntasGuia(textoNorm) {
+  // Busca la guía cuyo título (normalizado) esté contenido en el mensaje,
+  // o viceversa, para tolerar comillas/variaciones menores.
+  const guias = estudiaConBuscaEpp.guias || [];
+  let guia = guias.find(g => textoNorm.includes(normalizar(g.titulo)));
+  if (!guia) {
+    // Fallback: compara por palabras clave del título (ignora "ver preguntas de la guia")
+    const resto = textoNorm.replace(/^ver preguntas de la guia/, '').trim();
+    guia = guias.find(g => normalizar(g.titulo).includes(resto) || resto.includes(normalizar(g.titulo).split(' ')[0]));
+  }
+  if (!guia) return formatMenuEstudia();
+
+  const lineas = guia.items.map(it => `- P${it.p}. ${it.pregunta}`);
+  return `**📘 ${guia.titulo}** (${guia.totalPreguntas} preguntas)\n\n${lineas.join('\n')}\n\nEscribe cualquiera de estas preguntas tal cual (o con tus palabras) y te respondo con el detalle completo.`;
+}
+
 function formatMenuEstudia() {
   const lineas = (estudiaConBuscaEpp.guias || []).map(g => `- **${g.titulo}** (${g.totalPreguntas} preguntas)`);
   return `**📘 Estudia con BuscaEPP**\nContenido técnico de las guías de buscaepp.cl, con ${estudiaConBuscaEpp.totalPreguntas} preguntas y respuestas organizadas por tema:\n\n${lineas.join('\n')}\n\nEscribe tu pregunta directamente (ej. "¿qué significa el pictograma del martillo?", "¿cuándo cambio el filtro del respirador?", "¿qué exige SERNAGEOMIN en gran minería?") y te respondo con el detalle de la guía correspondiente.`;
@@ -448,6 +472,11 @@ O elige directamente una opción del panel izquierdo.`;
  */
 function responder(mensaje) {
   const textoNorm = normalizar(mensaje);
+
+  // -2) ¿Viene del clic en una guía del sidebar ("Ver preguntas de la guía...")?
+  if (esConsultaListaGuia(textoNorm)) {
+    return formatListaPreguntasGuia(textoNorm);
+  }
 
   // -1) ¿Pide el menú de guías "Estudia con BuscaEPP"?
   if (esConsultaMenuEstudia(textoNorm)) {

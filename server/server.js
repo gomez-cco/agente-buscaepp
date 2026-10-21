@@ -1,6 +1,6 @@
 const path = require('path');
 const express = require('express');
-const { normas, familias } = require('./knowledgeBase');
+const { normas, familias, estudiaConBuscaEpp } = require('./knowledgeBase');
 const { responder } = require('./matcher');
 
 const app = express();
@@ -37,7 +37,12 @@ app.get('/api/sidebar', (_req, res) => {
     label: f.label,
     icono: f.icono,
   }));
-  res.json({ temario, categorias });
+  const guiasEstudio = (estudiaConBuscaEpp.guias || []).map(g => ({
+    id: g.id,
+    titulo: g.titulo,
+    totalPreguntas: g.totalPreguntas,
+  }));
+  res.json({ temario, categorias, guiasEstudio });
 });
 
 app.get('/healthz', (_req, res) => res.json({ ok: true }));
