@@ -12,7 +12,7 @@
 // ejecutivo lee lo técnico si el cliente es prevencionista, o lee directo el
 // bloque "En simple" si el cliente es comprador — sin tener que cambiar de modo.
 
-const { normas, eppInfo, familias, actualizaciones, pictogramas, certificadores } = require('./knowledgeBase');
+const { normas, eppInfo, familias, actualizaciones, pictogramas, certificadores, estudiaConBuscaEpp } = require('./knowledgeBase');
 
 function normalizar(s) {
   return (s || '')
@@ -188,6 +188,21 @@ function tokenizarPalabras(textoNorm) {
     .filter(t => t.length >= 4 && !STOPWORDS.has(t));
 }
 
+// Variante para el motor de "Estudia con BuscaEPP": acepta palabras desde 3
+// letras porque varias siglas técnicas clave son cortas (TPR, EPP, UV, FR,
+// PU, OIT) y con el mínimo de 4 de tokenizarPalabras quedaban descartadas,
+// degradando el match a solo las palabras largas del resto de la frase.
+const STOPWORDS_CORTAS = new Set([
+  ...STOPWORDS,
+  'los', 'las', 'del', 'por', 'una', 'uno', 'son', 'mas', 'muy', 'sus',
+  'sin', 'ese', 'esa', 'eso', 'con', 'las', 'les', 'nos', 'les',
+]);
+function tokenizarPalabrasEstudia(textoNorm) {
+  return textoNorm
+    .split(/[^a-z0-9]+/)
+    .filter(t => t.length >= 3 && !STOPWORDS_CORTAS.has(t));
+}
+
 function buscarPorProducto(textoNorm) {
   const tokens = tokenizarPalabras(textoNorm);
   if (!tokens.length) return null;
@@ -304,6 +319,114 @@ function respuestaLeyMadre() {
   return formatNorma('Ley 16744');
 }
 
+// ---------------------------------------------------------------------------
+// "ESTUDIA CON BUSCAEPP" — motor de búsqueda sobre las 190 preguntas y
+// respuestas de las 6 guías técnicas de buscaepp.cl (Zona VIP > Zona Cliente
+// > Estudia con BuscaEPP). Esto es el contenido que el ejecutivo usaba antes
+// para tener más claridad frente al cliente, y que el agente no tenía cargado.
+// ---------------------------------------------------------------------------
+
+// Índice plano de las 190 preguntas, construido una sola vez al cargar el
+// módulo: cada item trae sus tokens (de la pregunta + el bloque al que
+// pertenece) precalculados, para no re-tokenizar en cada consulta.
+const INDICE_ESTUDIA = (estudiaConBuscaEpp.guias || []).flatMap(guia =>
+  guia.items.map(item => {
+    const textoParaTokens = normalizar(item.pregunta + ' ' + (item.bloque || ''));
+    return {
+      guiaId: guia.id,
+      guiaTitulo: guia.titulo,
+      p: item.p,
+      bloque: item.bloque,
+      pregunta: item.pregunta,
+      respuesta: item.respuesta,
+      tag: item.tag,
+      tokens: new Set(tokenizarPalabrasEstudia(textoParaTokens)),
+    };
+  })
+);
+
+// Frecuencia de documento (en cuántos de los 190 items aparece cada token) y
+// peso idf: palabras que se repiten en casi todas las preguntas de una misma
+// guía (ej. "ropa", "ignifuga" en la guía de ropa ignífuga) no discriminan
+// nada entre sus propias preguntas, así que deben pesar poco. Palabras
+// específicas (ej. "soldadura", "tpr", "dielectrico") que aparecen en pocos
+// items son las que de verdad indican una coincidencia real.
+const DOC_FREQ = new Map();
+for (const item of INDICE_ESTUDIA) {
+  for (const t of item.tokens) {
+    DOC_FREQ.set(t, (DOC_FREQ.get(t) || 0) + 1);
+  }
+}
+function idf(token) {
+  const df = DOC_FREQ.get(token) || 1;
+  return Math.log(1 + INDICE_ESTUDIA.length / df);
+}
+
+// Alias para invocar el listado/menú de guías disponibles
+const ALIAS_ESTUDIA_MENU = ['estudia con buscaepp', 'estudia con busca epp', 'estudiar con buscaepp', 'estudiar con busca epp', 'guia tecnica', 'guias tecnicas'];
+
+function esConsultaMenuEstudia(textoNorm) {
+  return ALIAS_ESTUDIA_MENU.some(a => textoNorm.includes(normalizar(a)));
+}
+
+function formatMenuEstudia() {
+  const lineas = (estudiaConBuscaEpp.guias || []).map(g => `- **${g.titulo}** (${g.totalPreguntas} preguntas)`);
+  return `**📘 Estudia con BuscaEPP**\nContenido técnico de las guías de buscaepp.cl, con ${estudiaConBuscaEpp.totalPreguntas} preguntas y respuestas organizadas por tema:\n\n${lineas.join('\n')}\n\nEscribe tu pregunta directamente (ej. "¿qué significa el pictograma del martillo?", "¿cuándo cambio el filtro del respirador?", "¿qué exige SERNAGEOMIN en gran minería?") y te respondo con el detalle de la guía correspondiente.`;
+}
+
+// Busca la mejor coincidencia entre la pregunta del usuario y las 190
+// preguntas de las guías. Exige una proporción mínima de palabras
+// coincidentes (no solo el conteo absoluto) para evitar matches débiles que
+// desplacen a una respuesta de norma/producto más precisa.
+function buscarEnEstudia(textoNorm) {
+  const tokens = tokenizarPalabrasEstudia(textoNorm);
+  if (!tokens.length) return null;
+
+  const idfTotalConsulta = tokens.reduce((acc, t) => acc + idf(t), 0);
+  if (!idfTotalConsulta) return null;
+
+  let mejor = null;
+  let mejorPeso = 0;
+  let mejorOverlap = 0;
+  for (const item of INDICE_ESTUDIA) {
+    let overlap = 0;
+    let peso = 0;
+    for (const t of tokens) {
+      if (item.tokens.has(t)) {
+        overlap++;
+        peso += idf(t);
+      }
+    }
+    if (peso > mejorPeso) {
+      mejorPeso = peso;
+      mejorOverlap = overlap;
+      mejor = item;
+    }
+  }
+  if (!mejor) return null;
+
+  // Con una sola palabra significativa basta 1 coincidencia; con 2 o más se
+  // exige al menos 2 coincidencias (evita que una sola palabra genérica
+  // compartida, ej. "casco" solo, dispare la respuesta equivocada de otra
+  // guía que por casualidad comparte esa palabra). Además, el peso
+  // ponderado por idf debe cubrir al menos el 60% del peso total de la
+  // consulta, para que palabras comunes repetidas en toda una guía (que
+  // pesan poco) no empujen un match sobre palabras específicas que faltaron.
+  const umbralMinimo = tokens.length === 1 ? 1 : 2;
+  const proporcionPeso = mejorPeso / idfTotalConsulta;
+  if (mejorOverlap >= umbralMinimo && proporcionPeso >= 0.6) {
+    return mejor;
+  }
+  return null;
+}
+
+function formatRespuestaEstudia(item) {
+  let out = `**${item.pregunta}**\n${item.respuesta}`;
+  if (item.tag) out += `\n*${item.tag}*`;
+  out += `\n\n📘 *Fuente: guía "${item.guiaTitulo}" — Estudia con BuscaEPP (P${item.p})*`;
+  return out;
+}
+
 const SUGERENCIAS_FALLBACK = `No encontré una coincidencia clara con esa pregunta en el catálogo de BuscaEPP.
 
 Prueba con:
@@ -311,6 +434,7 @@ Prueba con:
 - El código de una norma (ej. "NCh 461", "EN 388", "ANSI Z87.1") o "Ley 16744" / "ley madre".
 - El nombre de un producto (ej. "casco dieléctrico", "botín de seguridad").
 - "pictograma del guante" o "quién certifica" un EPP.
+- "Estudia con BuscaEPP" para ver las guías técnicas con preguntas y respuestas (ropa ignífuga, calzado, guantes, protección respiratoria, ropa reflectiva, venta en gran minería).
 
 O elige directamente una opción del panel izquierdo.`;
 
@@ -324,6 +448,11 @@ O elige directamente una opción del panel izquierdo.`;
  */
 function responder(mensaje) {
   const textoNorm = normalizar(mensaje);
+
+  // -1) ¿Pide el menú de guías "Estudia con BuscaEPP"?
+  if (esConsultaMenuEstudia(textoNorm)) {
+    return formatMenuEstudia();
+  }
 
   // 0) ¿Pregunta por la "ley madre" (Ley 16744) con alguno de sus sinónimos
   //    habituales ("ley madre", "16744"), que no calzan con el patrón exacto
@@ -356,6 +485,15 @@ function responder(mensaje) {
   }
   if (actMatches.length) {
     return actMatches.map(formatActualizacion).join('\n\n');
+  }
+
+  // 1bis) ¿Coincide fuertemente con alguna de las 190 preguntas de las guías
+  // "Estudia con BuscaEPP"? Estas respuestas son más ricas y específicas que
+  // el listado genérico de familia, así que se priorizan cuando hay una
+  // coincidencia clara (umbral de proporción de palabras en buscarEnEstudia).
+  const matchEstudia = buscarEnEstudia(textoNorm);
+  if (matchEstudia) {
+    return formatRespuestaEstudia(matchEstudia);
   }
 
   // 2) ¿Coincide con el nombre de un producto específico del catálogo?

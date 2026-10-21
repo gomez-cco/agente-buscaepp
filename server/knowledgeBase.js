@@ -16,6 +16,7 @@ const familias = loadJSON('familias.json');       // 17 familias con label e ico
 const actualizaciones = loadJSON('actualizaciones_2024_2026.json'); // cambios normativos recientes
 const pictogramas = loadJSON('pictogramas.json'); // significado de pictogramas (guantes: EN 388/511/374/407)
 const certificadores = loadJSON('certificadores.json'); // quién certifica/fiscaliza cada norma, por prefijo de código
+const estudiaConBuscaEpp = loadJSON('estudia_con_buscaepp.json'); // 190 preguntas y respuestas de las guías técnicas "Estudia con BuscaEPP" (buscaepp.cl, Zona VIP)
 
 // Serializa el glosario de normas en un bloque de texto compacto
 function serializarNormas() {
@@ -83,5 +84,6 @@ module.exports = {
   actualizaciones,
   pictogramas,
   certificadores,
+  estudiaConBuscaEpp,
   construirBaseConocimiento,
 };
