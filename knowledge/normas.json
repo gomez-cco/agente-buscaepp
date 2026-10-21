@@ -5,16 +5,19 @@
     "campo": "Industria en general, construcción, minería, forestal y cualquier faena con riesgo de impacto en la cabeza.",
     "requisitos": "El casco debe resistir impactos de al menos 50 J, penetración de objetos punzantes, y no debe transmitir fuerzas superiores a 5 kN al cráneo. Debe incluir sistema de suspensión interior ajustable.",
     "categorias": [
-      "Casco tipo A",
-      "Casco tipo B (dieléctrico)",
-      "Casco tipo C (conducción eléctrica reducida)"
+      "Tipo I — impacto solo desde arriba (uso general)",
+      "Tipo II — impacto superior y lateral (espacios confinados, andamios)",
+      "Casco tipo A (uso general, sin aislación eléctrica reforzada)",
+      "Casco tipo B / Clase E (dieléctrico, hasta 20.000V)",
+      "Casco tipo C (conductividad eléctrica reducida)"
     ],
     "tags": [
       "casco",
       "cabeza",
       "impacto",
       "industria"
-    ]
+    ],
+    "resumenSimple": "El casco de seguridad es obligatorio en toda faena con riesgo de golpes en la cabeza. Hay 3 tipos según el riesgo eléctrico: Tipo A (uso general, sin protección eléctrica reforzada), Tipo B o Clase E (dieléctrico, aísla hasta 20.000V — para trabajos eléctricos) y Tipo C (conductividad reducida). Además, por la dirección del golpe se clasifican en Tipo I (solo protege golpes desde arriba — el más común en construcción/minería) y Tipo II (protege también golpes laterales — se usa cuando hay riesgo de choque contra estructuras, como en espacios confinados o andamios)."
   },
   "NCh 1358": {
     "titulo": "Protectores auditivos — terminología y clasificación",
@@ -33,7 +36,8 @@
       "tapones",
       "orejeras",
       "dB"
-    ]
+    ],
+    "resumenSimple": "Si el ruido del lugar supera 85 dB(A) de forma sostenida, se necesita protección auditiva. El dato clave a pedir al proveedor es el NRR o SNR (cuántos decibeles reduce el protector) — mientras más alto, más atenúa. Los tapones son más económicos y cómodos para turnos largos; las orejeras protegen más parejo y son más fáciles de fiscalizar visualmente (se ven puestas)."
   },
   "NCh 1301": {
     "titulo": "Protección personal — elementos protectores de los ojos",
@@ -52,7 +56,8 @@
       "impacto",
       "partículas",
       "química"
-    ]
+    ],
+    "resumenSimple": "Los lentes de seguridad son obligatorios donde hay riesgo de partículas, polvo o salpicaduras. El requisito clave es que resistan impacto de alta velocidad (no son lentes de sol comunes) y que el fabricante marque el grado de protección en el lente. Para productos químicos se necesitan gafas panorámicas con sello perimetral, no lentes abiertos."
   },
   "NCh 1562": {
     "titulo": "Protección personal — pantallas para soldadores",
@@ -144,7 +149,8 @@
       "P3",
       "filtro",
       "autónomo"
-    ]
+    ],
+    "resumenSimple": "La mascarilla o respirador se elige según el contaminante, no según el precio: filtros P1 (baja eficiencia, polvo grueso), P2/N95 (eficiencia media, la más usada en construcción y minería) y P3 (alta eficiencia, para químicos finos o alta toxicidad). Para gases y vapores se usan cartuchos específicos (no filtros de partículas) codificados por color según el contaminante."
   },
   "NCh 2378": {
     "titulo": "Aparatos de protección respiratoria — máscaras completas",
@@ -219,7 +225,8 @@
       "dieléctrico",
       "térmico",
       "corte"
-    ]
+    ],
+    "resumenSimple": "El guante debe elegirse según el riesgo real de la tarea (golpe mecánico, corte, químico, calor o electricidad), no \"al ojo\". El fabricante debe marcar la talla y un pictograma con niveles de protección (ver \"pictograma del guante\" para el detalle de cada símbolo). Un guante sin pictograma o sin ficha técnica con esos niveles no cumple la norma y no debería comprarse para tareas de riesgo."
   },
   "NCh 772/1": {
     "titulo": "NCh 772/1 Of.92 — Calzado de seguridad de uso general (norma vigente en Chile)",
@@ -240,7 +247,8 @@
       "composite",
       "NCh 772",
       "uso general"
-    ]
+    ],
+    "resumenSimple": "El calzado de seguridad debe cumplir 4 requisitos mínimos para la mayoría de las faenas: (1) puntera de protección (acero o composite, resiste impacto de objetos que caen), (2) plantilla antiperforación, (3) suela antideslizante y (4) resistencia a hidrocarburos si hay contacto con combustibles o aceites. Según el riesgo específico se agregan extras: dieléctrico (NCh 2147/2) para trabajos eléctricos, antiestático (NCh 2147/1) para zonas con riesgo de explosión, o bota de goma/PVC (NCh 1796) para humedad y químicos. Para el comprador: un calzado \"de seguridad\" sin puntera certificada no cumple y expone al empleador a una multa o fiscalización."
   },
   "NCh 1796": {
     "titulo": "Calzado de seguridad — calzado de goma",
@@ -470,7 +478,8 @@
       "seguridad",
       "tagout",
       "energía"
-    ]
+    ],
+    "resumenSimple": "El arnés de cuerpo completo (nunca un cinturón simple, que ya no está permitido) es obligatorio para trabajo en altura sobre 1,8 m de riesgo de caída. Debe usarse junto con una línea de vida y un punto de anclaje certificado — el arnés solo no sirve si el anclaje no resiste la caída."
   },
   "DS 594 LOTO": {
     "titulo": "DS 594 Art. 37 — Procedimiento escrito de control de energías",
@@ -533,7 +542,8 @@
       "arco eléctrico",
       "llama",
       "nfpa"
-    ]
+    ],
+    "resumenSimple": "La ropa ignífuga protege contra llama directa y calor radiante (soldadura, incendios, procesos con fuego). No es lo mismo que la ropa con arco eléctrico (EN ISO 11611 es para arco de soldadura; para riesgo de arco eléctrico en tableros energizados se usa ropa clasificada en categorías de energía incidente, cal/cm²). Para el comprador: pedir siempre la certificación específica, porque una tela \"resistente al fuego\" sin la norma no garantiza protección real."
   },
   "EN ISO 11611": {
     "titulo": "Ropa de protección para soldadura y procesos afines",
@@ -630,6 +640,33 @@
       "banderillero",
       "alta visibilidad",
       "vía pública"
+    ]
+  },
+  "Ley 16744": {
+    "titulo": "Ley 16.744 — Seguro Social contra Riesgos de Accidentes del Trabajo y Enfermedades Profesionales (la \"ley madre\" de la prevención en Chile)",
+    "objetivo": "Es la ley base de la que nacen todas las obligaciones de seguridad laboral en Chile, incluyendo el uso de EPP. Establece un seguro social obligatorio que cubre accidentes del trabajo y enfermedades profesionales, financiado por el empleador, y obliga a toda empresa a implementar medidas de prevención de riesgos.",
+    "campo": "Aplica a todo trabajador dependiente en Chile (sector privado y público) y, de forma voluntaria, a algunos independientes. Es la base legal de la que se desprenden los reglamentos específicos (como el DS 594, que regula directamente el uso de EPP).",
+    "requisitos": "El empleador debe: (1) adherirse a una Mutualidad (ACHS, Mutual de Seguridad CChC o IST) o al ISL si es organismo público, pagando una cotización básica (0,90% de las remuneraciones) más una cotización adicional según el riesgo de la actividad; (2) implementar un Comité Paritario de Higiene y Seguridad si tiene 25 o más trabajadores; (3) contar con un Departamento de Prevención de Riesgos según el tamaño y riesgo de la empresa; (4) entregar gratuitamente todo el EPP necesario y certificado; (5) denunciar accidentes del trabajo (DIAT) y enfermedades profesionales (DIEP) a su organismo administrador.",
+    "categorias": [
+      "Accidente del trabajo (incluye el trayecto directo \"ida y regreso\" entre casa y trabajo)",
+      "Enfermedad profesional (causada directa y exclusivamente por el trabajo)",
+      "Prestaciones médicas (atención gratuita hasta la curación o declaración de invalidez)",
+      "Prestaciones económicas (subsidios por incapacidad, pensiones de invalidez o sobrevivencia)",
+      "Reglamentos derivados: DS 594 (condiciones sanitarias y ambientales, incluye EPP), DS 54 (comités paritarios), DS 40 (prevención de riesgos)"
+    ],
+    "resumenSimple": "La Ley 16.744 es el \"paraguas\" legal: dice que todo trabajador debe estar asegurado contra accidentes y enfermedades del trabajo, que ese seguro lo paga el empleador (nunca el trabajador) y que la empresa debe prevenir, no solo reaccionar. El EPP concreto que hay que usar (qué casco, qué guante, qué norma) no está en esta ley — eso lo detalla el DS 594. Para un comprador: esta ley es la razón legal de fondo por la que el EPP no es \"opcional\" ni algo que la empresa pueda dejar de comprar para ahorrar costos — hacerlo expone a la empresa a fiscalización, multas de la Dirección del Trabajo y, en caso de accidente, a responsabilidad del empleador.",
+    "tags": [
+      "ley 16744",
+      "16744",
+      "ley madre",
+      "seguro social",
+      "mutualidad",
+      "accidente del trabajo",
+      "enfermedad profesional",
+      "comité paritario",
+      "ACHS",
+      "IST",
+      "mutual de seguridad"
     ]
   }
 }

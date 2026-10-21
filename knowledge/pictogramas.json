@@ -1,0 +1,40 @@
+{
+  "guantes": {
+    "norma": "EN 388 (riesgos mecánicos) / EN 511 (frío) / EN 374 (químicos y microorganismos) / EN 407 (calor)",
+    "resumenSimple": "El pictograma del guante es un escudo con 4 a 6 números o letras adentro. Cada posición mide una resistencia distinta (mientras más alto el número, más protege). Sirve para elegir el guante correcto sin tener que leer toda la ficha técnica.",
+    "tipos": [
+      {
+        "pictograma": "🛡️ Escudo con 4 números (ej. 3-1-2-1) — EN 388",
+        "significa": "Riesgos mecánicos, en este orden:",
+        "detalle": [
+          "1° número — Resistencia a la ABRASIÓN (0 a 4, más alto = más resistente al roce/desgaste).",
+          "2° número — Resistencia al CORTE por cuchilla (0 a 5, método de cuchilla circular).",
+          "3° número — Resistencia al DESGARRO (0 a 4, rasgado del material).",
+          "4° número — Resistencia a la PERFORACIÓN (0 a 4, punzones)."
+        ],
+        "simple": "Es el pictograma más común. Entre más alto cada número, más dura el guante frente a ese riesgo específico — un 4-4-4-4 aguanta mucho más roce, corte, desgarro y pinchazo que un 1-1-1-1."
+      },
+      {
+        "pictograma": "🛡️ Escudo con número + letra (ej. B) — EN 388 actualizado (desde 2016/2018)",
+        "significa": "Agrega una 5ª posición: resistencia al CORTE por cuchilla recta (método TDM), de A (más bajo) a F (más alto).",
+        "simple": "Si ves una letra A-F junto a los 4 números, es la versión más nueva del mismo pictograma — mide el corte con un método más preciso."
+      },
+      {
+        "pictograma": "❄️ Copo de nieve — EN 511",
+        "significa": "Protección contra el FRÍO: 3 números para frío por convección, frío por contacto y permeabilidad al agua (0 a 4 cada uno).",
+        "simple": "Úsalo para cámaras de frío, trabajo a la intemperie en invierno o manipulación de superficies heladas."
+      },
+      {
+        "pictograma": "🧪 Matraz / frasco de laboratorio — EN 374",
+        "significa": "Protección QUÍMICA. Puede venir con letras (ej. JKL) que indican contra qué químicos específicos protege, según una tabla de códigos de la norma.",
+        "simple": "Si vas a manipular ácidos, solventes o cáusticos, exige este pictograma — no basta con un guante 'resistente' genérico."
+      },
+      {
+        "pictograma": "🔥 Llama — EN 407",
+        "significa": "Protección contra el CALOR y el fuego: hasta 6 números (inflamabilidad, calor de contacto, calor convectivo, calor radiante, salpicaduras de metal fundido, metal fundido en grandes cantidades).",
+        "simple": "Para soldadura, fundición o manejo de piezas calientes."
+      }
+    ],
+    "nota_compra": "Dato clave para comprador: el pictograma viene impreso o cosido en el guante y también debe aparecer en la ficha técnica del proveedor. Si un proveedor no puede mostrar el nivel exacto (ej. 'corte nivel 3'), probablemente el guante no está certificado para ese riesgo — pide siempre la ficha técnica con los niveles EN 388."
+  }
+}
