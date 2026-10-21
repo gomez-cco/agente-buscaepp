@@ -1,0 +1,15 @@
+{
+  "name": "buscaepp-agente",
+  "version": "1.0.0",
+  "description": "Asistente interactivo de normas y clasificación de EPP para BuscaEPP.cl — réplica del patrón ALLEXCEL, con respuestas pre-establecidas (sin IA, sin costo por uso)",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
