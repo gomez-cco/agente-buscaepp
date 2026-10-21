@@ -1,0 +1,1383 @@
+{
+  "totalPreguntas": 190,
+  "guias": [
+    {
+      "id": "ropa_ignifuga",
+      "titulo": "CONOCE SOBRE LA ROPA IGNÍFUGA",
+      "descripcion": "Esta guía está dirigida a compradores técnicos, prevencionistas y profesionales de seguridad industrial. Las respuestas se organizan en 8 bloques: etiquetado, normas europeas, normas americanas, arco eléctrico, composición y cuidado, marco regulatorio chileno, guía de logos y tabla de referencia rápida.",
+      "totalPreguntas": 40,
+      "items": [
+        {
+          "p": "1",
+          "bloque": "ETIQUETADO Y LOGOS",
+          "pregunta": "¿Cuántas etiquetas debe traer una prenda ignífuga y qué función tiene cada una?",
+          "respuesta": "(1) Etiqueta de marca: logo del fabricante, modelo, talla y composición de la tela. (2) Etiqueta de certificación: nombre exacto de cada norma (ej. \"EN ISO 11612\", \"NFPA 2112\"), código de desempeño, sello del organismo certificador e instrucciones de cuidado y lavado.",
+          "tag": "EN ISO 13688 / NFPA 2112 Cap. 5"
+        },
+        {
+          "p": "2",
+          "bloque": "ETIQUETADO Y LOGOS",
+          "pregunta": "¿Dónde exactamente va cosida la etiqueta en cada tipo de prenda?",
+          "respuesta": "Camisas, poleras y chaquetas: en el cuello, por dentro. Pantalones y overoles: en la pretina o costado interior izquierdo. Siempre por el lado que da contra el cuerpo o el forro, nunca expuesta hacia afuera.",
+          "tag": null
+        },
+        {
+          "p": "3",
+          "bloque": "ETIQUETADO Y LOGOS",
+          "pregunta": "¿Qué información exacta debe poder leerse en la etiqueta de certificación?",
+          "respuesta": "Nombre y dirección del fabricante, país de fabricación de la tela, modelo y talla, composición exacta de fibra, el nombre completo de cada norma cumplida, el código de desempeño cuando la norma lo exige, instrucciones de lavado y cuidado, y la frase \"No retirar esta etiqueta\".",
+          "tag": "EN ISO 13688 / NFPA 2112 Cap. 5"
+        },
+        {
+          "p": "4",
+          "bloque": "ETIQUETADO Y LOGOS",
+          "pregunta": "¿Qué NO debe aparecer nunca en la etiqueta o en la prenda?",
+          "respuesta": "No debe mostrarse el logo de una norma que la prenda no certifica. Tampoco debe usarse solo EN ISO 13688 sin la norma de riesgo específica, porque esa norma no certifica nada por sí misma. Nunca debe faltar la leyenda \"no retirar\" la etiqueta.",
+          "tag": "EN ISO 13688 — uso correcto del marcado"
+        },
+        {
+          "p": "5",
+          "bloque": "ETIQUETADO Y LOGOS",
+          "pregunta": "¿Se puede cortar, tapar o sacar la etiqueta porque le molesta al trabajador?",
+          "respuesta": "No, nunca. Retirar la etiqueta deja a la prenda sin respaldo de certificación frente a cualquier fiscalización, auditoría de mutualidad o accidente investigado.",
+          "tag": null
+        },
+        {
+          "p": "6",
+          "bloque": "ETIQUETADO Y LOGOS",
+          "pregunta": "¿Se puede bordar un logo corporativo en la ropa ignífuga?",
+          "respuesta": "Sí, pero el bordado debe hacerse con hilo ignífugo. Si se borda con hilo común (poliéster o algodón normal), ese hilo puede arder o fundirse, anulando la protección. Un logo bordado con hilo no ignífugo compromete la seguridad de la prenda completa.",
+          "tag": "Buena práctica obligatoria"
+        },
+        {
+          "p": "7",
+          "bloque": "ETIQUETADO Y LOGOS",
+          "pregunta": "¿Dónde se puede bordar el logo y qué tamaño puede tener?",
+          "respuesta": "En el pecho o la manga, siempre que no tape la etiqueta de certificación ni cubra una zona de protección crítica. Como buena práctica: no superar ~100 cm² por logo y no más de un par de logos por prenda.",
+          "tag": null
+        },
+        {
+          "p": "8",
+          "bloque": "ETIQUETADO Y LOGOS",
+          "pregunta": "¿Qué pasa si el cliente insiste en bordar con su propio hilo no ignífugo?",
+          "respuesta": "Se debe explicar que esa decisión anula la garantía de protección en esa zona. El fabricante no puede certificar el resultado final si se usa hilo que no fue ensayado con la tela. Siempre ofrecer bordado con hilo ignífugo aprobado por el fabricante.",
+          "tag": null
+        },
+        {
+          "p": "9",
+          "bloque": "ETIQUETADO Y LOGOS",
+          "pregunta": "¿La etiqueta tiene que estar en español?",
+          "respuesta": "Sí. Toda prenda ignífuga vendida en Chile debe llevar la información en español, aunque la tela se fabrique en Europa o Brasil.",
+          "tag": null
+        },
+        {
+          "p": "10",
+          "bloque": "ETIQUETADO Y LOGOS",
+          "pregunta": "¿Cómo se explica que una prenda realmente está certificada y no es solo publicidad?",
+          "respuesta": "Mostrando la etiqueta de certificación completa: nombre exacto de la norma, código de desempeño si aplica, y sello del organismo acreditado que hizo el ensayo. Si solo dice \"ignífuga\" sin norma, código ni sello, no está certificada por un tercero independiente.",
+          "tag": null
+        },
+        {
+          "p": "11",
+          "bloque": "NORMAS EUROPEAS (EN / ISO / IEC)",
+          "pregunta": "¿Qué es la EN ISO 11612?",
+          "respuesta": "La norma europea que certifica prendas ignífugas contra calor y llama: fuego repentino, calor directo y salpicaduras. Es la base de toda prenda ignífuga europea.",
+          "tag": "EN ISO 11612"
+        },
+        {
+          "p": "12",
+          "bloque": "NORMAS EUROPEAS (EN / ISO / IEC)",
+          "pregunta": "¿Qué significan las letras A1, A2, B1, C1 junto a la norma EN ISO 11612?",
+          "respuesta": "Cada letra es una prueba distinta: A1 = no se propaga el fuego por la superficie. A2 = no se propaga por el borde o costura. B1 = resiste calor convectivo ≥4 s. C1 = resiste calor radiante ≥7 s. F1 = resiste contacto directo con superficie caliente. Mayor número = mayor protección en esa prueba.",
+          "tag": "EN ISO 11612 — código de desempeño"
+        },
+        {
+          "p": "13",
+          "bloque": "NORMAS EUROPEAS (EN / ISO / IEC)",
+          "pregunta": "¿Qué es la IEC 61482-2?",
+          "respuesta": "La norma europea de protección contra arco eléctrico, equivalente a ASTM F1506. Si el cliente trabaja con electricidad, esta es la norma que debe pedir, además de la certificación FR básica.",
+          "tag": "IEC 61482-2"
+        },
+        {
+          "p": "14",
+          "bloque": "NORMAS EUROPEAS (EN / ISO / IEC)",
+          "pregunta": "¿La EN ISO 11612 también protege contra arco eléctrico?",
+          "respuesta": "No. Calor/llama y arco eléctrico son dos certificaciones distintas. Una prenda puede tener una sin la otra.",
+          "tag": "EN ISO 11612 / IEC 61482-2"
+        },
+        {
+          "p": "14.1",
+          "bloque": "NORMAS EUROPEAS (EN / ISO / IEC)",
+          "pregunta": "¿La EN ISO 11612 sirve para soldadura?",
+          "respuesta": "No necesariamente — y es el error más común porque el número se parece mucho. EN ISO 11612 certifica riesgo térmico general (calor, llama). EN ISO 11611 es la norma específica para soldadura y oxicorte, diseñada para resistir chispas y proyecciones metálicas incandescentes, algo que 11612 no evalúa. Un soldador necesita una prenda certificada bajo 11611 — muchas prendas de soldador combinan ambas normas (11611 + 11612) para cubrir soldadura y calor general a la vez.",
+          "tag": "EN ISO 11611 (soldadura) vs. EN ISO 11612 (calor/llama general)"
+        },
+        {
+          "p": "15",
+          "bloque": "NORMAS EUROPEAS (EN / ISO / IEC)",
+          "pregunta": "¿Qué es la EN 1149-5?",
+          "respuesta": "Certifica que una prenda FR es antiestática: evita que se acumule electricidad estática que pueda generar una chispa. Se usa en zonas con riesgo de explosión por gas o polvo (petroquímica y minería).",
+          "tag": "EN 1149-5"
+        },
+        {
+          "p": "16",
+          "bloque": "NORMAS EUROPEAS (EN / ISO / IEC)",
+          "pregunta": "Una empresa eléctrica pidió ropa ignífuga sin antiestática. ¿Por qué y qué se le ofrece?",
+          "respuesta": "Son dos riesgos distintos. La antiestática (EN 1149-5) sirve para evitar que una chispa estática encienda una atmósfera explosiva (gases, vapores — típico de ATEX). El arco eléctrico (IEC 61482-2 / ASTM F1506) es la energía térmica de una falla en equipo energizado. Una empresa eléctrica sin atmósfera explosiva necesita protección de arco pero la antiestática no le aporta nada. Cotizar FR con certificación de arco, sin acabado antiestático.",
+          "tag": "EN 1149-5 (riesgo ATEX) vs. IEC 61482-2 (riesgo de arco)"
+        },
+        {
+          "p": "17",
+          "bloque": "NORMAS EUROPEAS (EN / ISO / IEC)",
+          "pregunta": "¿Qué es la EN 13034?",
+          "respuesta": "Protección básica contra salpicaduras químicas livianas (ácidos diluidos). No reemplaza un traje químico completo; es una protección complementaria en prendas FR especializadas.",
+          "tag": "EN 13034"
+        },
+        {
+          "p": "18",
+          "bloque": "NORMAS AMERICANAS (NFPA / ASTM)",
+          "pregunta": "¿Qué es la NFPA 2112?",
+          "respuesta": "Norma americana que certifica prendas ignífugas contra fuego repentino (flash fire). Exige que se certifique la prenda terminada completa por un organismo de tercera parte (como UL), no solo la tela.",
+          "tag": "NFPA 2112 (edición 2023)"
+        },
+        {
+          "p": "19",
+          "bloque": "NORMAS AMERICANAS (NFPA / ASTM)",
+          "pregunta": "¿Qué es UL y por qué aparece junto a las normas americanas?",
+          "respuesta": "UL (Underwriters Laboratories): organismo certificador de seguridad de EEUU reconocido internacionalmente. Es el equivalente americano a AITEX en Europa: un laboratorio de tercera parte que ensaya el producto y emite el respaldo. UL — Underwriters Laboratories",
+          "tag": null
+        },
+        {
+          "p": "20",
+          "bloque": "NORMAS AMERICANAS (NFPA / ASTM)",
+          "pregunta": "¿Cuál es la diferencia entre NFPA 2112 y NFPA 2113?",
+          "respuesta": "NFPA 2112 certifica el producto. NFPA 2113 es la guía de uso: cómo lavarla, cuándo retirarla de servicio y cómo cuidarla.",
+          "tag": "NFPA 2112 / NFPA 2113"
+        },
+        {
+          "p": "21",
+          "bloque": "NORMAS AMERICANAS (NFPA / ASTM)",
+          "pregunta": "¿Qué es la ASTM F1506 y está certificada la prenda completa o solo la tela?",
+          "respuesta": "ASTM F1506 es la norma americana de protección contra arco eléctrico. Bajo NFPA 2112 y ASTM F1506 lo que certifica UL es la tela, no la prenda terminada — es un estándar de autodeclaración a nivel de tela. Esto no reduce la protección, pero es un matiz técnico importante.",
+          "tag": "ASTM F1506 / NFPA 70E"
+        },
+        {
+          "p": "22",
+          "bloque": "NORMAS AMERICANAS (NFPA / ASTM)",
+          "pregunta": "¿Qué significa ATPV exactamente?",
+          "respuesta": "ATPV (Arc Thermal Performance Value): energía de un arco eléctrico, en cal/cm², en la que existe un 50% de probabilidad de quemadura de segundo grado a través de la tela. Se determina con ASTM F1959 y se usa en NFPA 70E para elegir la ropa según el riesgo. Mayor ATPV = más protección.",
+          "tag": "ATPV — ASTM F1959 / NFPA 70E"
+        },
+        {
+          "p": "23",
+          "bloque": "NORMAS AMERICANAS (NFPA / ASTM)",
+          "pregunta": "¿Una prenda puede tener certificación europea y americana al mismo tiempo?",
+          "respuesta": "Sí. Existen prendas con EN ISO 11612 + IEC 61482-2 (Europa) junto con NFPA 2112 + ASTM F1506 (EEUU). En el caso europeo, la certificación evalúa la prenda confeccionada; en el americano aplica a nivel de tela.",
+          "tag": "Doble certificación EN + NFPA"
+        },
+        {
+          "p": "24",
+          "bloque": "NORMAS AMERICANAS (NFPA / ASTM)",
+          "pregunta": "¿Por qué la etiqueta dice \"Categoría III\" (Europa) pero la norma americana indica \"CAT 2\"? ¿No es contradicción?",
+          "respuesta": "No es contradicción — son dos sistemas que responden preguntas distintas. Categoría III europea (Regl. UE 2016/425): clasifica el rigor del proceso de certificación según la gravedad del riesgo. CAT 2 americano (NFPA 70E): indica cuánta energía de arco soporta la prenda (CAT 2 = 8 cal/cm²). Ambas pueden ser ciertas al mismo tiempo.",
+          "tag": "Reglamento (UE) 2016/425 · NFPA 70E"
+        },
+        {
+          "p": "26",
+          "bloque": "ARCO ELÉCTRICO Y NFPA 70E",
+          "pregunta": "¿Qué es NFPA 70E?",
+          "respuesta": "Norma americana de seguridad eléctrica en el trabajo. No certifica la ropa: define qué nivel de protección (CAT 1 a CAT 4) necesita cada tarea eléctrica según su riesgo.",
+          "tag": "NFPA 70E (edición 2024)"
+        },
+        {
+          "p": "27",
+          "bloque": "ARCO ELÉCTRICO Y NFPA 70E",
+          "pregunta": "¿Qué significan las categorías CAT 1 a CAT 4?",
+          "respuesta": "Son niveles de energía mínima que debe soportar la ropa: CAT 1 = 4 cal/cm² · CAT 2 = 8 cal/cm² · CAT 3 = 25 cal/cm² · CAT 4 = 40 cal/cm² o más. A mayor categoría, mayor riesgo y más protección requerida.",
+          "tag": "NFPA 70E — Tabla de categorías"
+        },
+        {
+          "p": "28",
+          "bloque": "ARCO ELÉCTRICO Y NFPA 70E",
+          "pregunta": "¿Qué categorías cubre la ropa FR más común del mercado?",
+          "respuesta": "La mayoría cubre entre CAT 1 y CAT 2 (hasta ~14 cal/cm²) — los niveles más comunes en mantenimiento eléctrico industrial. Para CAT 3 y CAT 4 se requieren prendas especializadas de mayor gramaje o multicapa.",
+          "tag": "NFPA 70E"
+        },
+        {
+          "p": "29",
+          "bloque": "ARCO ELÉCTRICO Y NFPA 70E",
+          "pregunta": "¿Toda la ropa ignífuga sirve para trabajo eléctrico?",
+          "respuesta": "No automáticamente. Protección contra fuego (EN ISO 11612 / NFPA 2112) y contra arco eléctrico (IEC 61482-2 / ASTM F1506) son certificaciones distintas. Para trabajo eléctrico hay que confirmar que la prenda tenga rating de arco en cal/cm² en su ficha técnica.",
+          "tag": null
+        },
+        {
+          "p": "30",
+          "bloque": "COMPOSICIÓN Y CUIDADO",
+          "pregunta": "¿De qué están hechas las prendas ignífugas?",
+          "respuesta": "Las más comunes: algodón FR tratado, mezclas algodón/poliéster FR tratadas, fibras inherentes como aramidas (Nomex, Kevlar) o modacrílico, y algodón 100% FR. Cada composición tiene distintas propiedades de confort, durabilidad y costo. Siempre debe figurar en la etiqueta.",
+          "tag": null
+        },
+        {
+          "p": "31",
+          "bloque": "COMPOSICIÓN Y CUIDADO",
+          "pregunta": "¿Qué diferencia hay entre protección \"inherente\" y \"tratada\"?",
+          "respuesta": "Inherente: la fibra nace ignífuga y no pierde esa propiedad nunca, ni con el lavado (ej: aramidas). Tratada: se aplicó un acabado químico a la tela, que dura muchos lavados pero requiere cuidado estricto.",
+          "tag": null
+        },
+        {
+          "p": "32",
+          "bloque": "COMPOSICIÓN Y CUIDADO",
+          "pregunta": "¿Cuántos lavados garantiza una prenda ignífuga?",
+          "respuesta": "NFPA 2112: se ensaya tras 100 ciclos de lavado y secado industrial. EN ISO 11612: se ensaya típicamente tras 50 ciclos (debe figurar en etiqueta). Las prendas de fibra inherente mantienen la protección de forma indefinida.",
+          "tag": "NFPA 2112 (100 ciclos) · EN ISO 11612 (50 ciclos)"
+        },
+        {
+          "p": "33",
+          "bloque": "COMPOSICIÓN Y CUIDADO",
+          "pregunta": "¿Qué pasa si se lava la ropa más veces de las que indica la etiqueta?",
+          "respuesta": "El acabado FR de la tela tratada puede perder eficacia más allá del número de ciclos certificado, aunque visualmente se vea bien. Por eso ese dato es tan importante como la norma misma al planificar el recambio de vestuario.",
+          "tag": null
+        },
+        {
+          "p": "34",
+          "bloque": "COMPOSICIÓN Y CUIDADO",
+          "pregunta": "¿Se puede lavar la ropa ignífuga con cloro o suavizante?",
+          "respuesta": "No. El cloro y el suavizante dañan el acabado ignífugo. Se debe lavar con detergente neutro, sin blanqueador.",
+          "tag": null
+        },
+        {
+          "p": "35",
+          "bloque": "COMPOSICIÓN Y CUIDADO",
+          "pregunta": "¿Cuándo se debe retirar de servicio una prenda ignífuga?",
+          "respuesta": "Ante cualquier daño visible: agujeros, costuras rotas, decoloración fuerte o pérdida de elasticidad. Una prenda dañada se retira de inmediato, sin importar cuántos lavados lleve.",
+          "tag": "NFPA 2113 — criterios de retiro"
+        },
+        {
+          "p": "36",
+          "bloque": "COMPOSICIÓN Y CUIDADO",
+          "pregunta": "¿Cuál es la vida útil de una prenda ignífuga?",
+          "respuesta": "El fabricante debe declarar la vida útil en su documentación oficial, sujeta a que se respeten los ciclos de lavado máximos y no haya daño visible. Solicitar este dato al proveedor antes de una licitación o renovación.",
+          "tag": null
+        },
+        {
+          "p": "37",
+          "bloque": "MARCO REGULATORIO CHILENO",
+          "pregunta": "¿Existe una norma chilena propia para ropa ignífuga?",
+          "respuesta": "No. Chile no tiene una norma NCh específica. La ley exige usar EPP adecuado al riesgo a través del DS 594 y la Ley 16.744, pero el estándar técnico lo define cada empresa según las normas internacionales que exija en su contrato.",
+          "tag": "DS 594 · Ley 16.744"
+        },
+        {
+          "p": "38",
+          "bloque": "MARCO REGULATORIO CHILENO",
+          "pregunta": "¿Existe en Chile una norma eléctrica que exija protección de arco?",
+          "respuesta": "No hay una norma chilena única que fije un estándar obligatorio de arco. El respaldo legal viene de la Ley 16.744 y del Art. 184 del Código del Trabajo. Como referencia técnica se usa ampliamente NFPA 70E, recogida en los pliegos RPTD N°14 y N°15 de la SEC, que la citan para definir límites de aproximación y riesgo de arco.",
+          "tag": "Ley 16.744 · DS 594 · Pliegos SEC RPTD N°14 y N°15 · NFPA 70E"
+        },
+        {
+          "p": "39",
+          "bloque": "MARCO REGULATORIO CHILENO",
+          "pregunta": "¿Qué es el Registro ISP y por qué es importante en licitaciones?",
+          "respuesta": "El ISP (Instituto de Salud Pública) registra EPP para el mercado chileno. Algunas licitaciones públicas lo exigen. Verificar en ispch.gob.cl/listadoepp el estado de registro de la prenda específica antes de presentar una oferta.",
+          "tag": "Registro ISP Chile"
+        },
+        {
+          "p": "40",
+          "bloque": "MARCO REGULATORIO CHILENO",
+          "pregunta": "¿Las mutualidades exigen alguna certificación específica?",
+          "respuesta": "No exigen una norma única por ley, pero recomiendan que la ropa tenga certificación internacional verificada por un laboratorio acreditado (AITEX u otros organismos reconocidos).",
+          "tag": null
+        }
+      ]
+    },
+    {
+      "id": "calzado",
+      "titulo": "CÓMO ELEGIR EL CALZADO DE SEGURIDAD CORRECTO",
+      "descripcion": "Esta guía está dirigida a compradores técnicos, prevencionistas y profesionales de seguridad industrial. La información se basa en la normativa chilena vigente (NCh772 y familia asociada, DS 594, Ley 16.744) y en características técnicas generales del calzado de seguridad. No promueve ni recomienda marcas o proveedores específicos.",
+      "totalPreguntas": 20,
+      "items": [
+        {
+          "p": "1",
+          "bloque": "NORMATIVA Y CERTIFICACIÓN EN CHILE",
+          "pregunta": "¿Qué hace que un zapato sea legalmente \"calzado de seguridad\" y no solo un zapato resistente?",
+          "respuesta": "Debe estar certificado bajo una norma técnica reconocida — en Chile, principalmente la NCh772/1 — por un laboratorio autorizado por el ISP, y contar con una puntera de seguridad ensayada contra impacto y compresión. Un zapato \"resistente\" sin esa certificación no garantiza el nivel de protección exigido en un lugar de trabajo. NCh772/1",
+          "tag": null
+        },
+        {
+          "p": "2",
+          "bloque": "NORMATIVA Y CERTIFICACIÓN EN CHILE",
+          "pregunta": "¿Cuáles son las principales normas chilenas que regulan el calzado de seguridad?",
+          "respuesta": "NCh772/1 (requisitos generales), NCh772/2 (punteras y plantillas), NCh1350 (plantas/suelas), NCh2147/1 (antiestático), NCh2147/2 (dieléctrico), NCh1796/1797 (calzado de goma), NCh2374 (botas de PVC) y NCh721 (terminología y clasificación). NCh772 y familia asociada",
+          "tag": null
+        },
+        {
+          "p": "3",
+          "bloque": "NORMATIVA Y CERTIFICACIÓN EN CHILE",
+          "pregunta": "¿Es obligatorio que el empleador entregue el calzado de seguridad sin costo para el trabajador?",
+          "respuesta": "Sí. La Ley N°16.744 establece que el empleador debe proporcionar los elementos de protección personal necesarios sin costo para el trabajador, y el D.S. N°594 exige EPP adecuado al riesgo específico de cada puesto de trabajo.",
+          "tag": "Ley 16.744 / DS 594"
+        },
+        {
+          "p": "4",
+          "bloque": "NORMATIVA Y CERTIFICACIÓN EN CHILE",
+          "pregunta": "¿Qué es el Registro RFI del ISP y por qué importa al comprar calzado importado?",
+          "respuesta": "Es el Registro de Fabricantes e Importadores de EPP del ISP. Cuando no existe un laboratorio nacional para cierto tipo de calzado, el ISP puede reconocer una certificación extranjera (como EN ISO 20345 o ASTM F2413) siempre que el producto esté inscrito en ese registro.",
+          "tag": "Registro RFI — ISP Chile"
+        },
+        {
+          "p": "5",
+          "bloque": "NORMATIVA Y CERTIFICACIÓN EN CHILE",
+          "pregunta": "¿Qué debe indicar la etiqueta o el marcado del calzado certificado?",
+          "respuesta": "La norma cumplida, la talla, el material de fabricación, el tipo de puntera y, cuando aplique, la clasificación de propiedades adicionales (antiestático, dieléctrico, resistente a hidrocarburos). Verificar esta información es la única forma confiable de confirmar que el calzado tiene respaldo normativo real.",
+          "tag": null
+        },
+        {
+          "p": "6",
+          "bloque": "COMPONENTES, PUNTERA Y CUERO",
+          "pregunta": "¿Cuál es la diferencia entre puntera de acero y puntera composite?",
+          "respuesta": "La de acero es metálica, económica y muy resistente, pero conduce electricidad y calor, y puede activar detectores de metales. La composite (fibra de vidrio, kevlar o carbono) es más liviana, no conductora y no metálica — preferida en trabajos eléctricos o donde se pasa por detectores de metal. Ambas deben cumplir el mismo ensayo de impacto y compresión de la norma.",
+          "tag": null
+        },
+        {
+          "p": "7",
+          "bloque": "COMPONENTES, PUNTERA Y CUERO",
+          "pregunta": "¿Qué es la plantilla o placa antiperforación y cuándo es necesaria?",
+          "respuesta": "Es una lámina (metálica o no metálica) ubicada entre la plantilla y la suela que evita que objetos punzantes (clavos, alambres) atraviesen el pie desde abajo. Es recomendable en construcción, demolición y manejo de escombros, donde ese riesgo está presente.",
+          "tag": null
+        },
+        {
+          "p": "8",
+          "bloque": "COMPONENTES, PUNTERA Y CUERO",
+          "pregunta": "¿Qué tipos de cuero se usan en calzado de seguridad y qué diferencia hay entre ellos?",
+          "respuesta": "Cuero graso (engrasado): mayor resistencia al agua y a hidrocarburos, común en minería y ambientes húmedos. Cuero corregido/pigmentado: superficie más uniforme y económica, buena resistencia a la abrasión. Nobuck: más liviano y transpirable, con menor resistencia al agua. Descarne: capa interna del cuero, usada como forro o refuerzo, no como capellada principal.",
+          "tag": null
+        },
+        {
+          "p": "9",
+          "bloque": "COMPONENTES, PUNTERA Y CUERO",
+          "pregunta": "Según la norma chilena, ¿qué partes del calzado deben ser de cuero obligatoriamente?",
+          "respuesta": "La NCh772/1 establece que la capellada, la caña y los refuerzos de punta y talón deben ser de cuero (o un material que cumpla los mismos requisitos). Si la puntera va al interior, debe llevar forro de cuero o descarne. NCh772/1",
+          "tag": null
+        },
+        {
+          "p": "10",
+          "bloque": "COMPONENTES, PUNTERA Y CUERO",
+          "pregunta": "¿Qué significa que un calzado sea \"Metal Free\"?",
+          "respuesta": "Es un calzado sin ningún componente metálico (puntera, placa antiperforación ni ojales), fabricado con materiales composite. Se usa donde se necesita evitar la detección de metales o reducir el peso total del zapato, manteniendo el nivel de protección exigido por la norma.",
+          "tag": null
+        },
+        {
+          "p": "11",
+          "bloque": "SUELAS Y PROPIEDADES ELÉCTRICAS",
+          "pregunta": "¿Qué tipos de suela existen y en qué se diferencian?",
+          "respuesta": "PU (poliuretano) inyectado: liviana y con buena absorción de impacto. PU bidensidad: combina una capa más blanda (confort) con una más dura (resistencia). Caucho/nitrilo: mayor resistencia a altas temperaturas e hidrocarburos, típica en minería y fundición. PVC: económica, pero pierde flexibilidad a bajas temperaturas.",
+          "tag": null
+        },
+        {
+          "p": "12",
+          "bloque": "SUELAS Y PROPIEDADES ELÉCTRICAS",
+          "pregunta": "¿Qué es la resistencia a hidrocarburos y por qué es relevante en minería o petroquímica?",
+          "respuesta": "Es la capacidad de la suela de no degradarse (hincharse, ablandarse o perder adherencia) al contacto con aceites, combustibles o solventes. Sin esa resistencia, la suela puede fallar rápidamente en faenas donde hay derrames de este tipo.",
+          "tag": null
+        },
+        {
+          "p": "13",
+          "bloque": "SUELAS Y PROPIEDADES ELÉCTRICAS",
+          "pregunta": "¿Qué diferencia hay entre calzado dieléctrico, antiestático y conductivo?",
+          "respuesta": "Dieléctrico (NCh2147/2): aísla al usuario de la corriente eléctrica del entorno, para trabajos eléctricos. Antiestático (NCh2147/1): disipa lentamente la electricidad estática acumulada en el cuerpo, para zonas con riesgo de atmósfera explosiva. Conductivo: descarga la estática de forma más rápida, usado en industrias con explosivos — nunca debe usarse donde hay riesgo eléctrico, porque conduce corriente. NCh2147/1 y NCh2147/2",
+          "tag": null
+        },
+        {
+          "p": "14",
+          "bloque": "SUELAS Y PROPIEDADES ELÉCTRICAS",
+          "pregunta": "¿Cómo se identifica un calzado antideslizante certificado?",
+          "respuesta": "Debe indicar en su ficha o etiqueta el ensayo de resistencia al deslizamiento sobre las superficies para las que fue evaluado (por ejemplo, piso cerámico con agua o acero con aceite). Un taco profundo por sí solo no garantiza esta propiedad si no fue ensayado formalmente.",
+          "tag": null
+        },
+        {
+          "p": "15",
+          "bloque": "SUELAS Y PROPIEDADES ELÉCTRICAS",
+          "pregunta": "¿El calzado dieléctrico puede llevar puntera metálica?",
+          "respuesta": "Depende del ensayo. En varias normas internacionales, la rigidez dieléctrica se prueba sobre la suela completa, por lo que tanto una puntera metálica como una composite pueden cumplir el requisito, siempre que el conjunto completo esté certificado como dieléctrico. La certificación aplica al calzado completo, no solo a la puntera.",
+          "tag": null
+        },
+        {
+          "p": "16",
+          "bloque": "SELECCIÓN POR INDUSTRIA, AJUSTE Y CUIDADO",
+          "pregunta": "¿Qué calzado conviene según el sector? (guía general, no exhaustiva)",
+          "respuesta": "Construcción: puntera reforzada, plantilla antiperforación y suela con buena tracción para terrenos irregulares. Minería: resistencia a hidrocarburos y aislamiento térmico. Pesca/industria alimentaria: impermeabilidad y resistencia a la humedad. Eléctrico: propiedades dieléctricas. Logística/bodega: liviano y ergonómico para largas jornadas de desplazamiento.",
+          "tag": null
+        },
+        {
+          "p": "17",
+          "bloque": "SELECCIÓN POR INDUSTRIA, AJUSTE Y CUIDADO",
+          "pregunta": "¿Bota o zapato de seguridad — cuándo conviene cada uno?",
+          "respuesta": "La bota (caña alta) da mayor soporte de tobillo y protección contra salpicaduras, barro o terrenos irregulares. El zapato (caña baja) es más liviano y cómodo para jornadas de mucho desplazamiento en superficies estables. La elección depende del riesgo del terreno, no solo de preferencia personal.",
+          "tag": null
+        },
+        {
+          "p": "18",
+          "bloque": "SELECCIÓN POR INDUSTRIA, AJUSTE Y CUIDADO",
+          "pregunta": "¿Cómo se elige la talla correcta?",
+          "respuesta": "Se recomienda medir el pie a media tarde (cuando está ligeramente más hinchado), probar el calzado con el mismo tipo de calcetín que se usará en el trabajo, y dejar un margen de aproximadamente un dedo entre el dedo más largo y la punta interior, sin que el talón se levante al caminar.",
+          "tag": null
+        },
+        {
+          "p": "19",
+          "bloque": "SELECCIÓN POR INDUSTRIA, AJUSTE Y CUIDADO",
+          "pregunta": "¿Cuándo se debe reemplazar el calzado de seguridad?",
+          "respuesta": "La norma no fija un plazo exacto en años; el criterio es visual y funcional: suela sin relieve antideslizante visible, puntera expuesta o deformada, separación entre el corte y la suela, o humedad interior permanente. El D.S. N°594 obliga a reemplazar cualquier EPP deteriorado, independiente de su antigüedad.",
+          "tag": "DS 594 Art. 53"
+        },
+        {
+          "p": "20",
+          "bloque": "SELECCIÓN POR INDUSTRIA, AJUSTE Y CUIDADO",
+          "pregunta": "¿Qué cuidados básicos alargan la vida útil del calzado de seguridad?",
+          "respuesta": "Dejarlo secar de forma natural (nunca junto a una fuente de calor directa, que puede dañar el cuero y deformar la suela), limpiar el barro o los químicos apenas sea posible, usar el calzado adecuado para cada tarea, y revisar periódicamente el estado de la puntera y la suela.",
+          "tag": null
+        }
+      ]
+    },
+    {
+      "id": "guantes",
+      "titulo": "GUANTES DE PROTECCIÓN: PICTOGRAMAS, NORMAS Y COMPOSICIÓN",
+      "descripcion": "Guía pensada para que tanto quien compra como quien vende guantes de protección pueda explicar y entender, en palabras simples, qué significa cada pictograma y cada número. Cada respuesta parte con una idea en simple y luego el detalle técnico con su norma. Se basa en las normas internacionales que rigen los guantes de protección (EN 388, EN ISO 374, EN 407, EN 511, ANSI/ISEA 105) y en el marco regulatorio chileno (Ley 16.744, DS 594). No promueve ni recomienda marcas o proveedores específicos. LOS 5 PICTOGRAMAS QUE VAS A VER EN UN GUANTE Cada símbolo certifica un tipo de riesgo distinto. Si no ves el símbolo, el guante no está certificado para ese riesgo. - Martillo → Riesgos mecánicos: golpes, roces, cortes, pinchazos → EN 388 - Vaso (beaker) → Químicos y microorganismos → EN ISO 374 - Llama → Calor y fuego → EN 407 - Copo de nieve → Frío por contacto o ambiente → EN 511 - Escudo con \"P\" → Impacto en el dorso — lo da el TPR → EN 388 (P) / ANSI 138",
+      "totalPreguntas": 30,
+      "items": [
+        {
+          "p": "1",
+          "bloque": "EL PICTOGRAMA DEL MARTILLO, EN SIMPLE (EN 388)",
+          "pregunta": "Veo un martillo con números abajo (ej. 4X43C). ¿Qué me está diciendo en simple?",
+          "respuesta": "En simple: son 4 o 5 \"notas\" del guante, una por cada tipo de golpe o roce, en orden fijo. Mientras más alto el número (o más adelante la letra), mejor rinde el guante en esa prueba puntual — no es una nota general de \"calidad\". El detalle: (1) Abrasión 0-4 — resistencia a la lija/roce. (2) Corte por cuchilla 0-5 — resistencia a que lo corten deslizando un filo. (3) Desgarro 0-4 — resistencia a que lo rompan tirando/rasgando. (4) Perforación 0-4 — resistencia a que lo atraviese algo puntiagudo tipo clavo. (5) Corte TDM A-F — una segunda forma de medir el corte, más precisa, que reemplaza al número (2) cuando ese ensayo no es confiable para el material.",
+          "tag": "EN 388:2016+A1:2018"
+        },
+        {
+          "p": "2",
+          "bloque": "EL PICTOGRAMA DEL MARTILLO, EN SIMPLE (EN 388)",
+          "pregunta": "¿Por qué a veces en vez de un número aparece una \"X\"?",
+          "respuesta": "En simple: la X no es un cero ni una falla — significa \"este ensayo puntual no aplicó o no se hizo por esta vía\". El detalle: pasa sobre todo en el segundo dígito (corte por cuchilla), cuando el material del guante desafila la cuchilla de prueba y da resultados poco confiables. En ese caso se pasa directamente al ensayo TDM (la letra A-F), y el segundo dígito queda como X.",
+          "tag": null
+        },
+        {
+          "p": "3",
+          "bloque": "EL PICTOGRAMA DEL MARTILLO, EN SIMPLE (EN 388)",
+          "pregunta": "¿Qué es la letra \"P\" al final, y qué tiene que ver con el TPR?",
+          "respuesta": "En simple: la \"P\" te dice que el guante también protege los nudillos y el dorso de la mano contra golpes — no solo la palma. Si ves guantes con placas o gomas abultadas en el dorso, eso casi siempre es TPR (caucho termoplástico), el material que se usa para lograr esa \"P\". El detalle: el TPR se moldea en segmentos sobre los nudillos y los dedos, con canales de flexión para que la mano se siga moviendo con libertad. Es un ensayo aparte y optativo: si un guante no lo tiene, ese espacio queda vacío (no se marca con 0). También existe la norma ANSI/ISEA 138, específica para impacto, con niveles 1 a 3 medidos en julios de energía absorbida.",
+          "tag": "EN 388 (P) / ANSI/ISEA 138"
+        },
+        {
+          "p": "4",
+          "bloque": "EL PICTOGRAMA DEL MARTILLO, EN SIMPLE (EN 388)",
+          "pregunta": "En Estados Unidos usan otra escala para el corte (A1 a A9). ¿Es lo mismo que la A-F europea?",
+          "respuesta": "En simple: no, son dos \"idiomas\" distintos para medir lo mismo — no conviertas un A5 americano en un nivel 5 europeo pensando que son iguales. El detalle: el sistema ANSI/ISEA 105 (EE.UU.) mide en gramos de fuerza con una hoja recta, en 9 niveles de A1 (más bajo) a A9 (más alto). El sistema EN 388 (Europa) mide en Newtons con otra metodología, en niveles A-F. Si te piden un nivel específico, exige la norma exacta que pide la faena o el cliente, no traduzcas \"a ojo\".",
+          "tag": "ANSI/ISEA 105 vs. EN 388"
+        },
+        {
+          "p": "5",
+          "bloque": "EL PICTOGRAMA DEL MARTILLO, EN SIMPLE (EN 388)",
+          "pregunta": "En Chile, ¿me tienen que vender guantes con norma europea o puedo aceptar la americana?",
+          "respuesta": "En simple: en Chile no hay una norma chilena propia para guantes — se exige que declaren una norma internacional reconocida, y en la práctica se ve mayoritariamente la europea (EN), aunque la americana (ANSI) también es válida. El detalle: el D.S. N°594 (Art. 54) exige que todo EPP cumpla \"las normas y exigencias de calidad que rijan según su naturaleza\". No especifica cuál marco usar, así que lo importante es que el guante declare con claridad la norma exacta bajo la que fue certificado (con año de versión), sea EN o ANSI.",
+          "tag": "DS 594 Art. 54 / DS 181"
+        },
+        {
+          "p": "6",
+          "bloque": "LOS OTROS 3 PICTOGRAMAS, EN SIMPLE",
+          "pregunta": "Veo un vaso de precipitado con letras abajo. ¿Qué significa?",
+          "respuesta": "En simple: ese guante fue probado contra químicos específicos — cada letra es una sustancia real de una lista fija, no una calificación general de \"resiste químicos\". El detalle: es el pictograma EN ISO 374. Las letras bajo el vaso corresponden a compuestos químicos concretos de una tabla normalizada frente a los cuales el guante fue efectivamente ensayado.",
+          "tag": "EN ISO 374-1"
+        },
+        {
+          "p": "7",
+          "bloque": "LOS OTROS 3 PICTOGRAMAS, EN SIMPLE",
+          "pregunta": "¿Qué diferencia hay entre un guante químico Tipo A, Tipo B y Tipo C?",
+          "respuesta": "En simple: A es el más probado (resiste más sustancias distintas), C es el menos probado (solo 1 sustancia) — pero eso no significa que A \"sirva para todo\". El detalle: Tipo A: resiste más de 30 min frente a al menos 6 sustancias de la lista. Tipo B: igual tiempo frente a al menos 3. Tipo C: al menos 10 min frente a 1 sola. Lo que realmente importa es si el químico que vas a usar está en esa lista, no solo la letra.",
+          "tag": "EN ISO 374-1"
+        },
+        {
+          "p": "8",
+          "bloque": "LOS OTROS 3 PICTOGRAMAS, EN SIMPLE",
+          "pregunta": "Veo una llama en el pictograma. ¿Qué protege exactamente?",
+          "respuesta": "En simple: mide qué tan bien aguanta el guante el calor y el fuego, en 6 pruebas distintas — no es un solo número, son varios. El detalle: es el pictograma EN 407: resistencia a que se prenda fuego, calor por contacto directo, calor que viene por el aire (convectivo), calor que viene por radiación, y dos niveles de salpicadura de metal fundido (pequeña y grande). Cada una se marca del 0 al 4 por separado.",
+          "tag": "EN 407:2020"
+        },
+        {
+          "p": "9",
+          "bloque": "LOS OTROS 3 PICTOGRAMAS, EN SIMPLE",
+          "pregunta": "¿Y el copo de nieve, para qué sirve?",
+          "respuesta": "En simple: es para trabajos con frío — cámaras frigoríficas, intemperie en invierno, o tocar superficies muy frías. El detalle: es el pictograma EN 511, que mide resistencia al frío del ambiente, frío al tocar una superficie fría, y si el guante deja pasar agua.",
+          "tag": "EN 511"
+        },
+        {
+          "p": "10",
+          "bloque": "LOS OTROS 3 PICTOGRAMAS, EN SIMPLE",
+          "pregunta": "¿Un mismo guante puede tener varios de estos pictogramas a la vez?",
+          "respuesta": "En simple: sí, y es bastante común en guantes para minería o industria pesada, donde hay varios riesgos al mismo tiempo. El detalle: cada pictograma corresponde a un ensayo independiente. Un guante puede aprobar EN 388 (mecánico) y EN 407 (calor) a la vez, por ejemplo, y mostrar ambos símbolos en su etiqueta.",
+          "tag": null
+        },
+        {
+          "p": "11",
+          "bloque": "LO QUE EXIGE LA LEY EN CHILE",
+          "pregunta": "¿El empleador está obligado a dar los guantes gratis?",
+          "respuesta": "En simple: sí, siempre que el trabajo lo requiera, el trabajador no debe pagar nada. El detalle: lo establece la Ley N°16.744: el empleador debe proporcionar los elementos de protección personal necesarios sin costo para el trabajador.",
+          "tag": "Ley 16.744"
+        },
+        {
+          "p": "12",
+          "bloque": "LO QUE EXIGE LA LEY EN CHILE",
+          "pregunta": "¿Qué dice exactamente el D.S. N°594 sobre los guantes?",
+          "respuesta": "En simple: obliga a que el guante cumpla una norma de calidad reconocida — no basta con que \"parezca\" seguro. El detalle: el Artículo 54 exige que todo EPP, nacional o importado, cumpla las normas y exigencias de calidad que correspondan según su naturaleza. Para guantes, eso significa exigir la norma internacional específica del riesgo: EN 388, EN 374, EN 407 o ANSI/ISEA 105, según el caso.",
+          "tag": "DS 594 Art. 54"
+        },
+        {
+          "p": "13",
+          "bloque": "LO QUE EXIGE LA LEY EN CHILE",
+          "pregunta": "¿El ISP certifica los guantes uno por uno en Chile, como hace con los cascos?",
+          "respuesta": "En simple: no exactamente — para guantes no existe un laboratorio nacional propio como el de cascos o calzado. El detalle: el ISP participa en la fiscalización general de EPP, pero para guantes se reconoce la certificación obtenida en laboratorios extranjeros acreditados bajo EN o ANSI.",
+          "tag": null
+        },
+        {
+          "p": "14",
+          "bloque": "LO QUE EXIGE LA LEY EN CHILE",
+          "pregunta": "Como comprador, ¿qué debo pedir para confirmar que un guante realmente está certificado?",
+          "respuesta": "En simple: pide ver el pictograma completo con sus números/letras y la norma con año — no aceptes solo la palabra \"certificado\" sin respaldo. El detalle: la ficha técnica o el empaque debe mostrar el pictograma, la norma exacta con su año de versión (ej. \"EN 388:2016+A1:2018\"), y todos los dígitos/letras de desempeño.",
+          "tag": null
+        },
+        {
+          "p": "15",
+          "bloque": "DE QUÉ ESTÁ HECHO EL GUANTE",
+          "pregunta": "¿Qué es el nitrilo y por qué se ve tanto en guantes de trabajo?",
+          "respuesta": "En simple: es un caucho sintético, resistente y sin proteínas de látex — por eso no da alergia. El detalle: es un copolímero de acrilonitrilo-butadieno. Buena resistencia a aceites, grasas y combustibles, y buena resistencia a la perforación y abrasión. Es de los recubrimientos más comunes en guantes de trabajo general y automotriz.",
+          "tag": null
+        },
+        {
+          "p": "16",
+          "bloque": "DE QUÉ ESTÁ HECHO EL GUANTE",
+          "pregunta": "¿Qué es el látex y cuál es su problema?",
+          "respuesta": "En simple: es caucho natural, muy cómodo y elástico — pero puede causar alergia. El detalle: algunas personas son sensibles a las proteínas naturales del látex, por eso en salud y alimentos suele preferirse nitrilo.",
+          "tag": null
+        },
+        {
+          "p": "17",
+          "bloque": "DE QUÉ ESTÁ HECHO EL GUANTE",
+          "pregunta": "¿En qué se diferencia el neopreno del nitrilo?",
+          "respuesta": "En simple: ambos son cauchos sintéticos, pero cada uno \"gana\" frente a distintos químicos. El detalle: el nitrilo destaca contra aceites e hidrocarburos; el neopreno ofrece mejor resistencia frente a ácidos, bases y alcoholes. La elección depende del químico real que se manipula.",
+          "tag": null
+        },
+        {
+          "p": "18",
+          "bloque": "DE QUÉ ESTÁ HECHO EL GUANTE",
+          "pregunta": "¿Qué son las fibras aramidas (las que a veces se conocen por nombres comerciales como \"Kevlar\" o \"Nomex\")?",
+          "respuesta": "En simple: son fibras sintéticas muy resistentes — unas cortan poco, otras aguantan calor. El detalle: las para-aramidas dan resistencia al corte y abrasión (guantes anticorte). Las meta-aramidas dan resistencia al calor y la llama (soldadura, fundición, arco eléctrico). Suelen mezclarse con otras fibras para que el guante no quede rígido.",
+          "tag": null
+        },
+        {
+          "p": "19",
+          "bloque": "DE QUÉ ESTÁ HECHO EL GUANTE",
+          "pregunta": "¿Qué es el HPPE?",
+          "respuesta": "En simple: una fibra súper liviana y muy resistente al corte. El detalle: es polietileno de alto peso molecular. Se teje como base de guantes anticorte de nivel medio-alto, a veces combinado con fibra de vidrio o hilo de acero para subir aún más la protección.",
+          "tag": null
+        },
+        {
+          "p": "20",
+          "bloque": "DE QUÉ ESTÁ HECHO EL GUANTE",
+          "pregunta": "¿Qué significa \"recubrimiento de PU\"?",
+          "respuesta": "En simple: una capa delgada que da buen agarre y mucha destreza para trabajos finos. El detalle: el poliuretano (PU) se aplica sobre la palma de un guante tejido (nylon, poliéster o HPPE). Ideal para ensamblaje, electrónica y manipulación de piezas pequeñas.",
+          "tag": null
+        },
+        {
+          "p": "21",
+          "bloque": "DE QUÉ ESTÁ HECHO EL GUANTE",
+          "pregunta": "¿PVC o cuero — cuál conviene?",
+          "respuesta": "En simple: el PVC es más barato y resiste agua/químicos básicos pero se pone duro con el frío; el cuero es más cómodo y resistente al roce pero no le gusta mojarse. El detalle: el PVC es un plástico sintético económico. El cuero (vacuno, cabra o cerdo) da buena resistencia mecánica y calor moderado, pero pierde propiedades húmedo y no protege bien contra químicos líquidos.",
+          "tag": null
+        },
+        {
+          "p": "22",
+          "bloque": "DE QUÉ ESTÁ HECHO EL GUANTE",
+          "pregunta": "¿Qué es el TPR y por qué algunos guantes tienen esas \"placas\" en el dorso?",
+          "respuesta": "En simple: el TPR es el material de goma dura que arma esas placas — su trabajo es absorber golpes para que no te lastimes los nudillos. El detalle: TPR significa caucho termoplástico. No es una placa rígida de una sola pieza: va moldeada en segmentos sobre los nudillos y los dedos, con canales flexibles entre cada segmento para que la mano se siga moviendo con libertad. Es lo que le da al guante la \"P\" de impacto en el pictograma EN 388, o la clasificación por niveles 1-2-3 de la norma ANSI/ISEA 138. Se usa en minería, montaje industrial, petróleo y trabajos con riesgo de golpes o aplastamiento en el dorso de la mano.",
+          "tag": "EN 388 (P) / ANSI/ISEA 138"
+        },
+        {
+          "p": "23",
+          "bloque": "DE QUÉ ESTÁ HECHO EL GUANTE",
+          "pregunta": "¿Qué es un guante \"grip\" o diamantado — es un material distinto?",
+          "respuesta": "En simple: no es un material, es una textura sobre el material — como el dibujo de una llanta, pero en la palma del guante. El detalle: \"grip\" o \"diamantado\" describe el patrón (liso, diamantado, arenado) aplicado sobre el recubrimiento — normalmente nitrilo o PU — para mejorar el agarre en superficies con aceite, grasa o humedad. Al comprar, fíjate primero en el material base y luego, aparte, en el tipo de acabado si el trabajo es en superficies resbaladizas.",
+          "tag": null
+        },
+        {
+          "p": "24",
+          "bloque": "QUÉ GUANTE CONVIENE SEGÚN EL TRABAJO",
+          "pregunta": "Manipulación general, ensamblaje o logística — ¿qué guante conviene?",
+          "respuesta": "Guante tejido con recubrimiento de PU o nitrilo delgado, nivel EN 388 bajo-medio en abrasión y corte. Prioriza destreza y comodidad para tareas repetitivas de manejo de piezas o cajas.",
+          "tag": null
+        },
+        {
+          "p": "25",
+          "bloque": "QUÉ GUANTE CONVIENE SEGÚN EL TRABAJO",
+          "pregunta": "Minería, construcción o manejo de materiales pesados — ¿qué guante conviene?",
+          "respuesta": "Guante con recubrimiento de nitrilo o látex más grueso, buen nivel de abrasión y perforación EN 388, refuerzo en la palma, y resistencia a hidrocarburos. Si hay riesgo de golpes en el dorso, sumar TPR (marca \"P\").",
+          "tag": null
+        },
+        {
+          "p": "26",
+          "bloque": "QUÉ GUANTE CONVIENE SEGÚN EL TRABAJO",
+          "pregunta": "Trabajos con vidrio, chapa metálica o riesgo de corte alto — ¿qué guante conviene?",
+          "respuesta": "Guante con fibra base HPPE o para-aramida, nivel de corte EN 388 D-F o ANSI A4 en adelante, según qué tan filoso sea lo que se manipula.",
+          "tag": null
+        },
+        {
+          "p": "27",
+          "bloque": "QUÉ GUANTE CONVIENE SEGÚN EL TRABAJO",
+          "pregunta": "Manejo de químicos líquidos (ácidos, solventes, aceites industriales) — ¿qué guante conviene?",
+          "respuesta": "Guante certificado EN ISO 374 Tipo A o B según cuántas sustancias relevantes fueron probadas, en nitrilo o neopreno según el químico específico — siempre cruzando la sustancia real de trabajo con la tabla de compatibilidad, no solo la letra del tipo.",
+          "tag": null
+        },
+        {
+          "p": "28",
+          "bloque": "QUÉ GUANTE CONVIENE SEGÚN EL TRABAJO",
+          "pregunta": "Soldadura o trabajo con calor directo/arco eléctrico — ¿qué guante conviene?",
+          "respuesta": "Guante de cuero curtido al cromo o con inserto de fibra meta-aramida, certificado EN 407 con niveles altos en calor de contacto y resistencia a salpicaduras de metal fundido.",
+          "tag": null
+        },
+        {
+          "p": "29",
+          "bloque": "QUÉ GUANTE CONVIENE SEGÚN EL TRABAJO",
+          "pregunta": "Industria alimentaria o manipulación de alimentos — ¿qué guante conviene?",
+          "respuesta": "Guante de nitrilo o látex sin polvo, con certificación de contacto alimentario, evitando látex si hay riesgo de alergia del personal, con buena resistencia a grasas y aceites.",
+          "tag": null
+        },
+        {
+          "p": "30",
+          "bloque": "QUÉ GUANTE CONVIENE SEGÚN EL TRABAJO",
+          "pregunta": "¿Cuáles son los errores más comunes al elegir guantes?",
+          "respuesta": "Elegir solo por precio sin revisar el pictograma completo; usar el mismo guante para todas las tareas sin diferenciar el riesgo; no verificar la talla (uno grande reduce destreza y puede engancharse, uno pequeño fatiga la mano); y no dejar por escrito el criterio de selección, lo que complica responder ante una fiscalización o un accidente investigado.",
+          "tag": null
+        }
+      ]
+    },
+    {
+      "id": "proteccion_respiratoria",
+      "titulo": "PROTECCIÓN RESPIRATORIA: TIPOS, FILTROS, CARTUCHOS Y CAMBIOS",
+      "descripcion": "Guía pensada para que tanto quien compra como quien vende protección respiratoria pueda explicar y entender, en palabras simples, qué tipo de respirador y filtro corresponde a cada riesgo. Cada respuesta parte con una idea en simple y luego el detalle técnico con su norma. Se basa en las normas internacionales (NIOSH 42 CFR Part 84, EN 149, EN 14387, EN 143) y en el marco regulatorio chileno (Ley 16.744, DS 594). No promueve ni recomienda marcas o proveedores específicos. QUÉ DEBES ENCONTRAR EN LA CAJA Y EN EL RESPIRADOR (verificar antes de comprar o aceptar un lote): - Sello de aprobación: marca NIOSH o marcado CE visible (NIOSH / CE) - Número TC / clase: ej. TC-84A-#### o FFP2/N95 (NIOSH / EN 149) - Banda de color: identifica el tipo de gas/vapor del cartucho (EN 14387) - Fecha fabricación/vencimiento: caduca aunque esté sin usar, empaque sellado - Modelo y talla: para verificar en la lista de certificación / ficha técnica",
+      "totalPreguntas": 30,
+      "items": [
+        {
+          "p": "1",
+          "bloque": "TIPOS DE RESPIRADORES Y CUÁNDO USAR CADA UNO",
+          "pregunta": "¿Qué diferencia hay entre un respirador purificador de aire y uno con suministro de aire?",
+          "respuesta": "En simple: uno limpia el aire que ya está en el ambiente (con filtro o cartucho); el otro te trae aire limpio desde otra fuente, porque el ambiente es demasiado peligroso para solo filtrarlo. El detalle: el purificador de aire (APR) usa filtros o cartuchos para retener contaminantes del aire ambiente — depende de que haya suficiente oxígeno. El de suministro de aire (línea de aire o equipo autónomo) entrega aire desde un cilindro o compresor externo, y se usa cuando falta oxígeno o las concentraciones de tóxicos son muy altas.",
+          "tag": null
+        },
+        {
+          "p": "2",
+          "bloque": "TIPOS DE RESPIRADORES Y CUÁNDO USAR CADA UNO",
+          "pregunta": "¿Mascarilla desechable tipo N95 o respirador de media cara reutilizable — cuál elijo?",
+          "respuesta": "En simple: la desechable es de un solo uso y solo sirve contra partículas; la de media cara se reutiliza y le puedes cambiar el filtro o cartucho según el riesgo del día. El detalle: la mascarilla autofiltrante (N95, FFP2, etc.) es una pieza completa desechable, solo protege contra partículas. La media cara reutilizable cubre nariz y boca, sella con la piel, y admite distintos filtros o cartuchos intercambiables — sirve para partículas, gases, o ambos, según lo que se le instale.",
+          "tag": null
+        },
+        {
+          "p": "3",
+          "bloque": "TIPOS DE RESPIRADORES Y CUÁNDO USAR CADA UNO",
+          "pregunta": "¿Cuándo se necesita una careta completa (full face) en vez de media cara?",
+          "respuesta": "En simple: cuando además de la respiración hay que proteger los ojos y la cara — salpicaduras, gases irritantes, o cuando el riesgo es más alto. El detalle: la careta completa cubre desde la frente hasta el mentón con un visor, sella todo el perímetro de la cara, y da un nivel de protección más alto que la media cara usando el mismo filtro o cartucho.",
+          "tag": null
+        },
+        {
+          "p": "4",
+          "bloque": "TIPOS DE RESPIRADORES Y CUÁNDO USAR CADA UNO",
+          "pregunta": "¿Qué es un respirador motorizado (PAPR) y cuándo conviene?",
+          "respuesta": "En simple: trae un pequeño motor que empuja el aire ya filtrado hacia tu cara, así respiras con menos esfuerzo — ideal para turnos largos. El detalle: el PAPR usa un ventilador con batería para forzar el aire a través de los filtros o cartuchos hacia una careta o capucha, generando presión positiva dentro de la pieza — eso además reduce el riesgo de que entre aire contaminado por fugas.",
+          "tag": null
+        },
+        {
+          "p": "5",
+          "bloque": "TIPOS DE RESPIRADORES Y CUÁNDO USAR CADA UNO",
+          "pregunta": "¿Qué son los equipos de aire suministrado o autónomos, y cuándo son obligatorios?",
+          "respuesta": "En simple: cuando el aire del lugar no es respirable (falta oxígeno o hay demasiado tóxico), ningún filtro sirve — hay que llevar el aire desde otro lado. El detalle: se usan en espacios confinados, rescate, o atmósferas con peligro inmediato para la vida o la salud (IDLH) o con deficiencia de oxígeno. Un filtro nunca reemplaza a un equipo de aire suministrado en esos escenarios, sin importar cuán bueno sea el filtro.",
+          "tag": null
+        },
+        {
+          "p": "6",
+          "bloque": "TIPOS DE RESPIRADORES Y CUÁNDO USAR CADA UNO",
+          "pregunta": "¿Qué significa que un respirador sea de \"ajuste hermético\" o de \"ajuste holgado\"?",
+          "respuesta": "En simple: hermético se pega a la piel y sella (necesita prueba de ajuste); holgado, como una capucha, no toca la piel pero necesita más flujo de aire para mantenerse protegido. El detalle: los de ajuste hermético (media cara, cara completa) requieren una prueba de ajuste individual porque su protección depende del sello con la cara. Los de ajuste holgado (capuchas, cascos con suministro de aire) no dependen de un sello perfecto, por lo que se adaptan mejor a personas con barba u otros rasgos que dificultan el sello hermético.",
+          "tag": null
+        },
+        {
+          "p": "7",
+          "bloque": "FILTROS VS. CARTUCHOS: LA DIFERENCIA",
+          "pregunta": "¿Cuál es la diferencia real entre un filtro y un cartucho?",
+          "respuesta": "En simple: el filtro atrapa cosas sólidas o líquidas suspendidas en el aire, como un colador; el cartucho absorbe gases y vapores, como una esponja química. El detalle: los filtros retienen partículas —polvo, humos metálicos, neblinas— mediante fibras que actúan como barrera física. Los cartuchos usan carbón activado u otros materiales que capturan moléculas de gas o vapor, algo que un filtro común no puede detener.",
+          "tag": null
+        },
+        {
+          "p": "8",
+          "bloque": "FILTROS VS. CARTUCHOS: LA DIFERENCIA",
+          "pregunta": "Veo \"N95\", \"P100\" o \"R95\" en un filtro. ¿Qué significa cada letra y número?",
+          "respuesta": "En simple: la letra dice si aguanta aceite en el ambiente, el número dice qué porcentaje de partículas detiene. El detalle: N = No resistente al aceite. R = Resistente al aceite, hasta un turno de 8 horas. P = a Prueba de aceite, uso más prolongado según el fabricante. El número (95, 99, 100) es el porcentaje mínimo de partículas que retiene: 95%, 99% o 99,97%. Ejemplo: N95 = no resiste aceite, retiene 95% de partículas. NIOSH 42 CFR Part 84",
+          "tag": null
+        },
+        {
+          "p": "9",
+          "bloque": "FILTROS VS. CARTUCHOS: LA DIFERENCIA",
+          "pregunta": "En Chile, ¿se usa la clasificación NIOSH (americana) o la europea (FFP1/2/3)?",
+          "respuesta": "En simple: en Chile se ven ambas y las dos son válidas — lo importante es que el respirador tenga su marca de aprobación visible. El detalle: Chile reconoce oficialmente la certificación NIOSH, y también se comercializan productos certificados bajo la norma europea EN 149 (clases FFP1, FFP2, FFP3). El D.S. N°594 exige que el EPP cumpla una norma de calidad reconocida, sin fijar cuál marco usar.",
+          "tag": "DS 594 Art. 54"
+        },
+        {
+          "p": "10",
+          "bloque": "FILTROS VS. CARTUCHOS: LA DIFERENCIA",
+          "pregunta": "Veo letras como \"A\", \"B\", \"E\", \"K\" en un cartucho, con distintos colores. ¿Qué significan?",
+          "respuesta": "En simple: cada letra y color es para un tipo de contaminante distinto — no todos los cartuchos sirven para lo mismo. El detalle (norma europea EN 14387): A (marrón) = vapores orgánicos como solventes. B (gris) = gases y vapores inorgánicos, como cloro. E (amarillo) = gases ácidos y dióxido de azufre. K (verde) = amoníaco y derivados. P (blanco) = partículas. Un cartucho puede combinar varias letras (ej. \"ABEK\") para cubrir varios riesgos a la vez.",
+          "tag": "EN 14387"
+        },
+        {
+          "p": "11",
+          "bloque": "FILTROS VS. CARTUCHOS: LA DIFERENCIA",
+          "pregunta": "¿El color del filtro o cartucho me dice todo lo que necesito saber?",
+          "respuesta": "En simple: no del todo — el color orienta, pero siempre hay que confirmar el modelo exacto en la etiqueta. El detalle: dentro de una misma clase (por ejemplo, la clase N de NIOSH), el color no distingue un N95 de un N99 o un N100 — pueden verse iguales. Siempre hay que verificar el código impreso contra la ficha técnica, no confiar solo en el color a simple vista.",
+          "tag": null
+        },
+        {
+          "p": "12",
+          "bloque": "FILTROS Y CARTUCHOS COMBINADOS",
+          "pregunta": "¿Por qué existen los filtros o cartuchos combinados?",
+          "respuesta": "En simple: porque en la vida real casi nunca hay un solo tipo de riesgo — a veces hay polvo y vapores al mismo tiempo, y necesitas cubrir ambos con una sola pieza. El detalle: un cartucho combinado integra la capa química (contra gases o vapores) junto con una capa de filtro de partículas en la misma pieza, certificado bajo ambas normas a la vez.",
+          "tag": null
+        },
+        {
+          "p": "13",
+          "bloque": "FILTROS Y CARTUCHOS COMBINADOS",
+          "pregunta": "¿En qué trabajos es típico necesitar un cartucho combinado?",
+          "respuesta": "En simple: pintura con pistola, fumigación agrícola, o limpieza con solventes — ahí hay vapor y partículas suspendidas a la vez. El detalle: en esas tareas se liberan vapores orgánicos junto con aerosoles o partículas en suspensión, por lo que un cartucho de una sola función dejaría desprotegido alguno de los dos riesgos.",
+          "tag": null
+        },
+        {
+          "p": "14",
+          "bloque": "FILTROS Y CARTUCHOS COMBINADOS",
+          "pregunta": "¿Un cartucho combinado dura lo mismo que uno simple?",
+          "respuesta": "En simple: normalmente no — suele durar menos, porque está trabajando contra dos tipos de riesgo a la vez. El detalle: la vida útil de un cartucho combinado depende de la concentración de cada contaminante presente. En general se sigue el criterio más exigente entre el componente químico y el de partículas al momento de definir el cambio.",
+          "tag": null
+        },
+        {
+          "p": "15",
+          "bloque": "CUÁNDO CAMBIAR FILTROS, CARTUCHOS Y EL RESPIRADOR",
+          "pregunta": "¿Cómo sé cuándo cambiar un filtro de partículas?",
+          "respuesta": "En simple: cuando cuesta más respirar a través de él, o si se ve sucio, mojado o dañado — eso manda, sin importar cuántas horas lleve. El detalle: los filtros de partículas se saturan físicamente; el aumento de la resistencia a respirar es la señal más confiable. Como referencia general (no una regla fija universal), muchos programas usan un máximo de 40 horas de uso efectivo o un mes de calendario, lo que ocurra primero — siempre sujeto al criterio de deterioro visible.",
+          "tag": null
+        },
+        {
+          "p": "16",
+          "bloque": "CUÁNDO CAMBIAR FILTROS, CARTUCHOS Y EL RESPIRADOR",
+          "pregunta": "¿Cómo sé cuándo cambiar un cartucho de gases o vapores?",
+          "respuesta": "En simple: a diferencia del filtro, el cartucho no \"se ve sucio\" cuando se agota — por eso hay que calcularlo antes, no esperar a sentir el olor. El detalle: el cartucho se agota cuando el material absorbente se satura, y en ese punto el contaminante puede empezar a pasar sin que se note a simple vista. Lo correcto es definir un cronograma de cambio calculado según la concentración del contaminante, la humedad y el tiempo de uso. Si se empieza a percibir olor, sabor o irritación, el cartucho ya se agotó y debe cambiarse de inmediato — eso no es una señal normal de aviso, es una falla.",
+          "tag": null
+        },
+        {
+          "p": "17",
+          "bloque": "CUÁNDO CAMBIAR FILTROS, CARTUCHOS Y EL RESPIRADOR",
+          "pregunta": "¿Qué pasa si sigo usando un filtro o cartucho después de que se agotó?",
+          "respuesta": "En simple: dejas de estar protegido aunque sigas usando el respirador puesto — es como no llevar nada para ese riesgo específico. El detalle: un filtro saturado puede liberar partículas ya retenidas, y un cartucho agotado deja pasar el gas o vapor sin retenerlo, muchas veces sin dar ninguna señal física evidente.",
+          "tag": null
+        },
+        {
+          "p": "18",
+          "bloque": "CUÁNDO CAMBIAR FILTROS, CARTUCHOS Y EL RESPIRADOR",
+          "pregunta": "¿Cada cuánto se reemplaza la pieza facial completa (media cara o cara completa), no solo el filtro?",
+          "respuesta": "En simple: el filtro se cambia seguido; la pieza de goma dura más, pero también se revisa cada vez. El detalle: se debe inspeccionar antes de cada uso (grietas, rigidez del sello, válvulas dañadas) y reemplazar la pieza facial cuando el material pierde flexibilidad, se agrieta, o ya no logra un sello adecuado en la prueba de ajuste — sin importar la fecha, si falla la prueba de ajuste no debe usarse.",
+          "tag": null
+        },
+        {
+          "p": "19",
+          "bloque": "CUÁNDO CAMBIAR FILTROS, CARTUCHOS Y EL RESPIRADOR",
+          "pregunta": "¿Los filtros y cartuchos vencen aunque nunca se hayan usado?",
+          "respuesta": "En simple: sí, el empaque sellado también caduca solo. El detalle: el empaque de fábrica trae una fecha de vencimiento; pasada esa fecha, el material absorbente o filtrante puede perder eficacia por degradación del material con el tiempo, aunque nunca se haya abierto.",
+          "tag": null
+        },
+        {
+          "p": "20",
+          "bloque": "ACCESORIOS DEL MERCADO",
+          "pregunta": "¿Qué es un retenedor de filtro y para qué sirve?",
+          "respuesta": "En simple: es la piecita que sostiene el filtro de partículas pegado a la pieza facial o al cartucho — sin él, el filtro no queda bien puesto. El detalle: el retenedor (adaptador) fija el disco o filtro de partículas sobre un cartucho de gases (para armar un combinado) o directamente sobre la pieza facial, asegurando el sello y evitando fugas alrededor del filtro.",
+          "tag": null
+        },
+        {
+          "p": "21",
+          "bloque": "ACCESORIOS DEL MERCADO",
+          "pregunta": "¿Qué es la válvula de exhalación y por qué algunos respiradores la tienen y otros no?",
+          "respuesta": "En simple: es una válvula que deja salir el aire que exhalas sin forzarlo a pasar por el filtro — respiras más cómodo y se empaña menos la vista. El detalle: al exhalar, la válvula se abre y libera el aire directamente afuera —ese aire ya no necesita filtrarse—, reduciendo la humedad y el calor dentro de la pieza facial. Los modelos sin válvula obligan a que el aire exhalado también pase por el material filtrante.",
+          "tag": null
+        },
+        {
+          "p": "22",
+          "bloque": "ACCESORIOS DEL MERCADO",
+          "pregunta": "¿Qué es la prueba de ajuste (fit test) y por qué es obligatoria?",
+          "respuesta": "En simple: es una prueba que confirma que el respirador realmente sella bien en tu cara — el mismo modelo puede sellar perfecto en una persona y fallar en otra. El detalle: existen dos tipos: la prueba cualitativa (detecta si la persona percibe un sabor o aroma de prueba a través de una fuga) y la cuantitativa (un equipo mide numéricamente cuánto aire de afuera se filtra hacia adentro de la pieza facial, dando un valor de ajuste medible). Se recomienda repetirla al menos una vez al año, y siempre que cambie el modelo de respirador o el rostro de la persona.",
+          "tag": null
+        },
+        {
+          "p": "23",
+          "bloque": "ACCESORIOS DEL MERCADO",
+          "pregunta": "¿Qué otros accesorios existen para complementar un respirador?",
+          "respuesta": "En simple: piezas que alargan la vida del equipo o lo hacen más cómodo, sin cambiar la protección en sí. El detalle: pre-filtros (capa desechable que se pone delante del filtro principal para que dure más en ambientes muy sucios), tapas o cubiertas de retenedor, bolsas de almacenamiento hermético para guardar el respirador entre turnos, toallitas de limpieza sin alcohol para no dañar el sello de goma, y correas o arneses de repuesto.",
+          "tag": null
+        },
+        {
+          "p": "24",
+          "bloque": "ACCESORIOS DEL MERCADO",
+          "pregunta": "¿Por qué la barba afecta tanto la elección del respirador?",
+          "respuesta": "En simple: el vello facial en la zona de sello impide que la media cara o cara completa selle bien — no hay filtro que compense una fuga en el borde. El detalle: cualquier respirador de ajuste hermético requiere piel lisa en el área de contacto. Si la persona tiene barba, la alternativa correcta no es \"apretar más\" la mascarilla, sino cambiar a un respirador de ajuste holgado (capucha o casco con suministro de aire) que no depende del sello con la piel.",
+          "tag": null
+        },
+        {
+          "p": "25",
+          "bloque": "QUÉ RESPIRADOR CONVIENE SEGÚN LA INDUSTRIA EN CHILE",
+          "pregunta": "Minería (polvo de sílice, tronaduras) — ¿qué respirador conviene?",
+          "respuesta": "Para polvo de sílice, filtro N95/P100 o FFP2/FFP3 como mínimo, dado que es un contaminante con límite de exposición estricto. En minería subterránea con riesgo de gases (monóxido de carbono, gases de tronadura) o posible deficiencia de oxígeno, se evalúa equipo de aire suministrado o autónomo — un purificador de aire nunca es apto si falta oxígeno.",
+          "tag": null
+        },
+        {
+          "p": "26",
+          "bloque": "QUÉ RESPIRADOR CONVIENE SEGÚN LA INDUSTRIA EN CHILE",
+          "pregunta": "Agricultura (fumigación, agroquímicos) — ¿qué respirador conviene?",
+          "respuesta": "Normalmente se necesita un cartucho combinado, porque los agroquímicos sueltan vapor y partículas al mismo tiempo. Media cara o cara completa con cartucho combinado para vapores orgánicos y partículas, revisando siempre la hoja de datos de seguridad (HDS) del producto específico para confirmar el filtro/cartucho exacto recomendado.",
+          "tag": null
+        },
+        {
+          "p": "27",
+          "bloque": "QUÉ RESPIRADOR CONVIENE SEGÚN LA INDUSTRIA EN CHILE",
+          "pregunta": "Forestal (polvo de madera, motosierras) — ¿qué respirador conviene?",
+          "respuesta": "Filtro N95/P95 o FFP2 para polvo de madera en corte y aserrado. En trabajos con motosierra o maquinaria de combustión en espacios poco ventilados, evaluar protección adicional contra monóxido de carbono y otros gases de combustión.",
+          "tag": null
+        },
+        {
+          "p": "28",
+          "bloque": "QUÉ RESPIRADOR CONVIENE SEGÚN LA INDUSTRIA EN CHILE",
+          "pregunta": "Minería o construcción subterránea / espacios confinados — ¿qué respirador conviene?",
+          "respuesta": "Acá casi nunca basta un filtro — hay que medir la atmósfera del lugar antes de entrar (oxígeno, gases inflamables, tóxicos). Si hay riesgo de deficiencia de oxígeno o concentración con peligro inmediato para la vida (IDLH), se requiere equipo de aire suministrado o autónomo, nunca un respirador purificador de aire con filtro o cartucho.",
+          "tag": null
+        },
+        {
+          "p": "29",
+          "bloque": "QUÉ RESPIRADOR CONVIENE SEGÚN LA INDUSTRIA EN CHILE",
+          "pregunta": "Soldadura o trabajos con humos metálicos — ¿qué respirador conviene?",
+          "respuesta": "Filtro P100/N100 o FFP3 para humos metálicos, considerando además protección ocular y facial (careta de soldar) por separado, ya que el respirador no protege contra la radiación del arco ni las chispas.",
+          "tag": null
+        },
+        {
+          "p": "30",
+          "bloque": "QUÉ RESPIRADOR CONVIENE SEGÚN LA INDUSTRIA EN CHILE",
+          "pregunta": "Si no estoy seguro de qué respirador necesito, ¿qué debo hacer antes de comprar?",
+          "respuesta": "En simple: no adivines — revisa la evaluación de riesgo del puesto o la hoja de datos de seguridad de la sustancia antes de elegir el filtro o cartucho. El detalle: la selección correcta parte de conocer el contaminante específico, su concentración estimada, si hay riesgo de deficiencia de oxígeno, y el tiempo de exposición. Sin esa información, cualquier elección es una suposición, no una decisión técnica — y en ambientes de alto riesgo, una suposición equivocada puede ser grave.",
+          "tag": null
+        }
+      ]
+    },
+    {
+      "id": "ropa_reflectiva",
+      "titulo": "ROPA REFLECTIVA: CLASES, MOP, COLORES Y NORMAS",
+      "descripcion": "Guía pensada para que cualquier usuario —comprador, vendedor o prevencionista— entienda con claridad qué exige la normativa de ropa de alta visibilidad. Cada respuesta parte con una idea en simple y luego el detalle técnico con su norma. Se basa en la norma chilena NCh 3254:2011, la norma internacional EN ISO 20471, ANSI/ISEA 107, y el Manual de Señalización de Tránsito del MOP (Decreto N°78/2012). No promueve ni recomienda marcas o proveedores específicos. LAS 3 CLASES, DE UN VISTAZO (mientras más alta la clase, más cuerpo debe estar cubierto por tela fluorescente naranjo y cinta reflectante blanca): - CLASE 1 — RIESGO BAJO — Bodega interior, tránsito lento — 0,14 m² tela + 0,10 m² cinta - CLASE 2 — RIESGO MEDIO — Obra, construcción general — 0,50 m² tela + 0,13 m² cinta - CLASE 3 — RIESGO ALTO — Carretera, tránsito rápido — 0,80 m² tela + 0,20 m² cinta Para abastecimiento: si en la orden de compra o ficha técnica no aparece la clase (1, 2 o 3) junto a la norma, no es posible saber qué tan cubierto queda el trabajador — pide siempre esa marca antes de comprar.",
+      "totalPreguntas": 30,
+      "items": [
+        {
+          "p": "1",
+          "bloque": "NORMATIVA QUE RIGE LA ROPA REFLECTIVA",
+          "pregunta": "¿Qué norma rige la ropa de alta visibilidad en Chile?",
+          "respuesta": "En simple: la norma chilena NCh 3254:2011, que establece requisitos equivalentes a los estándares internacionales. El detalle: su cumplimiento se exige según el riesgo de la faena, respaldado por el D.S. N°594 y, en minería, el D.S. N°132.",
+          "tag": "NCh 3254:2011"
+        },
+        {
+          "p": "2",
+          "bloque": "NORMATIVA QUE RIGE LA ROPA REFLECTIVA",
+          "pregunta": "¿Qué es la EN ISO 20471 y por qué se menciona tanto en Chile?",
+          "respuesta": "En simple: es la norma europea de referencia mundial para ropa de alta visibilidad — muchos productos en Chile se certifican bajo ella. El detalle: define materiales, colores, superficies mínimas y la clasificación en 3 clases. En el mercado chileno conviven productos certificados bajo NCh 3254 y bajo EN ISO 20471 — ambos son válidos.",
+          "tag": "EN ISO 20471"
+        },
+        {
+          "p": "3",
+          "bloque": "NORMATIVA QUE RIGE LA ROPA REFLECTIVA",
+          "pregunta": "¿Existe una norma equivalente en Estados Unidos?",
+          "respuesta": "En simple: sí, se llama ANSI/ISEA 107, con una lógica de clases parecida pero no siempre idéntica. El detalle: es común en faenas con matriz de capital estadounidense. Clasifica también en Clase 1, 2 y 3, pero con métodos de ensayo distintos — no asumir que un producto ANSI cumple automáticamente EN ISO 20471, o viceversa.",
+          "tag": "ANSI/ISEA 107"
+        },
+        {
+          "p": "4",
+          "bloque": "NORMATIVA QUE RIGE LA ROPA REFLECTIVA",
+          "pregunta": "¿Qué obliga el D.S. N°594 respecto a la ropa reflectiva?",
+          "respuesta": "En simple: obliga al empleador a evaluar el riesgo del puesto y entregar ropa de alta visibilidad certificada, sin costo para el trabajador. El detalle: exige EPP adecuado según el riesgo específico de cada puesto, con entrega gratuita conforme a la Ley N°16.744.",
+          "tag": "DS 594 / Ley 16.744"
+        },
+        {
+          "p": "5",
+          "bloque": "NORMATIVA QUE RIGE LA ROPA REFLECTIVA",
+          "pregunta": "¿Qué exige el D.S. N°132 en minería sobre alta visibilidad?",
+          "respuesta": "En simple: en minería se suma el riesgo de tránsito de maquinaria pesada, por eso suele exigirse una clase más alta. El detalle: el Reglamento de Seguridad Minera refuerza la obligación de EPP según el riesgo de la faena. La circulación de camiones y equipos de gran tonelaje hace que se prefiera Clase 2 o 3 en zonas de tránsito interior mina.",
+          "tag": "DS 132"
+        },
+        {
+          "p": "6",
+          "bloque": "NORMATIVA QUE RIGE LA ROPA REFLECTIVA",
+          "pregunta": "¿Puede un mismo trabajador necesitar cumplir dos normas a la vez?",
+          "respuesta": "En simple: sí — un trabajador vial necesita cumplir la norma de la prenda Y lo que exige el MOP para trabajar en la calle. El detalle: la norma de la prenda certifica el producto; el MOP regula específicamente su uso en la vía pública. Ambas se aplican juntas, una no reemplaza a la otra.",
+          "tag": null
+        },
+        {
+          "p": "7",
+          "bloque": "LAS 3 CLASES Y SUS DIFERENCIAS",
+          "pregunta": "¿En qué se basa la diferencia entre Clase 1, 2 y 3?",
+          "respuesta": "En simple: en cuánta superficie de tela fluorescente y de cinta reflectante lleva la prenda — a más superficie, más clase. El detalle: la norma fija un área mínima en m² de material de fondo y de material retrorreflectante que cada prenda debe cumplir. No es una decisión de diseño, es una medición exacta.",
+          "tag": null
+        },
+        {
+          "p": "8",
+          "bloque": "LAS 3 CLASES Y SUS DIFERENCIAS",
+          "pregunta": "¿Cuánta superficie exige la Clase 1?",
+          "respuesta": "En simple: la exigencia más baja — apta solo para riesgo bajo. El detalle: mínimo 0,14 m² de material de fondo y 0,10 m² de material retrorreflectante. Adecuada para tránsito lento (hasta 30 km/h) o interior de bodega, no para trabajo prolongado en vía pública.",
+          "tag": null
+        },
+        {
+          "p": "9",
+          "bloque": "LAS 3 CLASES Y SUS DIFERENCIAS",
+          "pregunta": "¿Cuánta superficie exige la Clase 2?",
+          "respuesta": "En simple: es el estándar más usado en obra y trabajo industrial en general. El detalle: mínimo 0,50 m² de material de fondo y 0,13 m² de material retrorreflectante. Buen equilibrio entre visibilidad y comodidad.",
+          "tag": null
+        },
+        {
+          "p": "10",
+          "bloque": "LAS 3 CLASES Y SUS DIFERENCIAS",
+          "pregunta": "¿Cuánta superficie exige la Clase 3?",
+          "respuesta": "En simple: es la máxima protección — para los riesgos más altos. El detalle: mínimo 0,80 m² de material de fondo y 0,20 m² de material retrorreflectante, cubriendo torso, brazos y piernas. Obligatoria en tránsito rápido (sobre 50-80 km/h) o donde la visibilidad debe garantizarse desde cualquier ángulo.",
+          "tag": null
+        },
+        {
+          "p": "11",
+          "bloque": "LAS 3 CLASES Y SUS DIFERENCIAS",
+          "pregunta": "¿Un chaleco reflectante puede ser Clase 3 por sí solo?",
+          "respuesta": "En simple: normalmente no — un solo chaleco rara vez junta suficiente área para Clase 3. El detalle: para alcanzar Clase 3 casi siempre se necesita combinar dos prendas certificadas (ej. chaqueta + pantalón reflectante) que sumadas cumplan el área exigida, salvo monos u overoles diseñados específicamente para ello.",
+          "tag": null
+        },
+        {
+          "p": "12",
+          "bloque": "LAS 3 CLASES Y SUS DIFERENCIAS",
+          "pregunta": "¿Cómo sé qué clase tiene la prenda que estoy comprando?",
+          "respuesta": "En simple: debe estar marcada en la etiqueta, con el número de la clase junto al pictograma de la norma. El detalle: la etiqueta debe indicar la norma (NCh 3254 o EN ISO 20471), el número de clase (1, 2 o 3) y, si aplica, el año de la versión de la norma. No aceptar la palabra del vendedor sin ver esa marca.",
+          "tag": null
+        },
+        {
+          "p": "13",
+          "bloque": "COLORES Y MATERIALES AUTORIZADOS",
+          "pregunta": "¿Qué colores están autorizados por la norma para el material de fondo?",
+          "respuesta": "En simple: solo tres — amarillo, naranja y rojo fluorescente. Ningún otro color cuenta como \"alta visibilidad\" aunque se vea llamativo. El detalle: la norma solo reconoce como material de fondo válido el amarillo fluorescente, naranja fluorescente y rojo-naranja fluorescente. Un verde o celeste \"brillante\" no cumple, aunque se venda comercialmente como reflectante.",
+          "tag": null
+        },
+        {
+          "p": "14",
+          "bloque": "COLORES Y MATERIALES AUTORIZADOS",
+          "pregunta": "¿Qué es el \"material de fondo\" y qué función cumple?",
+          "respuesta": "En simple: es la tela de color fluorescente que hace visible a la persona de día. El detalle: convierte parte de la luz ultravioleta en luz visible, por lo que resalta bajo luz solar incluso en días nublados. Solo funciona de día — no refleja luz de faros en la oscuridad.",
+          "tag": null
+        },
+        {
+          "p": "15",
+          "bloque": "COLORES Y MATERIALES AUTORIZADOS",
+          "pregunta": "¿Qué es el \"material retrorreflectante\" y qué función cumple?",
+          "respuesta": "En simple: son las cintas o bandas que \"devuelven\" la luz de los faros — por eso brillan de noche cuando les llega luz. El detalle: refleja la luz directamente hacia su fuente de origen, lo que hace visible a la persona en la oscuridad o con poca luz. No aporta visibilidad relevante de día.",
+          "tag": null
+        },
+        {
+          "p": "16",
+          "bloque": "COLORES Y MATERIALES AUTORIZADOS",
+          "pregunta": "¿Qué es el \"material combinado\"?",
+          "respuesta": "En simple: una sola tela que hace las dos cosas a la vez — fluorescente de día y reflectante de noche. El detalle: combina propiedades de material de fondo y retrorreflectante en un mismo tejido, contando para ambos requisitos de área según la norma.",
+          "tag": null
+        },
+        {
+          "p": "17",
+          "bloque": "COLORES Y MATERIALES AUTORIZADOS",
+          "pregunta": "¿Por qué las bandas reflectantes van en un patrón específico (torso y piernas)?",
+          "respuesta": "En simple: para que la silueta humana se reconozca de lejos, no solo un punto de luz. El detalle: la norma exige bandas horizontales y verticales alrededor del torso, y en piernas o mangas si aplica, para que desde un vehículo se distinga la forma de una persona, no solo un destello aislado.",
+          "tag": null
+        },
+        {
+          "p": "18",
+          "bloque": "COLORES Y MATERIALES AUTORIZADOS",
+          "pregunta": "¿Bordar un logo sobre la cinta reflectante afecta la certificación?",
+          "respuesta": "En simple: sí, puede hacerla perder la clase certificada. El detalle: bordar, estampar o intervenir el material reflectante sin autorización de un organismo certificador reduce el área efectiva reflectante y puede sacar a la prenda de la clase que originalmente cumplía.",
+          "tag": null
+        },
+        {
+          "p": "19",
+          "bloque": "QUÉ EXIGE EL MOP (VÍA PÚBLICA)",
+          "pregunta": "¿Qué rol cumple el MOP en la ropa de alta visibilidad?",
+          "respuesta": "En simple: el MOP no certifica la prenda — regula específicamente cómo debe verse un trabajador en la calle o carretera. El detalle: a través del Manual de Señalización de Tránsito (Decreto N°78/2012, MTT/MOP), define qué cintas y colores debe llevar el personal que trabaja en la vía pública, complementando la norma de la prenda. MOP Decreto N°78/2012",
+          "tag": null
+        },
+        {
+          "p": "20",
+          "bloque": "QUÉ EXIGE EL MOP (VÍA PÚBLICA)",
+          "pregunta": "¿Qué exige el MOP para el personal de campo en general?",
+          "respuesta": "En simple: camisa o polera amarillo limón. El detalle: el manual establece el amarillo limón como color base para la vestimenta de cuadrillas que trabajan en o cerca de la calzada.",
+          "tag": null
+        },
+        {
+          "p": "21",
+          "bloque": "QUÉ EXIGE EL MOP (VÍA PÚBLICA)",
+          "pregunta": "¿Qué exige el MOP para banderilleros?",
+          "respuesta": "En simple: chaleco naranja con franjas reflectantes. El detalle: quienes controlan el tránsito manualmente en obras deben usar chaleco color naranja con franjas de alta intensidad, por ser el rol de mayor exposición directa a vehículos en movimiento.",
+          "tag": null
+        },
+        {
+          "p": "22",
+          "bloque": "QUÉ EXIGE EL MOP (VÍA PÚBLICA)",
+          "pregunta": "¿Qué significa \"franjas de alta intensidad\" en el contexto del MOP?",
+          "respuesta": "En simple: cintas reflectantes de mejor calidad, pensadas para brillar más de noche en la vía pública. El detalle: se refiere a cintas retrorreflectantes de mayor grado de reflectividad que las estándar, exigidas específicamente para visibilidad nocturna en trabajos viales.",
+          "tag": null
+        },
+        {
+          "p": "23",
+          "bloque": "QUÉ EXIGE EL MOP (VÍA PÚBLICA)",
+          "pregunta": "Si mi ropa ya es Clase 2 o 3, ¿igual debo cumplir lo que pide el MOP?",
+          "respuesta": "En simple: sí — son dos exigencias distintas y ambas aplican si trabajas en la vía pública. El detalle: la clase certifica el área de material de la prenda; el MOP regula el color y tipo de cinta específico para el contexto vial. Cumplir una no exime de la otra.",
+          "tag": null
+        },
+        {
+          "p": "24",
+          "bloque": "QUÉ EXIGE EL MOP (VÍA PÚBLICA)",
+          "pregunta": "¿A quién le exige el MOP esta normativa específicamente?",
+          "respuesta": "En simple: a cuadrillas, banderilleros y personal de supervisión que trabaja en calles, carreteras y obras viales. El detalle: aplica a trabajadores expuestos directamente al tránsito vehicular en faenas de construcción, mantención o señalización vial — no a todo trabajador de alta visibilidad en general.",
+          "tag": null
+        },
+        {
+          "p": "25",
+          "bloque": "CÓMO ELEGIR SEGÚN EL TRABAJO Y CUIDADOS",
+          "pregunta": "¿Qué clase conviene para trabajo de bodega o interior de planta?",
+          "respuesta": "Normalmente Clase 1, salvo que haya tránsito de maquinaria. En bodegas cerradas con tránsito peatonal lento y controlado, Clase 1 suele bastar; si conviven montacargas o vehículos, puede exigirse Clase 2.",
+          "tag": null
+        },
+        {
+          "p": "26",
+          "bloque": "CÓMO ELEGIR SEGÚN EL TRABAJO Y CUIDADOS",
+          "pregunta": "¿Qué clase conviene para construcción u obra general?",
+          "respuesta": "Clase 2, el estándar más usado en el rubro — equilibra visibilidad y comodidad para trabajo prolongado en terreno, con tránsito moderado de vehículos y maquinaria.",
+          "tag": null
+        },
+        {
+          "p": "27",
+          "bloque": "CÓMO ELEGIR SEGÚN EL TRABAJO Y CUIDADOS",
+          "pregunta": "¿Qué clase conviene para trabajo en carretera o minería con tránsito de alta velocidad?",
+          "respuesta": "Clase 3, sin excepción. Donde los vehículos circulan sobre 50-80 km/h, o en interior mina con camiones de gran tonelaje, la norma exige la máxima superficie visible para dar tiempo de reacción al conductor.",
+          "tag": null
+        },
+        {
+          "p": "28",
+          "bloque": "CÓMO ELEGIR SEGÚN EL TRABAJO Y CUIDADOS",
+          "pregunta": "¿Qué combinación de riesgos es común en minería junto con la alta visibilidad?",
+          "respuesta": "Casi siempre se suma protección térmica o ignífuga, porque el frío y el arco eléctrico también están presentes. Es habitual combinar ropa de alta visibilidad con propiedades ignífugas (EN ISO 11612) o antiestáticas.",
+          "tag": null
+        },
+        {
+          "p": "29",
+          "bloque": "CÓMO ELEGIR SEGÚN EL TRABAJO Y CUIDADOS",
+          "pregunta": "¿Cómo se cuida la ropa de alta visibilidad para no perder su clase?",
+          "respuesta": "En simple: lavarla como indica la etiqueta y revisarla seguido — se desgasta y pierde efectividad con el tiempo. El detalle: el lavado con productos abrasivos, la exposición prolongada al sol, o el desgaste físico de la cinta reflectante reducen su reflectividad. La norma no fija un plazo exacto de reemplazo; el criterio es visual: si la cinta se ve opaca, agrietada o descolorida, ya no garantiza el nivel certificado.",
+          "tag": null
+        },
+        {
+          "p": "30",
+          "bloque": "CÓMO ELEGIR SEGÚN EL TRABAJO Y CUIDADOS",
+          "pregunta": "Si tengo dudas sobre qué clase necesito, ¿qué debo revisar primero?",
+          "respuesta": "En simple: la velocidad y proximidad del tránsito vehicular en el lugar de trabajo — eso define casi todo. El detalle: la elección de clase depende principalmente del riesgo de tránsito vehicular (velocidad, volumen, distancia de la vía) y de la evaluación de riesgo del puesto. Ante la duda, consultar la evaluación de riesgo del lugar de trabajo antes de elegir solo por el color o el precio.",
+          "tag": null
+        }
+      ]
+    },
+    {
+      "id": "venta_gran_mineria",
+      "titulo": "VENTA DE EPP EN LA GRAN MINERÍA: SERNAGEOMIN, NORMAS Y FAMILIAS",
+      "descripcion": "Esta guía es para equipos comerciales y de abastecimiento que venden EPP a la gran minería. Cubre el marco legal (DS 132, Ley 16.744, DS 594, PLANESI, Ley 20.551), el rol de SERNAGEOMIN, y cómo se organiza la compra de EPP por familia. Cada respuesta parte con una idea en simple y luego el detalle técnico con su norma. Información de referencia general — no reemplaza la evaluación de riesgo específica de cada faena ni asesoría legal.",
+      "totalPreguntas": 40,
+      "items": [
+        {
+          "p": "1",
+          "bloque": "MARCO LEGAL E INSTITUCIONAL: SERNAGEOMIN",
+          "pregunta": "¿Qué es SERNAGEOMIN y qué rol cumple en la seguridad minera?",
+          "respuesta": "En simple: es el organismo del Estado que fiscaliza que las faenas mineras cumplan las normas de seguridad — puede inspeccionar, sancionar e incluso paralizar operaciones. El detalle: el Servicio Nacional de Geología y Minería, dependiente del Ministerio de Minería, aplica y fiscaliza el Reglamento de Seguridad Minera (DS 132), investiga accidentes, y tiene atribuciones legales para exigir medidas correctivas urgentes, incluyendo la paralización parcial o total de una faena si la seguridad de los trabajadores está comprometida.",
+          "tag": null
+        },
+        {
+          "p": "2",
+          "bloque": "MARCO LEGAL E INSTITUCIONAL: SERNAGEOMIN",
+          "pregunta": "¿Cuál es la norma principal que rige la seguridad en la gran minería chilena?",
+          "respuesta": "En simple: el Decreto Supremo N°132, conocido como Reglamento de Seguridad Minera. El detalle: publicado en 2004 por el Ministerio de Minería, actualizó al antiguo DS 72 de 1985. Establece el marco regulatorio general para proteger la vida e integridad de los trabajadores mineros y las instalaciones.",
+          "tag": "DS 132 — Ministerio de Minería"
+        },
+        {
+          "p": "3",
+          "bloque": "MARCO LEGAL E INSTITUCIONAL: SERNAGEOMIN",
+          "pregunta": "¿Qué otras normas generales (no exclusivas de minería) también aplican en una faena minera?",
+          "respuesta": "En simple: las mismas leyes laborales de seguridad que rigen cualquier trabajo en Chile, sumadas a las específicas de minería. El detalle: la Ley N°16.744 (seguro contra accidentes del trabajo y enfermedades profesionales) y el D.S. N°594 (condiciones sanitarias y ambientales básicas en lugares de trabajo) aplican como marco general; el DS 132 se suma como exigencia adicional específica del rubro minero.",
+          "tag": "Ley 16.744 / DS 594"
+        },
+        {
+          "p": "4",
+          "bloque": "MARCO LEGAL E INSTITUCIONAL: SERNAGEOMIN",
+          "pregunta": "¿Qué es el \"Libro del SERNAGEOMIN\" y por qué es importante para el departamento de prevención?",
+          "respuesta": "En simple: es un cuaderno oficial donde el fiscalizador anota sus observaciones cada vez que visita la faena — y la empresa debe firmarlas. El detalle: es un libro foliado, registrado ante la Dirección Regional del Servicio, donde se anotan las observaciones y requerimientos de cada inspección. Debe mantenerse en la Administración o en el Departamento de Prevención de Riesgos de la faena, y también deben anotarse ahí las observaciones a empresas contratistas.",
+          "tag": null
+        },
+        {
+          "p": "5",
+          "bloque": "MARCO LEGAL E INSTITUCIONAL: SERNAGEOMIN",
+          "pregunta": "¿Qué significa una \"observación tipo A\" y qué consecuencia tiene?",
+          "respuesta": "En simple: es la categoría más grave de hallazgo en una fiscalización — puede significar que paran la faena de inmediato. El detalle: las observaciones tipo A corresponden a incumplimientos graves detectados por SERNAGEOMIN, que pueden derivar en paralización inmediata de las operaciones afectadas hasta que se corrija la condición de riesgo.",
+          "tag": null
+        },
+        {
+          "p": "6",
+          "bloque": "MARCO LEGAL E INSTITUCIONAL: SERNAGEOMIN",
+          "pregunta": "¿Qué compromiso institucional guía actualmente la política de seguridad minera en Chile?",
+          "respuesta": "En simple: \"fatalidad cero\" — el objetivo declarado de que no deberían ocurrir muertes en la actividad minera. El detalle: es el eje central de las políticas actuales del sector, coordinadas entre SERNAGEOMIN, el Ministerio del Trabajo y organizaciones sindicales, en el marco de la Comisión Sectorial Minera del Consejo Superior Laboral.",
+          "tag": null
+        },
+        {
+          "p": "7",
+          "bloque": "MARCO LEGAL E INSTITUCIONAL: SERNAGEOMIN",
+          "pregunta": "¿Chile tiene compromisos internacionales en seguridad minera?",
+          "respuesta": "En simple: sí, con la Organización Internacional del Trabajo (OIT). El detalle: Chile adhiere al Convenio 176 de la OIT sobre seguridad y salud en minas, que establece estándares internacionales de referencia para la fiscalización y gestión de riesgos en la industria minera.",
+          "tag": "Convenio 176 OIT"
+        },
+        {
+          "p": "8",
+          "bloque": "DS 132 — REGLAMENTO DE SEGURIDAD MINERA",
+          "pregunta": "¿Qué obligaciones generales impone el DS 132 a las empresas mineras?",
+          "respuesta": "En simple: cuidar la vida de los trabajadores, cuidar las instalaciones, y cuidar el entorno — con evidencia documentada de cómo lo hacen. El detalle: exige protección, educación y supervisión de los trabajadores; condiciones sanitarias mínimas en faena; elaboración de planes de emergencia; y cumplimiento de compromisos ambientales, entre otras obligaciones.",
+          "tag": null
+        },
+        {
+          "p": "9",
+          "bloque": "DS 132 — REGLAMENTO DE SEGURIDAD MINERA",
+          "pregunta": "¿Qué dice el DS 132 específicamente sobre los elementos de protección personal?",
+          "respuesta": "En simple: la empresa debe entregarlos y revisar que estén en buen estado; el trabajador está obligado a usarlos. El detalle: establece la obligación de verificar el estado de los EPP y su uso por parte de los trabajadores, quienes deben cumplir las exigencias del reglamento interno de la empresa respecto a dichos elementos.",
+          "tag": "DS 132"
+        },
+        {
+          "p": "10",
+          "bloque": "DS 132 — REGLAMENTO DE SEGURIDAD MINERA",
+          "pregunta": "¿El DS 132 regula la circulación de vehículos dentro de la faena?",
+          "respuesta": "En simple: sí — no es solo sobre EPP, también ordena cómo deben moverse los vehículos dentro del yacimiento. El detalle: establece requisitos y restricciones específicas para la circulación de vehículos al interior de yacimientos mineros, dado el riesgo de colisión con maquinaria de gran tonelaje.",
+          "tag": null
+        },
+        {
+          "p": "11",
+          "bloque": "DS 132 — REGLAMENTO DE SEGURIDAD MINERA",
+          "pregunta": "¿Aplica el DS 132 a las empresas contratistas, no solo a la titular de la faena?",
+          "respuesta": "En simple: sí, plenamente — un contratista dentro de una faena minera debe cumplir el mismo reglamento. El detalle: las observaciones de prevención realizadas a empresas contratistas también deben quedar registradas en el Libro del SERNAGEOMIN de la faena, y la empresa mandante debe garantizar el acceso y las condiciones para la fiscalización de todos quienes trabajen en el yacimiento.",
+          "tag": null
+        },
+        {
+          "p": "12",
+          "bloque": "DS 132 — REGLAMENTO DE SEGURIDAD MINERA",
+          "pregunta": "¿El DS 132 regula el manejo de explosivos y sustancias peligrosas?",
+          "respuesta": "En simple: sí, con requisitos específicos de almacenamiento, control y aprobación previa. El detalle: exige que los explosivos y accesorios sean previamente controlados y aprobados, y establece condiciones de temperatura y ventilación para el almacenamiento de reactivos y sustancias peligrosas — su incumplimiento puede derivar en multas o paralización.",
+          "tag": null
+        },
+        {
+          "p": "13",
+          "bloque": "DS 132 — REGLAMENTO DE SEGURIDAD MINERA",
+          "pregunta": "¿Qué pasa si una faena no cumple el DS 132?",
+          "respuesta": "En simple: desde multas hasta la paralización total de la operación, dependiendo de la gravedad. El detalle: SERNAGEOMIN puede exigir medidas correctivas urgentes, aplicar sanciones económicas, y ordenar la paralización parcial o total de las operaciones si la seguridad de los trabajadores o la población está comprometida.",
+          "tag": null
+        },
+        {
+          "p": "14",
+          "bloque": "SILICOSIS Y PROTECCIÓN RESPIRATORIA (PLANESI)",
+          "pregunta": "¿Qué es el PLANESI y por qué es tan relevante para la venta de EPP en minería?",
+          "respuesta": "En simple: es el plan nacional para erradicar la silicosis, una enfermedad pulmonar incurable causada por el polvo de sílice — muy presente en minería. El detalle: el Plan Nacional para la Erradicación de la Silicosis se lanzó oficialmente en 2009 en Antofagasta, y establece la obligación de vigilancia epidemiológica y control de exposición a sílice en los organismos administradores de la Ley 16.744 y en las empresas donde exista presencia de este contaminante.",
+          "tag": "PLANESI — Minsal / ISP, 2009"
+        },
+        {
+          "p": "15",
+          "bloque": "SILICOSIS Y PROTECCIÓN RESPIRATORIA (PLANESI)",
+          "pregunta": "¿Cuál es el límite de exposición a sílice permitido en Chile?",
+          "respuesta": "En simple: hay un límite numérico exacto que la faena no puede superar en la jornada de trabajo. El detalle: el D.S. N°594 fija un límite permisible de exposición a sílice respirable de 0,05 mg/m³ como promedio ponderado en la jornada laboral.",
+          "tag": "DS 594"
+        },
+        {
+          "p": "16",
+          "bloque": "SILICOSIS Y PROTECCIÓN RESPIRATORIA (PLANESI)",
+          "pregunta": "¿Qué tipo de filtro respiratorio se exige frente al riesgo de sílice?",
+          "respuesta": "En simple: filtros de alta eficiencia para partículas, no cualquier mascarilla básica. El detalle: se recomiendan respiradores de medio rostro o rostro completo con filtros clase P100 o P3 (alta eficiencia), y su uso correcto exige que el trabajador esté con el rostro afeitado en la zona de sello, para no comprometer el ajuste.",
+          "tag": null
+        },
+        {
+          "p": "17",
+          "bloque": "SILICOSIS Y PROTECCIÓN RESPIRATORIA (PLANESI)",
+          "pregunta": "¿Por qué el departamento de prevención suele ser tan estricto con la protección respiratoria en minería?",
+          "respuesta": "En simple: porque la silicosis es una enfermedad progresiva e incurable — no hay margen de error una vez que el daño ocurre. El detalle: al ser irreversible, la exigencia normativa (PLANESI, DS 594) obliga a un control continuo: vigilancia ambiental, vigilancia médica de los trabajadores expuestos, y verificación permanente de que el EPP entregado corresponda exactamente al nivel de riesgo medido en cada área.",
+          "tag": null
+        },
+        {
+          "p": "18",
+          "bloque": "SILICOSIS Y PROTECCIÓN RESPIRATORIA (PLANESI)",
+          "pregunta": "Para vender protección respiratoria a una minera, ¿basta con que el producto tenga certificación NIOSH o EN?",
+          "respuesta": "En simple: no necesariamente — el departamento de prevención suele pedir además que el filtro esté validado para el contaminante y concentración específicos de esa faena. El detalle: la certificación de fábrica es la base mínima, pero la selección final del filtro exacto depende de la evaluación de riesgo propia de la faena (tipo de mineral, concentración de sílice medida, otros contaminantes presentes) — por eso suelen exigir ficha técnica detallada y, a veces, pruebas de ajuste cuantitativo antes de aceptar un producto nuevo.",
+          "tag": null
+        },
+        {
+          "p": "19",
+          "bloque": "MINERÍA SUBTERRÁNEA: REFUGIOS Y AUTORRESCATE",
+          "pregunta": "¿Qué es un refugio minero y quién lo exige?",
+          "respuesta": "En simple: es un espacio seguro dentro de la mina subterránea donde los trabajadores pueden resguardarse y sobrevivir si quedan atrapados. El detalle: exigido por el DS 132 (reforzado tras el accidente de la mina San José en 2010), debe contar con alimentos no perecibles, agua potable renovable, tubos de oxígeno, equipos de comunicación con la superficie, ropa de recambio, elementos de primeros auxilios, y suministro de aire comprimido como principal medio de soporte de vida.",
+          "tag": "DS 132 — refugios mineros"
+        },
+        {
+          "p": "20",
+          "bloque": "MINERÍA SUBTERRÁNEA: REFUGIOS Y AUTORRESCATE",
+          "pregunta": "¿Qué es un autorescatador y en qué contexto se usa?",
+          "respuesta": "En simple: es un equipo respiratorio de emergencia, personal e individual, para escapar de una atmósfera irrespirable dentro de la mina. El detalle: es un dispositivo portátil que cada trabajador de minería subterránea debe portar, diseñado para dar autonomía respiratoria durante el tiempo necesario para evacuar hacia una zona segura o un refugio minero en caso de incendio, explosión o gases tóxicos.",
+          "tag": null
+        },
+        {
+          "p": "21",
+          "bloque": "MINERÍA SUBTERRÁNEA: REFUGIOS Y AUTORRESCATE",
+          "pregunta": "¿La minería subterránea tiene exigencias de EPP distintas a la minería a rajo abierto?",
+          "respuesta": "En simple: sí — el subterráneo suma riesgos que no existen (o son menores) a cielo abierto, como gases confinados y colapsos de galería. El detalle: además del EPP estándar, en minería subterránea se agregan autorescatadores, equipos de comunicación personal, y protocolos de refugio minero — riesgos que en el rajo abierto se gestionan de forma distinta (mayor exposición a polvo en suspensión, tránsito de camiones de gran tonelaje, radiación solar).",
+          "tag": null
+        },
+        {
+          "p": "22",
+          "bloque": "MINERÍA SUBTERRÁNEA: REFUGIOS Y AUTORRESCATE",
+          "pregunta": "¿Qué otro elemento es clave en minería subterránea además del autorescatador?",
+          "respuesta": "En simple: la lámpara minera personal, que no es solo para ver — también es parte del sistema de identificación en una emergencia. El detalle: la lámpara minera con batería autónoma permite ubicación y señalización del trabajador en caso de corte de energía o evacuación, y suele integrarse al casco de seguridad certificado bajo NCh 461.",
+          "tag": null
+        },
+        {
+          "p": "23",
+          "bloque": "CIERRE DE FAENAS Y OTRAS NORMAS ASOCIADAS",
+          "pregunta": "¿Qué regula la Ley N°20.551?",
+          "respuesta": "En simple: obliga a las mineras a planificar y financiar, desde antes de cerrar, cómo van a dejar el lugar seguro cuando termine la operación. El detalle: regula el cierre de faenas e instalaciones mineras en Chile, exigiendo a los titulares presentar a SERNAGEOMIN un plan de cierre con garantía financiera asociada, para asegurar la estabilidad física y química del lugar incluso después del cese de operaciones.",
+          "tag": "Ley 20.551"
+        },
+        {
+          "p": "24",
+          "bloque": "CIERRE DE FAENAS Y OTRAS NORMAS ASOCIADAS",
+          "pregunta": "¿Por qué le importaría esto a un vendedor de EPP?",
+          "respuesta": "En simple: porque una faena en proceso de cierre reduce personal y compra distinto que una faena en plena operación — cambia el volumen y tipo de EPP que necesita. El detalle: conocer si una faena está en operación plena, en ralentización o en proceso de cierre ayuda a dimensionar correctamente una propuesta comercial — las exigencias de EPP no desaparecen durante el cierre, pero el perfil de riesgo y la dotación cambian.",
+          "tag": null
+        },
+        {
+          "p": "25",
+          "bloque": "CIERRE DE FAENAS Y OTRAS NORMAS ASOCIADAS",
+          "pregunta": "¿Qué es el Departamento de Prevención de Riesgos y cuándo es obligatorio tenerlo?",
+          "respuesta": "En simple: es la unidad interna de la empresa a cargo de la seguridad — obligatoria a partir de cierto tamaño de dotación. El detalle: la legislación chilena (Ley 16.744 y su reglamento) obliga a las empresas de más de 100 trabajadores a contar con un Departamento de Prevención de Riesgos Profesionales. En la gran minería prácticamente siempre existe, y es el interlocutor técnico principal para cualquier venta de EPP.",
+          "tag": "Ley 16.744 y reglamento (DS 40)"
+        },
+        {
+          "p": "26",
+          "bloque": "CIERRE DE FAENAS Y OTRAS NORMAS ASOCIADAS",
+          "pregunta": "¿Qué es el Comité Paritario de Higiene y Seguridad?",
+          "respuesta": "En simple: un grupo mixto de representantes de la empresa y de los trabajadores que vigila las condiciones de seguridad. El detalle: obligatorio en empresas con más de 25 trabajadores (Ley 16.744), participa en la evaluación de riesgos y puede influir en las decisiones de compra de EPP, especialmente en la validación de nuevos productos antes de su adopción masiva.",
+          "tag": "Ley 16.744"
+        },
+        {
+          "p": "27",
+          "bloque": "CÓMO SE ORGANIZA EL EPP POR FAMILIA EN GRAN MINERÍA",
+          "pregunta": "¿Cómo se organiza típicamente la compra de EPP por familia en una minera?",
+          "respuesta": "En simple: cada \"familia\" agrupa un tipo de riesgo (cabeza, pies, respiratorio, etc.), y cada una tiene su propia ficha técnica y norma exigida. El detalle: la gran minería suele estructurar sus bases de licitación y catálogos internos por familia de producto (protección de cabeza, calzado, manos, respiratoria, auditiva, visual, alta visibilidad, caídas, entre otras), cada una con especificaciones técnicas, normas y clases exigidas de forma independiente.",
+          "tag": null
+        },
+        {
+          "p": "28",
+          "bloque": "CÓMO SE ORGANIZA EL EPP POR FAMILIA EN GRAN MINERÍA",
+          "pregunta": "Familia \"Protección de Cabeza\" — ¿qué exige minería habitualmente?",
+          "respuesta": "Casco certificado bajo NCh 461-2001, normalmente Clase B o A según el riesgo eléctrico del área, con compatibilidad para acoplar lámpara minera y protección auditiva o facial según la tarea.",
+          "tag": "NCh 461-2001"
+        },
+        {
+          "p": "29",
+          "bloque": "CÓMO SE ORGANIZA EL EPP POR FAMILIA EN GRAN MINERÍA",
+          "pregunta": "Familia \"Calzado de Seguridad\" — ¿qué exige minería habitualmente?",
+          "respuesta": "Calzado bajo NCh 772/1 y normas asociadas, con resistencia a hidrocarburos (frecuente en minería por presencia de combustibles y aceites) y, en áreas eléctricas, calzado dieléctrico certificado bajo NCh 2147/2.",
+          "tag": "NCh 772/1 · NCh 2147/2"
+        },
+        {
+          "p": "30",
+          "bloque": "CÓMO SE ORGANIZA EL EPP POR FAMILIA EN GRAN MINERÍA",
+          "pregunta": "Familia \"Protección Respiratoria\" — ¿qué exige minería habitualmente?",
+          "respuesta": "Como mínimo, filtros P100/P3 por el riesgo de sílice (PLANESI), y en áreas de proceso con químicos (fundición, lixiviación) se suman cartuchos para gases y vapores específicos según la hoja de datos de seguridad de cada sustancia.",
+          "tag": null
+        },
+        {
+          "p": "31",
+          "bloque": "CÓMO SE ORGANIZA EL EPP POR FAMILIA EN GRAN MINERÍA",
+          "pregunta": "Familia \"Ropa de Alta Visibilidad\" — ¿qué exige minería habitualmente?",
+          "respuesta": "Generalmente Clase 2 en zonas de tránsito moderado y Clase 3 en interior mina o zonas de tránsito de camiones de alto tonelaje, donde la distancia de frenado es crítica.",
+          "tag": "NCh 3254 / EN ISO 20471"
+        },
+        {
+          "p": "32",
+          "bloque": "CÓMO SE ORGANIZA EL EPP POR FAMILIA EN GRAN MINERÍA",
+          "pregunta": "Familia \"Protección Auditiva\" — ¿por qué es especialmente exigente en minería?",
+          "respuesta": "La maquinaria minera genera niveles de ruido muy altos y constantes. Se exige protección auditiva certificada con atenuación (NRR/SNR) calculada según el nivel de ruido medido en cada área específica de la faena, no un producto genérico.",
+          "tag": null
+        },
+        {
+          "p": "33",
+          "bloque": "CÓMO SE ORGANIZA EL EPP POR FAMILIA EN GRAN MINERÍA",
+          "pregunta": "Familia \"Protección Contra Caídas\" — ¿qué exige minería habitualmente?",
+          "respuesta": "Sistemas anticaídas certificados, con anclajes diseñados para las condiciones específicas de la faena (piques, taludes, estructuras de proceso), normalmente con plan de rescate documentado como exigencia adicional del departamento de prevención.",
+          "tag": null
+        },
+        {
+          "p": "34",
+          "bloque": "CÓMO SE ORGANIZA EL EPP POR FAMILIA EN GRAN MINERÍA",
+          "pregunta": "Familia \"Guantes de Protección\" — ¿qué exige minería habitualmente?",
+          "respuesta": "Varía según el área: guantes con nivel de abrasión/corte EN 388 alto para manejo de materiales, guantes dieléctricos certificados en áreas eléctricas, y guantes resistentes a químicos en plantas de proceso (ácidos, reactivos de flotación).",
+          "tag": null
+        },
+        {
+          "p": "35",
+          "bloque": "VENDER A GRAN MINERÍA: PROCESO Y EL DEPARTAMENTO DE PREVENCIÓN",
+          "pregunta": "¿Por qué el departamento de prevención de una minera revisa con tanto detalle cada producto EPP?",
+          "respuesta": "En simple: porque la faena está sujeta a la fiscalización directa de SERNAGEOMIN, y cualquier producto que ingrese puede quedar registrado en una auditoría o en la investigación de un accidente. El detalle: esa fiscalización específica exige trazabilidad completa de certificación para todo EPP en uso — por eso el departamento de prevención pide respaldo documentado, no solo la palabra del proveedor.",
+          "tag": null
+        },
+        {
+          "p": "36",
+          "bloque": "VENDER A GRAN MINERÍA: PROCESO Y EL DEPARTAMENTO DE PREVENCIÓN",
+          "pregunta": "¿Qué documentación suele pedir una minera antes de aprobar un nuevo producto EPP?",
+          "respuesta": "En simple: mucho más que solo la ficha técnica — piden pruebas, certificados de laboratorio, y a veces un piloto de uso en terreno. El detalle: certificado de ensayo del laboratorio acreditado (no solo la declaración del fabricante), ficha de seguridad si aplica, muestras para prueba piloto con un grupo reducido de trabajadores, y a veces evaluación del Comité Paritario antes de una compra masiva.",
+          "tag": null
+        },
+        {
+          "p": "37",
+          "bloque": "VENDER A GRAN MINERÍA: PROCESO Y EL DEPARTAMENTO DE PREVENCIÓN",
+          "pregunta": "¿Qué significa que un producto esté \"homologado\" para una faena minera?",
+          "respuesta": "En simple: que ya pasó por todo el proceso de evaluación interna y quedó aprobado en el catálogo oficial de esa empresa — no puede venderse un reemplazo sin pasar por lo mismo. El detalle: la homologación es un proceso interno donde el departamento de prevención valida que un producto específico (con su marca, modelo y certificación) cumple los estándares de la faena. Cambiar de proveedor o de modelo, aunque sea \"equivalente\" en papel, normalmente requiere repetir el proceso.",
+          "tag": null
+        },
+        {
+          "p": "38",
+          "bloque": "VENDER A GRAN MINERÍA: PROCESO Y EL DEPARTAMENTO DE PREVENCIÓN",
+          "pregunta": "¿Qué rol cumplen las mutualidades (ACHS, IST, Mutual de Seguridad) en este proceso?",
+          "respuesta": "En simple: son organismos que administran el seguro de accidentes laborales y también entregan asesoría técnica en prevención — a veces influyen en qué EPP se valida. El detalle: como administradores de la Ley 16.744, las mutualidades participan en la vigilancia de riesgos (como el PLANESI) y frecuentemente asesoran a las empresas mineras en la selección técnica de EPP, por lo que sus recomendaciones pueden pesar en el proceso de homologación.",
+          "tag": null
+        },
+        {
+          "p": "39",
+          "bloque": "VENDER A GRAN MINERÍA: PROCESO Y EL DEPARTAMENTO DE PREVENCIÓN",
+          "pregunta": "Si SERNAGEOMIN cambia una exigencia normativa, ¿qué pasa con el EPP ya comprado?",
+          "respuesta": "En simple: la empresa minera es responsable de actualizar su dotación — un EPP que cumplía ayer puede dejar de ser válido si cambia la norma o la evaluación de riesgo. El detalle: la obligación de cumplimiento es continua, no solo al momento de la compra. Un cambio normativo, una actualización del Reglamento de Seguridad Minera, o una nueva evaluación de riesgo tras un incidente puede obligar a reemplazar EPP que antes cumplía.",
+          "tag": null
+        },
+        {
+          "p": "40",
+          "bloque": "VENDER A GRAN MINERÍA: PROCESO Y EL DEPARTAMENTO DE PREVENCIÓN",
+          "pregunta": "En resumen, ¿qué es lo primero que debe entender un vendedor antes de ofrecer EPP a la gran minería?",
+          "respuesta": "En simple: que no está vendiendo solo un producto — está vendiendo algo que debe sobrevivir una fiscalización de SERNAGEOMIN y, en el peor caso, una investigación de accidente. El detalle: cualquier propuesta comercial debe venir respaldada con certificación verificable, ficha técnica completa, y idealmente casos de uso en faenas similares — el departamento de prevención no evalúa solo el precio o la comodidad, evalúa si ese producto resiste el nivel de exigencia legal y de fiscalización al que está sometida la operación.",
+          "tag": null
+        }
+      ]
+    }
+  ]
+}
