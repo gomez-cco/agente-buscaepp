@@ -13,6 +13,7 @@
   const categoriasList = document.getElementById('categoriasList');
   const temarioList = document.getElementById('temarioList');
   const guiaList = document.getElementById('guiaList');
+  const estudioList = document.getElementById('estudioList');
 
   const initialMessagesHTML = messagesEl.innerHTML;
   let sessionId = 'sess-' + Math.random().toString(36).slice(2, 10);
@@ -39,10 +40,18 @@
         temarioList.appendChild(li);
       });
 
+      estudioList.innerHTML = '';
+      (data.guiasEstudio || []).forEach(g => {
+        const li = document.createElement('li');
+        li.textContent = `${g.titulo} (${g.totalPreguntas})`;
+        li.dataset.q = `Ver preguntas de la guía "${g.titulo}"`;
+        estudioList.appendChild(li);
+      });
     })
     .catch(() => {
       categoriasList.innerHTML = '<li class="loading">No se pudo cargar</li>';
       temarioList.innerHTML = '<li class="loading">No se pudo cargar</li>';
+      estudioList.innerHTML = '<li class="loading">No se pudo cargar</li>';
     });
 
   // Listener delegado único: cubre tanto los ítems fijos (guía) como los
