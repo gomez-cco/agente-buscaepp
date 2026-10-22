@@ -1,5 +1,5 @@
 {
-  "totalPreguntas": 220,
+  "totalPreguntas": 228,
   "guias": [
     {
       "id": "ropa_ignifuga",
@@ -831,7 +831,7 @@
         },
         {
           "p": "22",
-          "bloque": "ACCESORIOS DEL MERCADO",
+          "bloque": "CÓMO SABER SI EL RESPIRADOR ESTÁ BIEN PUESTO — PRUEBA DE AJUSTE Y SELLADO (FIT TEST)",
           "pregunta": "¿Qué es la prueba de ajuste (fit test) y por qué es obligatoria?",
           "respuesta": "En simple: es una prueba que confirma que el respirador realmente sella bien en tu cara — el mismo modelo puede sellar perfecto en una persona y fallar en otra. El detalle: existen dos tipos: la prueba cualitativa (detecta si la persona percibe un sabor o aroma de prueba a través de una fuga) y la cuantitativa (un equipo mide numéricamente cuánto aire de afuera se filtra hacia adentro de la pieza facial, dando un valor de ajuste medible). Se recomienda repetirla al menos una vez al año, y siempre que cambie el modelo de respirador o el rostro de la persona.",
           "tag": null
@@ -944,42 +944,42 @@
         },
         {
           "p": "7",
-          "bloque": "LAS 3 CLASES Y SUS DIFERENCIAS",
+          "bloque": "LAS 3 CLASES O CATEGORÍAS Y SUS DIFERENCIAS (TIPOS DE ROPA REFLECTIVA)",
           "pregunta": "¿En qué se basa la diferencia entre Clase 1, 2 y 3?",
           "respuesta": "En simple: en cuánta superficie de tela fluorescente y de cinta reflectante lleva la prenda — a más superficie, más clase. El detalle: la norma fija un área mínima en m² de material de fondo y de material retrorreflectante que cada prenda debe cumplir. No es una decisión de diseño, es una medición exacta.",
           "tag": null
         },
         {
           "p": "8",
-          "bloque": "LAS 3 CLASES Y SUS DIFERENCIAS",
+          "bloque": "LAS 3 CLASES O CATEGORÍAS Y SUS DIFERENCIAS (TIPOS DE ROPA REFLECTIVA)",
           "pregunta": "¿Cuánta superficie exige la Clase 1?",
           "respuesta": "En simple: la exigencia más baja — apta solo para riesgo bajo. El detalle: mínimo 0,14 m² de material de fondo y 0,10 m² de material retrorreflectante. Adecuada para tránsito lento (hasta 30 km/h) o interior de bodega, no para trabajo prolongado en vía pública.",
           "tag": null
         },
         {
           "p": "9",
-          "bloque": "LAS 3 CLASES Y SUS DIFERENCIAS",
+          "bloque": "LAS 3 CLASES O CATEGORÍAS Y SUS DIFERENCIAS (TIPOS DE ROPA REFLECTIVA)",
           "pregunta": "¿Cuánta superficie exige la Clase 2?",
           "respuesta": "En simple: es el estándar más usado en obra y trabajo industrial en general. El detalle: mínimo 0,50 m² de material de fondo y 0,13 m² de material retrorreflectante. Buen equilibrio entre visibilidad y comodidad.",
           "tag": null
         },
         {
           "p": "10",
-          "bloque": "LAS 3 CLASES Y SUS DIFERENCIAS",
+          "bloque": "LAS 3 CLASES O CATEGORÍAS Y SUS DIFERENCIAS (TIPOS DE ROPA REFLECTIVA)",
           "pregunta": "¿Cuánta superficie exige la Clase 3?",
           "respuesta": "En simple: es la máxima protección — para los riesgos más altos. El detalle: mínimo 0,80 m² de material de fondo y 0,20 m² de material retrorreflectante, cubriendo torso, brazos y piernas. Obligatoria en tránsito rápido (sobre 50-80 km/h) o donde la visibilidad debe garantizarse desde cualquier ángulo.",
           "tag": null
         },
         {
           "p": "11",
-          "bloque": "LAS 3 CLASES Y SUS DIFERENCIAS",
+          "bloque": "LAS 3 CLASES O CATEGORÍAS Y SUS DIFERENCIAS (TIPOS DE ROPA REFLECTIVA)",
           "pregunta": "¿Un chaleco reflectante puede ser Clase 3 por sí solo?",
           "respuesta": "En simple: normalmente no — un solo chaleco rara vez junta suficiente área para Clase 3. El detalle: para alcanzar Clase 3 casi siempre se necesita combinar dos prendas certificadas (ej. chaqueta + pantalón reflectante) que sumadas cumplan el área exigida, salvo monos u overoles diseñados específicamente para ello.",
           "tag": null
         },
         {
           "p": "12",
-          "bloque": "LAS 3 CLASES Y SUS DIFERENCIAS",
+          "bloque": "LAS 3 CLASES O CATEGORÍAS Y SUS DIFERENCIAS (TIPOS DE ROPA REFLECTIVA)",
           "pregunta": "¿Cómo sé qué clase tiene la prenda que estoy comprando?",
           "respuesta": "En simple: debe estar marcada en la etiqueta, con el número de la clase junto al pictograma de la norma. El detalle: la etiqueta debe indicar la norma (NCh 3254 o EN ISO 20471), el número de clase (1, 2 o 3) y, si aplica, el año de la versión de la norma. No aceptar la palabra del vendedor sin ver esa marca.",
           "tag": null
@@ -1604,6 +1604,70 @@
         }
       ],
       "totalPreguntas": 10
+    },
+    {
+      "id": "proteccion_visual_lentes",
+      "titulo": "PROTECCIÓN VISUAL: LENTES, FILTROS Y CARETAS FACIALES",
+      "descripcion": "Guía consultiva sobre cuándo usar lentes de seguridad, filtros UV/IR y careta facial, y qué certifica que un lente realmente sea de seguridad.",
+      "items": [
+        {
+          "p": 1,
+          "bloque": "QUÉ HACE QUE UN LENTE SEA \"DE SEGURIDAD\"",
+          "pregunta": "¿Qué certifica que un lente sea de seguridad?",
+          "respuesta": "Que el lente y el armazón estén fabricados en material resistente a impacto (normalmente policarbonato) y certificados bajo una norma de protección ocular — en Chile la NCh 1301, o su equivalente internacional ANSI Z87.1. El marcado \"Z87\" o la referencia a NCh 1301 en la patilla o el lente es lo que distingue un lente de seguridad real de un lente de sol común que solo parece robusto.",
+          "tag": "NCh 1301 / ANSI Z87.1"
+        },
+        {
+          "p": 2,
+          "bloque": "QUÉ HACE QUE UN LENTE SEA \"DE SEGURIDAD\"",
+          "pregunta": "¿Qué diferencia hay entre lentes de seguridad y lentes de sol o anteojos comunes?",
+          "respuesta": "Un lente de seguridad resiste el impacto de partículas o fragmentos a alta velocidad sin quebrarse ni astillarse sobre el ojo; un lente de sol o anteojo común no está diseñado ni probado para eso, aunque se vea similar. La diferencia está en el material (policarbonato vs. otros plásticos o vidrio) y en que pasó un ensayo de impacto certificado.",
+          "tag": "NCh 1301"
+        },
+        {
+          "p": 3,
+          "bloque": "CUÁNDO USAR CADA TIPO (CONSULTIVO)",
+          "pregunta": "¿Cuándo debo usar lentes con filtro UV?",
+          "respuesta": "En cualquier trabajo prolongado a la intemperie con exposición solar directa (construcción, minería a rajo abierto, trabajo agrícola o vial), para proteger la vista del daño acumulado por radiación ultravioleta, además del riesgo mecánico de partículas.",
+          "tag": "NCh 1582"
+        },
+        {
+          "p": 4,
+          "bloque": "CUÁNDO USAR CADA TIPO (CONSULTIVO)",
+          "pregunta": "¿Cuándo se necesita una careta facial además de los lentes?",
+          "respuesta": "Cuando el riesgo no es solo para los ojos sino para toda la cara: esmerilado, corte con disco, manejo de líquidos corrosivos que puedan salpicar, o soldadura. La careta facial se usa SIEMPRE sobre lentes de seguridad, nunca los reemplaza, porque no sella contra partículas finas que entran por los costados.",
+          "tag": "NCh 1301"
+        },
+        {
+          "p": 5,
+          "bloque": "CUÁNDO USAR CADA TIPO (CONSULTIVO)",
+          "pregunta": "¿Qué lente o filtro conviene para soldadura?",
+          "respuesta": "Un filtro infrarrojo/de sombra graduada (no un lente transparente común), que reduzca la intensidad de luz y el calor radiante del arco. El número de sombra adecuado depende del proceso y el amperaje — a mayor amperaje, mayor número de sombra. Va integrado en la careta de soldador, no como lente suelto.",
+          "tag": "NCh 1583"
+        },
+        {
+          "p": 6,
+          "bloque": "MARCADO Y CALIDAD",
+          "pregunta": "¿Qué significa el marcado \"Z87\" que traen algunos lentes?",
+          "respuesta": "Es la referencia a la norma americana ANSI Z87.1 para protección ocular industrial, el equivalente a la NCh 1301 chilena. Si el lente no trae ninguno de los dos marcados (en el lente o en la patilla), no hay garantía real de que resista impacto como lente de seguridad.",
+          "tag": "ANSI Z87.1"
+        },
+        {
+          "p": 7,
+          "bloque": "MARCADO Y CALIDAD",
+          "pregunta": "¿Los lentes de seguridad graduados (con receta) deben cumplir la misma norma?",
+          "respuesta": "Sí. Un lente graduado para uso industrial debe certificarse igual que uno sin aumento: material resistente a impacto y marcado de norma. Un lente recetado \"de calle\" puesto dentro de un armazón de seguridad no cumple por sí solo — hay proveedores que fabrican lentes de seguridad graduados certificados para este caso específico.",
+          "tag": "NCh 1301"
+        },
+        {
+          "p": 8,
+          "bloque": "MARCADO Y CALIDAD",
+          "pregunta": "¿Qué diferencia hay entre el policarbonato y otros materiales de lente?",
+          "respuesta": "El policarbonato es el material estándar en lentes de seguridad porque resiste impacto mucho mejor que el vidrio o el acrílico, es liviano y se le puede aplicar recubrimiento antirrayas y antiempañante. El vidrio, aunque ópticamente más nítido, se descarta en seguridad industrial porque se puede astillar.",
+          "tag": "NCh 1301"
+        }
+      ],
+      "totalPreguntas": 8
     }
   ]
 }
