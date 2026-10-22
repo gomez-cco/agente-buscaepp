@@ -93,6 +93,27 @@ function esConsultaCertificacion(textoNorm) {
   return ALIAS_CERTIFICACION.some(a => textoNorm.includes(normalizar(a)));
 }
 
+// Palabras que disparan el detalle de vigencia/actualización de una norma.
+// Antes estos bloques se agregaban SIEMPRE a cualquier respuesta de producto o
+// norma, aunque la pregunta no tuviera nada que ver con eso (ej. "¿qué es la
+// ropa ignífuga?" terminaba con un párrafo sobre enmiendas de NFPA 2112). Una
+// respuesta clara responde SOLO lo que se preguntó; el detalle de vigencia o
+// certificación se agrega nada más cuando el usuario lo pide explícitamente.
+const ALIAS_VIGENCIA = ['vigente', 'vigencia', 'actualizada', 'actualizado', 'actualizacion', 'nueva edicion', 'cambio de norma', 'sigue vigente', 'esta vigente', 'obsoleta', 'reemplazada', 'se actualizo'];
+
+function esConsultaVigencia(textoNorm) {
+  return ALIAS_VIGENCIA.some(a => textoNorm.includes(normalizar(a)));
+}
+
+// Corrige errores de tipeo frecuentes antes de procesar la consulta (ej.
+// "picograma" en vez de "pictograma"), para no perder el match por una letra.
+const CORRECCIONES_TIPEO = [
+  [/picogram/g, 'pictogram'],
+];
+function corregirTipeo(textoNorm) {
+  return CORRECCIONES_TIPEO.reduce((t, [re, rep]) => t.replace(re, rep), textoNorm);
+}
+
 function buscarFamiliaEnTexto(textoNorm) {
   // Reutiliza buscarPorFamilia (definida más abajo) — se declara aquí para orden de lectura,
   // pero en JS las function declarations se "hoistean", así que esto funciona sin problema.
@@ -197,10 +218,23 @@ const STOPWORDS_CORTAS = new Set([
   'los', 'las', 'del', 'por', 'una', 'uno', 'son', 'mas', 'muy', 'sus',
   'sin', 'ese', 'esa', 'eso', 'con', 'las', 'les', 'nos', 'les',
 ]);
+// Pequeño normalizador: (1) un par de sinónimos de dominio que la gente usa
+// indistintamente ("categoría" por "clase"), y (2) una raíz muy simple que
+// quita la "s" final de plurales, para que "pruebas"/"prueba",
+// "diferencias"/"diferencia" o "categorias"/"clase" se traten como la misma
+// palabra al comparar — sin esto, una pregunta parafraseada en plural no
+// calzaba con la pregunta original aunque fuera la misma idea.
+const SINONIMOS_ESTUDIA = { categoria: 'clase', categorias: 'clase' };
+function raizEstudia(token) {
+  let t = SINONIMOS_ESTUDIA[token] || token;
+  if (t.length > 4 && t.endsWith('s')) t = t.slice(0, -1);
+  return t;
+}
 function tokenizarPalabrasEstudia(textoNorm) {
   return textoNorm
     .split(/[^a-z0-9]+/)
-    .filter(t => t.length >= 3 && !STOPWORDS_CORTAS.has(t));
+    .filter(t => t.length >= 3 && !STOPWORDS_CORTAS.has(t))
+    .map(raizEstudia);
 }
 
 function buscarPorProducto(textoNorm) {
@@ -243,7 +277,7 @@ function actualizacionesDeFamilia(fam) {
   return actualizaciones.filter(a => a.familia === fam);
 }
 
-function formatNorma(codigo) {
+function formatNorma(codigo, opts = {}) {
   const n = normas[codigo];
   if (!n) return '';
   const cats = (n.categorias || []).join(', ');
@@ -254,7 +288,13 @@ function formatNorma(codigo) {
   if (n.resumenSimple) {
     out += `\n💬 **En simple (para el comprador):**\n${n.resumenSimple}\n`;
   }
-  out += formatCertificacion([codigo]);
+  // La búsqueda directa por código de norma (ej. "NCh 772/1") es una consulta
+  // de ficha técnica completa — ahí sí tiene sentido incluir siempre quién
+  // certifica. En los demás usos (family/clasificación) solo se agrega si se
+  // pidió explícitamente (opts.incluirCertificacion).
+  if (opts.incluirCertificacion !== false) {
+    out += formatCertificacion([codigo]);
+  }
   return out;
 }
 
@@ -292,17 +332,22 @@ function respuestaPorFamilia(fam) {
   return out;
 }
 
-function respuestaPorProducto(item) {
+function respuestaPorProducto(item, textoNorm = '') {
   let out = `**${item.nombre}**\n- Norma: ${item.norma}\n- Motivo: ${item.motivo}`;
-  // Si alguna norma citada en item.norma tiene actualización conocida, la agrega
-  const normaNorm = normalizar(item.norma);
-  const relacionadas = actualizaciones.filter(a => normaNorm.includes(normalizar(a.norma).split(/[:\-]/)[0].trim()));
-  if (relacionadas.length) {
-    out += '\n\n**Dato a verificar**\n' + relacionadas.map(formatActualizacion).join('\n');
+  // Respuesta clara y directa por defecto: solo se agrega el detalle de
+  // vigencia o de certificación cuando el usuario preguntó explícitamente por
+  // eso. Si no, la respuesta termina en el motivo — sin rodeos.
+  if (esConsultaVigencia(textoNorm)) {
+    const normaNorm = normalizar(item.norma);
+    const relacionadas = actualizaciones.filter(a => normaNorm.includes(normalizar(a.norma).split(/[:\-]/)[0].trim()));
+    if (relacionadas.length) {
+      out += '\n\n**Vigencia de la norma**\n' + relacionadas.map(formatActualizacion).join('\n');
+    }
   }
-  // Códigos de norma citados en item.norma (puede traer varios separados por "/")
-  const codigosCitados = item.norma.split('/').map(s => s.trim()).filter(Boolean);
-  out += formatCertificacion(codigosCitados);
+  if (esConsultaCertificacion(textoNorm)) {
+    const codigosCitados = item.norma.split('/').map(s => s.trim()).filter(Boolean);
+    out += formatCertificacion(codigosCitados);
+  }
   return out;
 }
 
@@ -479,7 +524,7 @@ O elige directamente una opción del panel izquierdo.`;
  * (para el cliente comprador/adquisiciones), en un solo mensaje.
  */
 function responder(mensaje) {
-  const textoNorm = normalizar(mensaje);
+  const textoNorm = corregirTipeo(normalizar(mensaje));
 
   // -2) ¿Viene del clic en una guía del sidebar ("Ver preguntas de la guía...")?
   if (esConsultaListaGuia(textoNorm)) {
@@ -524,20 +569,20 @@ function responder(mensaje) {
     return actMatches.map(formatActualizacion).join('\n\n');
   }
 
-  // 1bis) ¿Coincide fuertemente con alguna de las 190 preguntas de las guías
-  // "Estudia con BuscaEPP"? Estas respuestas son más ricas y específicas que
-  // el listado genérico de familia, así que se priorizan cuando hay una
-  // coincidencia clara (umbral de proporción de palabras en buscarEnEstudia).
-  const matchEstudia = buscarEnEstudia(textoNorm);
-  if (matchEstudia) {
-    return formatRespuestaEstudia(matchEstudia);
-  }
-
   // 2) ¿Coincide con el nombre de un producto específico del catálogo?
   const producto = buscarPorProducto(textoNorm);
 
   // 3) ¿Coincide con una familia/categoría de EPP?
   const familiasCoincidentes = buscarPorFamilia(textoNorm);
+
+  // 1bis) ¿Coincide fuertemente con alguna de las preguntas de las guías
+  // "Estudia con BuscaEPP"? Estas respuestas son más ricas y específicas que
+  // el listado genérico de familia, así que se priorizan cuando hay una
+  // coincidencia clara.
+  const matchEstudia = buscarEnEstudia(textoNorm);
+  if (matchEstudia) {
+    return formatRespuestaEstudia(matchEstudia);
+  }
 
   // 3bis) Si la pregunta además menciona "certifica/certificación" pero no
   // calzó con un código de norma exacto (ej. "¿quién certifica los cascos?"),
@@ -561,10 +606,10 @@ function responder(mensaje) {
 
   if (familiasCoincidentes.length && producto) {
     // Si matchea ambos, prioriza el producto específico pero menciona la familia
-    return respuestaPorProducto(producto);
+    return respuestaPorProducto(producto, textoNorm);
   }
   if (producto) {
-    return respuestaPorProducto(producto);
+    return respuestaPorProducto(producto, textoNorm);
   }
   if (familiasCoincidentes.length) {
     // Si la pregunta pide explícitamente "tipos", "clasificación" o
@@ -575,7 +620,7 @@ function responder(mensaje) {
     if (pideClasificacionOTipos(textoNorm)) {
       const bloques = familiasCoincidentes.map(fam => {
         const normaPrincipal = NORMA_PRINCIPAL_POR_FAMILIA[fam];
-        const fichaNorma = normaPrincipal ? formatNorma(normaPrincipal) : '';
+        const fichaNorma = normaPrincipal ? formatNorma(normaPrincipal, { incluirCertificacion: esConsultaCertificacion(textoNorm) }) : '';
         const listado = respuestaPorFamilia(fam);
         return fichaNorma ? `${fichaNorma}\n\n${listado}` : listado;
       });
